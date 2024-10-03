@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<?import java.net.URL?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
+            prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.FXML_HomeController">
+    <stylesheets>
+        <URL value="@../../css/style.css" />
+    </stylesheets>
+    <top>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="500.0">
+            <children>
+                <ImageView fx:id="logo" fitHeight="100.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@2412.jpg"/>
+                    </image>
+                </ImageView>
+             </children>
+        </HBox>
+    </top>
+    <center>
+        <TabPane prefHeight="500.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+            <tabs>
+                <Tab text="Commentaire">
+                    <GridPane alignment="CENTER" hgap="10.0" prefHeight="700.0" vgap="10.0">
+
+                        <TableView fx:id="tableCommentaire" prefHeight="700.0" prefWidth="670.0"
+                                   BorderPane.alignment="CENTER" GridPane.rowIndex="2">
+                            <columns>
+                                <TableColumn prefWidth="75.0" text="Id">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="id"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Nom">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="nomuser"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="contenu">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="contenu"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="date">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="date"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="img">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="img"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                            </columns>
+                        </TableView>
+                        <columnConstraints>
+                            <ColumnConstraints/>
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints/>
+                            <RowConstraints/>
+                            <RowConstraints/>
+                        </rowConstraints>
+                    </GridPane>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>

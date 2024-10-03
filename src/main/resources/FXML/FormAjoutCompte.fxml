@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="686.0" prefWidth="1316.0" stylesheets="@../css/Compte.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Compte.AjouterCompte">
+   <children>
+      <!-- Image de fond -->
+      <ImageView fitHeight="744.0" fitWidth="1366.0" layoutY="-19.0" pickOnBounds="true" preserveRatio="true" translateY="20.0">
+         <image>
+            <Image url="@../img/istockphoto-1363583906-1024x1024.jpg" />
+         </image>
+      </ImageView>
+
+      <!-- VBox transparente -->
+      <VBox fx:id="content_area" alignment="CENTER" layoutX="142.0" layoutY="51.0" prefHeight="632.0" prefWidth="1060.0" style="-fx-background-color: rgba(255, 255, 255, 0.6);">
+         <children>
+            <VBox prefHeight="86.0" prefWidth="1058.0" translateY="-30.0">
+               <children>
+                  <HBox prefHeight="30.0" prefWidth="1060.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email " wrappingWidth="93.3943099975586">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Confirmation Email" wrappingWidth="285.78297424316406">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="270.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Type Cin ">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="80.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="50.0" prefWidth="1060.0">
+                     <children>
+                        <TextField fx:id="Email" prefHeight="44.0" prefWidth="296.0">
+                           <opaqueInsets>
+                              <Insets left="20.0" />
+                           </opaqueInsets>
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="conformation_email" prefHeight="44.0" prefWidth="296.0">
+                           <HBox.margin>
+                              <Insets left="66.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <ComboBox fx:id="typeCin" prefHeight="44.0" prefWidth="296.0" styleClass="combo-box" stylesheets="@../css/SideNavBar.css">
+                           <HBox.margin>
+                              <Insets left="69.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <HBox fx:id="EmailInputErrorHbox" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="EmailInputError" fill="#c11036" strokeType="OUTSIDE" strokeWidth="0.0" text=". Veuillez entrer ton email ">
+                                 <font>
+                                    <Font name="Bell MT" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="27.0" top="8.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="ConfEmailInputErrorHbox" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="ConfEmailInputError" fill="#c11036" strokeType="OUTSIDE" strokeWidth="0.0" text=". Veuillez confirmer votre email ">
+                                 <font>
+                                    <Font name="Bell MT" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="200.0" top="8.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="TypeCinInputErrorHbox" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="TypeCinInputError" fill="#c11036" strokeType="OUTSIDE" strokeWidth="0.0" text=". Veuillez choisir votre type de cin " wrappingWidth="205.6702880859375">
+                                 <HBox.margin>
+                                    <Insets left="190.0" top="8.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="104.0" prefWidth="1060.0" translateY="-20.0">
+               <children>
+                  <HBox prefHeight="29.0" prefWidth="1060.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Numéro de Cin ">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date délivrance de Cin ">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="250.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Numéro de télèphone ">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="189.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="131.0" prefWidth="1060.0">
+                     <children>
+                        <TextField fx:id="NumCin" prefHeight="44.0" prefWidth="296.0">
+                           <HBox.margin>
+                              <Insets left="25.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <DatePicker fx:id="DatedelCin" prefHeight="42.0" prefWidth="241.0">
+                           <HBox.margin>
+                              <Insets left="70.0" top="8.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                        <TextField fx:id="NumTel" prefHeight="44.0" prefWidth="296.0">
+                           <HBox.margin>
+                              <Insets left="116.0" top="8.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <HBox fx:id="NumCinInputErrorHbox" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="NumCinInputError" fill="#c11036" strokeType="OUTSIDE" strokeWidth="0.0" text=". Veuillez entrer le numéro de cin " wrappingWidth="308.90220642089844">
+                                 <font>
+                                    <Font name="Bell MT" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="27.0" top="8.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="DateInputErrorHbox" prefHeight="26.0" prefWidth="245.0" translateX="-120.0">
+                           <children>
+                              <Text fx:id="DateInputError" fill="#c11036" strokeType="OUTSIDE" strokeWidth="0.0" text=". Veuillez entrer la date ">
+                                 <font>
+                                    <Font name="Bell MT" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="188.0" top="8.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="NumTelInputErrorHbox" prefHeight="26.0" prefWidth="361.0">
+                           <children>
+                              <Text fx:id="NumTelInputError" fill="#c11036" strokeType="OUTSIDE" strokeWidth="0.0" text=". Veuillez entrer le numéro de télèphone " wrappingWidth="282.931640625">
+                                 <font>
+                                    <Font name="Bell MT" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="100.0" top="8.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="110.0" prefWidth="1060.0" translateY="-20.0">
+               <children>
+                  <HBox prefHeight="26.0" prefWidth="1060.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="325.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Date de naissance ">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="309.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="46.0" prefWidth="1060.0">
+                     <children>
+                        <TextField fx:id="Nom" prefHeight="44.0" prefWidth="296.0">
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="Prenom" prefHeight="44.0" prefWidth="296.0">
+                           <HBox.margin>
+                              <Insets left="64.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <DatePicker fx:id="DateNaiss" prefHeight="42.0" prefWidth="241.0">
+                           <HBox.margin>
+                              <Insets left="70.0" />
+                           </HBox.margin>
+                        </DatePicker>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="32.0" prefWidth="1060.0">
+                     <children>
+                        <HBox prefHeight="32.0" prefWidth="100.0">
+                           <children>
+                              <HBox fx:id="NomInputErrorHbox" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="NomInputError" fill="#c11036" strokeType="OUTSIDE" strokeWidth="0.0" text=". Veuillez saisir votre nom ">
+                                       <HBox.margin>
+                                          <Insets left="27.0" top="5.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="Bell MT" size="13.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="PrenomnputErrorHbox" prefHeight="32.0" prefWidth="255.0">
+                                 <children>
+                                    <Text fx:id="PrenomnputError" fill="#c11036" strokeType="OUTSIDE" strokeWidth="0.0" text=". Veuillez saisir votre prenom">
+                                       <HBox.margin>
+                                          <Insets left="225.0" top="5.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="Bell MT" size="13.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="DateNaissnputErrorHbox" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fx:id="DateNaissnputError" fill="#c11036" strokeType="OUTSIDE" strokeWidth="0.0" text=". Veuillez saisir votre date de naissance ">
+                                       <HBox.margin>
+                                          <Insets left="209.0" top="5.0" />
+                                       </HBox.margin>
+                                       <font>
+                                          <Font name="Bell MT" size="13.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="9.0" />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="102.0" prefWidth="1060.0" translateY="-20.0">
+               <children>
+                  <HBox prefHeight="29.0" prefWidth="1060.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Type de Compte">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Montant de dépot initial ">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="237.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nationalité">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="180.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="49.0" prefWidth="1060.0">
+                     <children>
+                        <ComboBox fx:id="TypeCompte" prefHeight="44.0" prefWidth="296.0" stylesheets="@../css/SideNavBar.css">
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <TextField fx:id="MontantDepot" prefHeight="44.0" prefWidth="296.0">
+                           <HBox.margin>
+                              <Insets left="60.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="Nationalite" prefHeight="44.0" prefWidth="296.0">
+                           <HBox.margin>
+                              <Insets left="73.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="21.0" prefWidth="1060.0">
+                     <children>
+                        <HBox fx:id="TypeInputErrorHbox" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="TypeInputError" fill="#c11036" strokeType="OUTSIDE" strokeWidth="0.0" text=". Veuillez choisir un type de Compte ">
+                                 <font>
+                                    <Font name="Bell MT" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="27.0" top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="MontantInputErrorHbox" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="MontantInputError" fill="#c11036" strokeType="OUTSIDE" strokeWidth="0.0" text=". Veuillez saisir un montant de dépot ">
+                                 <font>
+                                    <Font name="Bell MT" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="175.0" top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="NatioInputErrorHbox" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="NatioInputError" fill="#c11036" strokeType="OUTSIDE" strokeWidth="0.0" text=". Veuillez saisir votre nationalité ">
+                                 <font>
+                                    <Font name="Bell MT" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="158.0" top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="86.0" prefWidth="1060.0" translateY="-10.0">
+               <children>
+                  <HBox prefHeight="25.0" prefWidth="1060.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Profession">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Statut Marital">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="287.0" />
+                           </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sexe ">
+                           <font>
+                              <Font name="Bodoni MT" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="260.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="55.0" prefWidth="1060.0">
+                     <children>
+                        <TextField fx:id="Profession" prefHeight="44.0" prefWidth="296.0">
+                           <HBox.margin>
+                              <Insets left="25.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <ComboBox fx:id="StatutMarital" prefHeight="40.0" prefWidth="296.0" stylesheets="@../css/SideNavBar.css">
+                           <HBox.margin>
+                              <Insets left="65.0" top="5.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                        <ComboBox fx:id="Sexe" prefHeight="40.0" prefWidth="296.0" stylesheets="@../css/SideNavBar.css" translateX="68.0" translateY="5.0" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="16.0" prefWidth="1060.0">
+                     <children>
+                        <HBox fx:id="ProffesionInputErrorHbox" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="ProffesionInputError" fill="#c11036" strokeType="OUTSIDE" strokeWidth="0.0" text=". Veuillez entrer votre profession ">
+                                 <font>
+                                    <Font name="Bell MT" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="25.0" top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="StatutnputErrorHbox" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Text fx:id="StatutnputError" fill="#c11036" strokeType="OUTSIDE" strokeWidth="0.0" text=". Veuillez entrer votre statut marital">
+                                 <font>
+                                    <Font name="Bell MT" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="184.0" top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="SexenputErrorHbox" prefHeight="20.0" prefWidth="237.0">
+                           <children>
+                              <Text fx:id="SexenputError" fill="#c11036" strokeType="OUTSIDE" strokeWidth="0.0" text=". Veuillez entrer votre sexe ">
+                                 <font>
+                                    <Font name="Bell MT" size="13.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="175.0" top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox prefHeight="43.0" prefWidth="1060.0" stylesheets="@../css/SideNavBar.css">
+               <children>
+                  <Button fx:id="ConfirmBtnCompte" mnemonicParsing="false" onMouseClicked="#ajouterCompte" prefHeight="43.0" prefWidth="125.0" styleClass="confirm-button" stylesheets="@../css/SideNavBar.css" text="Confirmer">
+                     <HBox.margin>
+                        <Insets left="460.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

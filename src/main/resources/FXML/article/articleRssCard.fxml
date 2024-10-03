@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="backArt" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="297.0" styleClass="userProductCard" stylesheets="@../../css/SideNavBar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.articleCardRssController">
+    <children>
+          <HBox fx:id="open_productDetails" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="412.0" prefWidth="311.0" styleClass="openProductDetailsBtn">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="426.0" prefWidth="378.0">
+               <children>
+                    <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="131.0" prefWidth="91.0" translateY="5.0">
+                        <VBox.margin>
+                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                        </VBox.margin>
+                        <children>
+                            <ImageView fx:id="imgArtFront" fitHeight="150.0" fitWidth="260.0" pickOnBounds="true" preserveRatio="true" translateY="5.0" />
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER" minHeight="-Infinity" prefHeight="48.0" prefWidth="290.0" styleClass="userProductCard-name" stylesheets="@../../css/SideNavBar.css" translateY="50.0">
+                        <children>
+                            <Text fx:id="titreArtFront" fill="#5ba890" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre de l'article" textAlignment="CENTER" wrappingWidth="256.2749938964844">
+                           <font>
+                              <Font size="16.0" />
+                           </font></Text>
+                        </children>
+                        <padding>
+                            <Insets bottom="10.0" top="10.0" />
+                        </padding>
+                    </HBox>
+                    <HBox alignment="CENTER" prefHeight="27.0" prefWidth="264.0" styleClass="ratingProductCard" translateY="80.0">
+                        <children>
+                            <Text fx:id="datepubArt" fill="#26647a" strokeType="OUTSIDE" strokeWidth="0.0" text="Date pub" />
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="228.0" prefWidth="283.0" styleClass="userProductCard-description" translateY="100.0">
+                        <children>
+                        <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="218.0" prefWidth="326.0" translateX="20.0">
+                           <content>
+                                  <Text fx:id="contenuArtFront" fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" text="Contenu de l'article ici" wrappingWidth="217.12405395507812" />
+                           </content>
+                        </ScrollPane>
+                        </children>
+                        <VBox.margin>
+                            <Insets />
+                        </VBox.margin>
+                        <padding>
+                            <Insets bottom="10.0" />
+                        </padding>
+                    </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+    </children>
+</VBox>

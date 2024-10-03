@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="stripe-java-22.17.0-beta.21">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/stripe-java-22.17.0-beta.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/poi-ooxml-5.2.3.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/poi-ooxml-lite-5.2.3.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/poi-excelant-5.2.3.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/poi-5.2.3.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/okio-1.13.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

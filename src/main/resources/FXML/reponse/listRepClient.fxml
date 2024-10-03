@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="listRepClient" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="1084.0" styleClass="dash__container-card" stylesheets="@../../css/SideNavBar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.reponse.ListRepClientController">
+    <children>
+        <ScrollPane layoutX="27.0" layoutY="115.0" prefHeight="493.0" prefWidth="1035.0" styleClass="product-card-scrollPane" stylesheets="@../../css/SideNavBar.css">
+
+        </ScrollPane>
+        <HBox alignment="CENTER_LEFT" layoutX="27.0" layoutY="5.0" prefHeight="100.0" prefWidth="1035.0">
+            <children>
+                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product-title" text="Liste des réponses" />
+
+                <Text fill="#97d158" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="sort-text" text="Triée par :" translateX="60.0">
+                    <HBox.margin>
+                        <Insets right="25.0" />
+                    </HBox.margin>
+                </Text>
+                <ComboBox fx:id="inputReptrie" maxHeight="-Infinity" minHeight="-Infinity" minWidth="150.0" prefHeight="40.0" promptText="Tous" styleClass="product__add-comboBox" stylesheets="@../../css/SideNavBar.css" translateX="60.0" />
+            </children>
+        </HBox>
+        <HBox fx:id="repTableHead" alignment="CENTER_LEFT" layoutX="19.0" layoutY="92.0" prefHeight="74.0" prefWidth="1035.0" styleClass="userTableHead" stylesheets="@../../css/style.scss">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Objet de la réclamation" textAlignment="CENTER" wrappingWidth="225.3999786376953" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Date réclamation" textAlignment="CENTER" wrappingWidth="162.5999755859375" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Département" textAlignment="CENTER" wrappingWidth="131.4000244140625" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Réponse" textAlignment="CENTER" wrappingWidth="248.5999755859375" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Date de réception" textAlignment="CENTER" wrappingWidth="141.800048828125" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Pièce jointe" textAlignment="CENTER" wrappingWidth="118.15468978881836" />
+
+            </children>
+
+        </HBox>
+        <ScrollPane hbarPolicy="NEVER" layoutX="33.0" layoutY="167.0" prefHeight="449.0" prefWidth="1061.0" styleClass="user_listScrollPane" translateX="-12.0">
+            <content>
+                <VBox fx:id="RepListContainer" prefHeight="454.0" prefWidth="1059.0" spacing="13.0" styleClass="userTableBody" />
+            </content>
+        </ScrollPane>
+    </children>
+</Pane>

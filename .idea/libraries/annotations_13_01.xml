@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="annotations-13.01">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/wetransfer_lib_2024-05-09_1444/lib/annotations-13.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/wetransfer_lib_2024-05-09_1444/lib/gson-2.10.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/wetransfer_lib_2024-05-09_1444/lib/kotlin-stdlib-1.3.50.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/wetransfer_lib_2024-05-09_1444/lib/okhttp-4.2.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/wetransfer_lib_2024-05-09_1444/lib/okio-2.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

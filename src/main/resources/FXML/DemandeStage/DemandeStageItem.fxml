@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER_LEFT" prefHeight="99.0" prefWidth="1100.0" styleClass="userItem" stylesheets="@../../css/yesser/ItemStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.demandeStage.DemandeStageItemController">
+   <children>
+      <Text fx:id="Nom" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__name" text="nom" wrappingWidth="54.84808349609375">
+         <HBox.margin>
+            <Insets left="10.0" right="4.0" />
+         </HBox.margin>
+      </Text>
+      <Text fx:id="prenom" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__name" text="prenom" translateX="20.0" wrappingWidth="75.84808349609375" />
+      <Text fx:id="email" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field" text="email" translateX="20.0" wrappingWidth="173.84814453125">
+         <HBox.margin>
+            <Insets right="4.0" />
+         </HBox.margin>
+      </Text>
+      <Text fx:id="numero" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__name" text="numero" translateX="20.0" wrappingWidth="106.84808349609375" />
+      <Text fx:id="domaine" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__name" text="domaine" translateX="20.0" wrappingWidth="108.84808349609375" />
+      <Text fx:id="date" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__name" text="date" translateX="20.0" wrappingWidth="115.84808349609375" />
+      <Text fx:id="Lettre" strokeType="OUTSIDE" strokeWidth="0.0" text="lettreMotivation" wrappingWidth="118.189453125" />
+      <Hyperlink fx:id="cv" onAction="#showCv" prefHeight="41.0" prefWidth="79.0" translateX="20.0">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imgYesser/pdf%20(1).png" />
+               </image>
+            </ImageView>
+         </graphic></Hyperlink>
+      <HBox prefHeight="99.0" prefWidth="77.0" translateX="20.0" translateY="-20.0">
+         <children>
+            <Label fx:id="Approuver" styleClass="userItem__btn">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imgYesser/verifier.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="10.0" top="40.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="refuser" styleClass="userItem__btn">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                     <image>
+                        <Image url="@../../imgYesser/supprimer.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="10.0" top="40.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <HBox.margin>
+            <Insets left="25.0" />
+         </HBox.margin>
+      </HBox>
+   </children>
+</HBox>

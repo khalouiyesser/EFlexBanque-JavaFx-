@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1040.0"
+      prefWidth="630.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.AddCommentCardController">
+    <children>
+        <HBox prefHeight="53.0" prefWidth="570.0">
+            <children>
+                <Text fx:id="productName" fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                      styleClass="product__card-title" text="Commentaire">
+                    <font>
+                        <Font name="Montserrat ExtraBold" size="19.0"/>
+                    </font>
+                </Text>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="16.0" top="26.0"/>
+            </padding>
+        </HBox>
+        <HBox prefHeight="33.0" prefWidth="570.0">
+            <children>
+                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-desc"
+                      text="Ajoutez votre commentaire">
+                    <font>
+                        <Font name="Montserrat Regular" size="13.0"/>
+                    </font>
+                </Text>
+            </children>
+            <padding>
+                <Insets bottom="27.0" left="16.0"/>
+            </padding>
+        </HBox>
+        <Line endX="488.0" startX="-100.0" stroke="#defee6" strokeWidth="2.0">
+            <VBox.margin>
+                <Insets bottom="27.0" left="16.0" right="16.0"/>
+            </VBox.margin>
+        </Line>
+
+        <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="102.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Nom">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <TextField fx:id="nameInput" maxHeight="-Infinity" minHeight="-Infinity" onKeyTyped="#nameTypedInput"
+                           prefHeight="40.0" promptText="Nom" styleClass="product__add-input">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </TextField>
+                <HBox fx:id="nameInputErrorHbox" prefHeight="67.0" prefWidth="598.0" styleClass="form_errors-product"
+                      stylesheets="@../../assets/style/aliStyle.css">
+                    <children>
+                        <Text fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="form_errors-product-point" text=".  " translateY="-15.0"
+                              wrappingWidth="23.18400001525879"/>
+                        <Text fx:id="nameInputError" fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="le nom ne peut pas être vide !">
+                            <HBox.margin>
+                                <Insets top="5.0"/>
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="183.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Contenu">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <TextArea fx:id="ContenuInput" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="200.0"
+                          prefWidth="200.0" promptText="Contenu" styleClass="product__add-input-textArea"/>
+                <HBox fx:id="descriptionInputErrorHbox" prefHeight="67.0" prefWidth="598.0" styleClass="form_errors-product"
+                      stylesheets="@../../assets/style/aliStyle.css">
+                    <children>
+                        <Text fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="form_errors-product-point" text=".  " translateY="-15.0"
+                              wrappingWidth="23.18400001525879"/>
+                        <Text fx:id="descriptionInputError" fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="le contenu ne peut pas être vide !">
+                            <HBox.margin>
+                                <Insets top="5.0"/>
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+         <Line endX="498.0" startX="-100.0" stroke="#defee6" strokeWidth="2.0">
+            <VBox.margin>
+                <Insets bottom="30.0" left="16.0"/>
+            </VBox.margin>
+        </Line>
+         <HBox alignment="CENTER" prefHeight="46.0" prefWidth="630.0">
+            <children>
+                <Button fx:id="add_new_EvenementBtn" mnemonicParsing="false" onMouseClicked="#addNewComments"
+                        styleClass="product__add-new-productBtn" text="Ajouter un commentaire" textFill="WHITE">
+                    <font>
+                        <Font name="Montserrat Regular" size="16.0"/>
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
+                    </padding>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </HBox>
+
+    </children>
+</VBox>

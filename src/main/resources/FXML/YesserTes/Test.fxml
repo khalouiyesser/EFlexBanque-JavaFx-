@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.textToSpeech.Test"
+            prefHeight="400.0" prefWidth="600.0">
+    <HBox prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+        <children>
+            <Button mnemonicParsing="false" onAction="#uploadImage" prefHeight="35.0" prefWidth="181.0" text="Upload Photo" />
+            <Button onAction="#camera" prefHeight="35.0" prefWidth="168.0" text="Take Photo" />
+        </children>
+        <VBox.margin>
+            <Insets left="40.0" right="40.0" />
+        </VBox.margin>
+    </HBox>
+
+</AnchorPane>

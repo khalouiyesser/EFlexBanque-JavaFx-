@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#takerdv" prefHeight="419.0" prefWidth="353.0" style="-fx-background-color: white;" stylesheets="@../css/SideNavBar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Credit.credititemsuser">
+    <children>
+        <HBox alignment="CENTER" minHeight="-Infinity" prefHeight="60.0" prefWidth="354.0" styleClass="userProductCard-name" stylesheets="@../css/SideNavBar.css">
+            <children>
+                <Text fx:id="productName" fill="#5ba890" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="commandDetailsProductName" text="Demande de Credit" textAlignment="CENTER" wrappingWidth="256.2749938964844">
+               <font>
+                  <Font name="Agency FB" size="21.0" />
+               </font></Text>
+            <HBox fx:id="rdvcredit" onMouseClicked="#getrdv" prefHeight="34.0" prefWidth="41.0" style="-fx-background-color: ff8000;" styleClass="product__card-btns">
+               <children>
+                  <ImageView fitHeight="25.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" translateX="9.0" translateY="5.0">
+                     <image>
+                        <Image url="@../img/un-evenement.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            </children>
+            <padding>
+                <Insets bottom="10.0" top="10.0" />
+            </padding>
+        </HBox>
+        <HBox prefHeight="48.0" prefWidth="354.0">
+            <children>
+                <Text opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="user id">
+                    <HBox.margin>
+                        <Insets left="50.0" top="10.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="useriditem" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10987654">
+                    <HBox.margin>
+                        <Insets left="93.0" top="10.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox prefHeight="37.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="DESCRIPTION">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="useritemidclient" strokeType="OUTSIDE" strokeWidth="0.0" text="10987654" translateX="-70.0">
+                    <HBox.margin>
+                        <Insets left="93.0" />
+                    </HBox.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+                </Text>
+            </children>
+        </HBox>
+        <HBox prefHeight="37.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="montant">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+               <font>
+                  <Font size="22.0" />
+               </font>
+                </Text>
+                <Text fx:id="montantuseritem" strokeType="OUTSIDE" strokeWidth="0.0" text="shayma ouerhani" translateX="60.0" translateY="-7.0">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+               <font>
+                  <Font size="20.0" />
+               </font>
+                </Text>
+            </children>
+        </HBox>
+        <HBox prefHeight="37.0" prefWidth="354.0">
+            <children>
+                <Text opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="mensualite" wrappingWidth="55.0999755859375">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="mensualiteuserrole" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="shayma@gmail.com">
+                    <HBox.margin>
+                        <Insets left="67.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox layoutX="18.0" layoutY="160.0" prefHeight="42.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Date  : " wrappingWidth="52.699951171875">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="dateitem" strokeType="OUTSIDE" strokeWidth="0.0" text="19/08/2024">
+                    <HBox.margin>
+                        <Insets left="70.0" />
+                    </HBox.margin>
+               <font>
+                  <Font size="17.0" />
+               </font>
+                </Text>
+            </children>
+        </HBox>
+        <HBox layoutX="18.0" layoutY="338.0" prefHeight="42.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="duree" wrappingWidth="107.10003662109375">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="dureeitem" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="64.0">
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+               <font>
+                  <Font size="19.0" />
+               </font>
+                </Text>
+            </children>
+        </HBox>
+        <HBox layoutX="18.0" layoutY="231.0" prefHeight="44.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="taux" wrappingWidth="91.9000244140625">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="tauxitem" strokeType="OUTSIDE" strokeWidth="0.0" text="22222222" translateX="-30.0">
+                    <HBox.margin>
+                        <Insets left="30.0" />
+                    </HBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+                </Text>
+            </children>
+        </HBox>
+        <HBox alignment="TOP_CENTER" prefHeight="47.0" prefWidth="342.0">
+            <VBox.margin>
+                <Insets right="11.0" />
+            </VBox.margin>
+            <padding>
+                <Insets top="2.0" />
+            </padding>
+            <children>
+                <Label styleClass="userItem__field-active" stylesheets="@../css/Compte.css">
+                    <graphic>
+                        <Text fx:id="userItemStateText" strokeType="OUTSIDE" strokeWidth="0.0" text="En cours" />
+                    </graphic>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+      <HBox prefHeight="39.0" prefWidth="346.0">
+         <children>
+            <HBox fx:id="deletecredit" onMouseClicked="#deletecredit" prefHeight="39.0" prefWidth="39.0" style="-fx-background-color: ff80white00;" styleClass="product__card-btns">
+               <children>
+                  <ImageView fx:id="deletebutton" fitHeight="23.0" fitWidth="83.0" onMouseClicked="#deletecredit" pickOnBounds="true" preserveRatio="true" scaleX="2.0" scaleY="2.0" translateX="10.0" translateY="10.0">
+                     <image>
+                        <Image url="@../img/pngtree-recycle-bin-icon-glossy-blue-round-button-delete-photo-png-image_13830767.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+    </children>
+   <styleClass>
+      <String fx:value="userProductCard" />
+      <String fx:value="ba" />
+   </styleClass>
+</VBox>

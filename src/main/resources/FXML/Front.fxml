@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="content_area" prefHeight="700.0" prefWidth="1366.0" stylesheets="@../css/front.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FrontControlleur">
+    <children>
+        <ScrollPane prefHeight="700.0" prefWidth="1366.0">
+            <content>
+                <VBox prefHeight="2000.0" prefWidth="1366.0">
+                    <children>
+                        <VBox prefHeight="759.0" prefWidth="1366.0" styleClass="bgfront" stylesheets="@../css/front.css">
+                            <children>
+                                <HBox prefHeight="33.0" prefWidth="1366.0">
+                                    <children>
+                                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="134.0">
+                                            <children>
+                                                <ImageView fitHeight="68.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../img/logo.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-custom" text="E-Flex Bank" />
+                                            </children>
+                                        </HBox>
+                                        <HBox fx:id="actualiteee" alignment="CENTER" onMouseClicked="#actualiteee" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-custom" text="Acceuil" />
+                                            </children>
+                                        </HBox>
+                                        <HBox fx:id="actualitee" alignment="CENTER" onMouseClicked="#actualitee" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-custom" text="Actualités" />
+                                            </children>
+                                        </HBox>
+                                        <HBox fx:id="OpenStage" alignment="CENTER" onMouseClicked="#OpenStage" prefHeight="100.0" prefWidth="200.0" styleClass="title-custom">
+                                            <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Stages" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="title-custom">
+                                            <children>
+                                                <Text fill="WHITE" onMouseClicked="#open_evenementsList" strokeType="OUTSIDE" strokeWidth="0.0" text="Evenement" />
+                                            </children>
+                                        </HBox>
+                                        <HBox fx:id="Tologin" alignment="CENTER" onMouseClicked="#Tologin" prefHeight="100.0" prefWidth="200.0" styleClass="title-custom">
+                                            <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Se connecter" />
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" styleClass="compteFront">
+                            <children>
+                                <VBox prefHeight="100.0" prefWidth="1152.0" styleClass="hbox-button">
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text fill="WHITE" styleClass="text-custom" text="Vous n'avez pas un compte bancaire ?Vous n'avez pas un compte bancaire ?" translateX="20.0" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text fill="WHITE" styleClass="text-custom" text="Profitez d’une relation bancaire de proximité et des services personnalisés pour réaliser tous vos projets répondant à vos besoins et exigences d'engagement et d'efficacité." translateX="20.0" wrappingWidth="976.2952880859375" />
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox-button">
+                                    <children>
+                                        <Button fx:id="CreerCompte" mnemonicParsing="false" onAction="#CreerCompte" styleClass="button-custom" text="Créer un compte" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </HBox>
+                        <VBox prefHeight="526.0" prefWidth="1366.0">
+                            <children>
+                                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="1366.0">
+                                    <children>
+                                        <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="750.0" stylesheets="@../css/articles.css">
+                                            <center>
+                                                <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="749.0" BorderPane.alignment="CENTER">
+                                                    <left>
+                                                        <AnchorPane fx:id="Empty" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="742.0" BorderPane.alignment="CENTER">
+                                                            <children>
+                                                                <BorderPane fx:id="borderPost" layoutX="111.0" layoutY="38.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="450.0" style="-fx-border-color: #DCDCDC; -fx-border-radius: 10; -fx-background-color: white; -fx-background-radius: 10;" AnchorPane.leftAnchor="111.0" AnchorPane.topAnchor="38.0">
+                                                                    <bottom>
+                                                                        <Pane prefHeight="166.0" prefWidth="445.0" style="-fx-border-color: #DCDCDC;" BorderPane.alignment="CENTER">
+                                                                            <children>
+                                                                                <Label fx:id="contenuArt" alignment="TOP_LEFT" layoutY="44.0" prefHeight="116.0" prefWidth="444.0" style="-fx-border-color: #DCDCDC; -fx-border-width: 1 0 0 0;" text="Contenu" textAlignment="CENTER">
+                                                                                    <font>
+                                                                                        <Font name="Calibri Italic" size="20.0" />
+                                                                                    </font>
+                                                                                    <padding>
+                                                                                        <Insets left="10.0" top="10.0" />
+                                                                                    </padding>
+                                                                                </Label>
+                                                                                <Label layoutX="14.0" layoutY="14.0" prefHeight="23.0" prefWidth="186.0" text="Catégorie">
+                                                                                    <font>
+                                                                                        <Font name="Calibri Bold Italic" size="20.0" />
+                                                                                    </font>
+                                                                                    <padding>
+                                                                                        <Insets left="10.0" />
+                                                                                    </padding>
+                                                                                </Label>
+                                                                                <Label fx:id="categorieart" layoutX="299.0" layoutY="7.0" prefHeight="29.0" prefWidth="132.0" text="Label">
+                                                                                    <font>
+                                                                                        <Font name="Calibri Bold Italic" size="20.0" />
+                                                                                    </font>
+                                                                                </Label>
+                                                                            </children>
+                                                                        </Pane>
+                                                                    </bottom>
+                                                                    <top>
+                                                                        <Pane prefHeight="92.0" prefWidth="659.0" style="-fx-border-color: #43882b; -fx-background-color: #43882b;" BorderPane.alignment="CENTER">
+                                                                            <children>
+                                                                                <Button fx:id="titreArt" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#go_details_Posts" prefHeight="48.0" prefWidth="264.0" styleClass="buttonFront" text="Titre Articles">
+                                                                                    <font>
+                                                                                        <Font name="Calibri Bold Italic" size="25.0" />
+                                                                                    </font>
+                                                                                </Button>
+                                                                                <Button fx:id="dateArt" alignment="TOP_LEFT" layoutY="38.0" mnemonicParsing="false" onAction="#go_details_Posts" prefHeight="48.0" prefWidth="264.0" styleClass="buttonFront" text="Date">
+                                                                                    <font>
+                                                                                        <Font name="Calibri Bold Italic" size="16.0" />
+                                                                                    </font>
+                                                                                </Button>
+                                                                            </children>
+                                                                        </Pane>
+                                                                    </top>
+                                                                    <center>
+                                                                        <ImageView fx:id="imageP" fitHeight="208.0" fitWidth="217.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                                            <image>
+                                                                                <Image url="@../imagesAct/admin.png" />
+                                                                            </image>
+                                                                            <viewport>
+                                                                                <Rectangle2D />
+                                                                            </viewport>
+                                                                        </ImageView>
+                                                                    </center>
+                                                                </BorderPane>
+                                                                <Button fx:id="newtP" layoutX="528.0" layoutY="278.0" mnemonicParsing="false" onAction="#nextPost" prefHeight="64.0" prefWidth="61.0" styleClass="buttonNext" AnchorPane.leftAnchor="880.0" AnchorPane.topAnchor="278.0" />
+                                                                <Button fx:id="PreviousP" layoutY="278.0" mnemonicParsing="false" onAction="#PreviousPost" styleClass="buttonNext" AnchorPane.leftAnchor="210.0" AnchorPane.topAnchor="278.0" />
+                                                                <Button fx:id="ajoutPP" layoutX="887.0" layoutY="34.0" mnemonicParsing="false" onAction="#Go_New_Post" prefHeight="25.0" prefWidth="17.0" styleClass="buttonNext" AnchorPane.leftAnchor="887.0" AnchorPane.topAnchor="34.0" />
+                                                                <ImageView fitHeight="54.0" fitWidth="58.0" layoutX="789.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true" translateX="-200.0">
+                                                                    <image>
+                                                                        <Image url="@../imagesAct/fleche.png" />
+                                                                    </image>
+                                                                </ImageView>
+                                                                <ImageView fitHeight="53.0" fitWidth="51.0" layoutX="29.0" layoutY="279.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                                                                    <image>
+                                                                        <Image url="@../imagesAct/fleche.png" />
+                                                                    </image>
+                                                                </ImageView>
+                                                            </children>
+                                                        </AnchorPane>
+                                                    </left>
+                                                </BorderPane>
+                                            </center>
+                                        </BorderPane>
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1358.0">
+                                    <children>
+                                        <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1354.0">
+                                            <content>
+                                                <!--                                            <GridPane fx:id="ArtListContainer" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="704.0">-->
+                                                <GridPane fx:id="ArtListContainer" alignment="TOP_CENTER" hgap="10" styleClass="article-grid" vgap="10">
+
+                                                    <rowConstraints>
+                                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    </rowConstraints>
+                                                </GridPane>
+                                            </content>
+                                        </ScrollPane>
+
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+        <VBox fx:id="Rss" prefHeight="200.0" prefWidth="100.0" />
+    </children>
+</AnchorPane>

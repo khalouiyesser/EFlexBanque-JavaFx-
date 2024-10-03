@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
+            prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.FXML_HomeController">
+    <top>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="500.0">
+            <children>
+                <ImageView fx:id="logo" fitHeight="100.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@2412.jpg"/>
+                    </image>
+                </ImageView>
+                <Button mnemonicParsing="false" style="-fx-background-color: lightblue;" text="Button"
+                        textAlignment="CENTER">
+                    <HBox.margin>
+                        <Insets/>
+                    </HBox.margin>
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+                    </padding>
+                    <font>
+                        <Font name="System Bold" size="14.0"/>
+                    </font>
+                </Button>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <TabPane prefHeight="500.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+            <tabs>
+
+                <Tab text="Projets">
+                    <GridPane alignment="CENTER" hgap="10.0" prefHeight="700.0" vgap="10.0">
+
+                        <TableView fx:id="tableProjet" prefHeight="700.0" prefWidth="670.0"
+                                   BorderPane.alignment="CENTER" GridPane.rowIndex="2">
+                            <columns>
+                                <TableColumn prefWidth="75.0" text="Id">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="id"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Nom">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="nomProjet"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Image">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="img"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Catégorie">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="categorie"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Description">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="descriptionProjet"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Budget">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="budgetProjet"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Date de création">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="dateCreation"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Durée">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="dureeProjet"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Statut">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="statutProjet"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                            </columns>
+                        </TableView>
+
+                        <HBox GridPane.rowIndex="1">
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#addProjet" text="Ajouter Projet"
+                                        textFill="#1af70a"/>
+                                <Button mnemonicParsing="false" onAction="#deleteProjet" text="Supprimer Projet"
+                                        textFill="#f70000">
+                                    <HBox.margin>
+                                        <Insets left="10.0"/>
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <columnConstraints>
+                            <ColumnConstraints/>
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints/>
+                            <RowConstraints/>
+                            <RowConstraints/>
+                        </rowConstraints>
+                    </GridPane>
+                </Tab>
+                <Tab text="Evenements">
+                    <GridPane alignment="CENTER" hgap="10.0" prefHeight="700.0" vgap="10.0">
+
+                        <TableView fx:id="tableEvenement" prefHeight="700.0" prefWidth="670.0"
+                                   BorderPane.alignment="CENTER" GridPane.rowIndex="2">
+                            <columns>
+                                <TableColumn prefWidth="75.0" text="Id">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="id"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Nom">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="nom"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Description">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="description"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Date de début">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="dateDebut"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Date de fin">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="dateFin"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Lieu">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="lieu"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Organisateur">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="organisateur"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Prix">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="prix"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Likes">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="likes"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Dislikes">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="dislikes"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Project ID">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="projectId"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                            </columns>
+                        </TableView>
+                        <HBox GridPane.rowIndex="1">
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#addEvenement" text="Ajouter Evenement"
+                                        textFill="#1af70a"/>
+                                <Button mnemonicParsing="false" onAction="#deleteEvenement" text="Supprimer Evenement"
+                                        textFill="#f70000">
+                                    <HBox.margin>
+                                        <Insets left="10.0"/>
+                                    </HBox.margin>
+                                </Button>
+                            </children>
+                        </HBox>
+                        <columnConstraints>
+                            <ColumnConstraints/>
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints/>
+                            <RowConstraints/>
+                            <RowConstraints/>
+                        </rowConstraints>
+                    </GridPane>
+                </Tab>
+                <Tab text="Commentaire">
+                    <GridPane alignment="CENTER" hgap="10.0" prefHeight="700.0" vgap="10.0">
+                        <TableView fx:id="tableCommentaire" prefHeight="700.0" prefWidth="670.0"
+                                   BorderPane.alignment="CENTER" GridPane.rowIndex="2">
+                            <columns>
+                                <TableColumn prefWidth="75.0" text="Id">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="id"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="Nom">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="nomuser"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="contenu">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="contenu"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="date">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="date"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                                <TableColumn prefWidth="100.0" text="img">
+                                    <cellValueFactory>
+                                        <PropertyValueFactory property="img"/>
+                                    </cellValueFactory>
+                                </TableColumn>
+                            </columns>
+                        </TableView>
+                        <columnConstraints>
+                            <ColumnConstraints/>
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints/>
+                            <RowConstraints/>
+                            <RowConstraints/>
+                        </rowConstraints>
+                    </GridPane>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </center>
+</BorderPane>

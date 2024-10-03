@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.fxml.FXML?>
+
+<VBox fx:id="backArt" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.article.articleCardRssController">
+
+    <Text fx:id="titreArtFront"/>
+    <Text fx:id="contenuArtFront"/>
+
+</VBox>

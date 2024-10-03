@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="600.0" style="-fx-effect: none;" styleClass="addProductCard" stylesheets="@../assets/style/aliStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Compte.ShowCompte">
+    <children>
+                  <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="75.0" prefWidth="600.0">
+                      <children>
+                          <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="84.0" prefWidth="312.0">
+                              <children>
+                                  <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="categoriesModel-card-title" text="Detaille Compte " />
+                              </children>
+                          </HBox>
+                          <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close_addReviewsModel" prefHeight="30.0" prefWidth="30.0" styleClass="categoriesModel-card-exitBtn" translateX="200.0">
+                              <children>
+                                  <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                                      <image>
+                                          <Image url="@../assets/img/cross.png" />
+                                      </image>
+                                  </ImageView>
+                              </children>
+                          </HBox>
+                      </children>
+                      <opaqueInsets>
+                          <Insets />
+                      </opaqueInsets>
+                      <padding>
+                          <Insets left="30.0" right="30.0" />
+                      </padding>
+                  </HBox>
+                  <Line endX="540.0" stroke="#defee6" strokeWidth="2.0" translateX="30.0" />
+                  <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="38.0" prefWidth="600.0">
+                      <padding>
+                          <Insets left="30.0" right="30.0" />
+                      </padding>
+                      <children>
+                          <HBox prefHeight="6.0" prefWidth="538.0">
+                              <children>
+                                  <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-input-label" text="Email">
+                                      <HBox.margin>
+                                          <Insets right="2.0" />
+                                      </HBox.margin>
+                                  </Text>
+                                  <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                                      <font>
+                                          <Font name="Montserrat Regular" size="16.0" />
+                                      </font>
+                                  </Text>
+                                  <Text fx:id="Email" strokeType="OUTSIDE" strokeWidth="0.0" text="shayma.ouerhani@gmail.com" translateX="200.0" />
+                              </children>
+                              <padding>
+                                  <Insets bottom="10.0" />
+                              </padding>
+                          </HBox>
+                          <HBox fx:id="nameInputErrorHbox" prefHeight="91.0" prefWidth="554.0" styleClass="form_errors-product" stylesheets="@../assets/style/aliStyle.css" visible="false">
+                              <children>
+                                  <Text fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="form_errors-product-point" text=".  " translateY="-15.0" wrappingWidth="23.18400001525879" />
+                                  <Text fx:id="nameInputError" fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0" text="the product  name can not be empty !">
+                                      <HBox.margin>
+                                          <Insets top="5.0" />
+                                      </HBox.margin>
+                                  </Text>
+                              </children>
+                          </HBox>
+                      </children>
+                      <VBox.margin>
+                          <Insets top="20.0" />
+                      </VBox.margin>
+                  </VBox>
+                  <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="348.0" prefWidth="600.0">
+                      <padding>
+                          <Insets left="30.0" right="30.0" />
+                      </padding>
+                      <children>
+                          <HBox prefHeight="6.0" prefWidth="538.0">
+                              <children>
+                                  <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-input-label" text="Nom ">
+                                      <HBox.margin>
+                                          <Insets right="2.0" />
+                                      </HBox.margin>
+                                  </Text>
+                                  <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                                      <font>
+                                          <Font name="Montserrat Regular" size="16.0" />
+                                      </font>
+                                  </Text>
+                                  <Text fx:id="Nom" strokeType="OUTSIDE" strokeWidth="0.0" text="Ouerhani" translateX="196.0" />
+                              </children>
+                              <padding>
+                                  <Insets bottom="10.0" />
+                              </padding>
+                          </HBox>
+                          <HBox layoutX="40.0" layoutY="10.0" prefHeight="6.0" prefWidth="538.0">
+                              <children>
+                                  <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-input-label" text="Prenom ">
+                                      <HBox.margin>
+                                          <Insets right="2.0" />
+                                      </HBox.margin>
+                                  </Text>
+                                  <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                                      <font>
+                                          <Font name="Montserrat Regular" size="16.0" />
+                                      </font>
+                                  </Text>
+                                  <Text fx:id="Prenom" strokeType="OUTSIDE" strokeWidth="0.0" text="Shayma" translateX="175.0" />
+                              </children>
+                              <padding>
+                                  <Insets bottom="10.0" />
+                              </padding>
+                          </HBox>
+                          <HBox layoutX="40.0" layoutY="42.0" prefHeight="6.0" prefWidth="538.0">
+                              <children>
+                                  <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-input-label" text="Type Cin">
+                                      <HBox.margin>
+                                          <Insets right="2.0" />
+                                      </HBox.margin>
+                                  </Text>
+                                  <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                                      <font>
+                                          <Font name="Montserrat Regular" size="16.0" />
+                                      </font>
+                                  </Text>
+                                  <Text fx:id="TypeCin" strokeType="OUTSIDE" strokeWidth="0.0" text="Cin" translateX="175.0" />
+                              </children>
+                              <padding>
+                                  <Insets bottom="10.0" />
+                              </padding>
+                          </HBox>
+                          <HBox layoutX="40.0" layoutY="74.0" prefHeight="6.0" prefWidth="538.0">
+                              <children>
+                                  <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-input-label" text="Cin">
+                                      <HBox.margin>
+                                          <Insets right="2.0" />
+                                      </HBox.margin>
+                                  </Text>
+                                  <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                                      <font>
+                                          <Font name="Montserrat Regular" size="16.0" />
+                                      </font>
+                                  </Text>
+                                  <Text fx:id="Cin" strokeType="OUTSIDE" strokeWidth="0.0" text="13021431" translateX="210.0" />
+                              </children>
+                              <padding>
+                                  <Insets bottom="10.0" />
+                              </padding>
+                          </HBox>
+                          <HBox layoutX="40.0" layoutY="106.0" prefHeight="6.0" prefWidth="538.0">
+                              <children>
+                                  <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-input-label" text="Date Délivrance Cin">
+                                      <HBox.margin>
+                                          <Insets right="2.0" />
+                                      </HBox.margin>
+                                  </Text>
+                                  <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                                      <font>
+                                          <Font name="Montserrat Regular" size="16.0" />
+                                      </font>
+                                  </Text>
+                                  <Text fx:id="DatedelCin" strokeType="OUTSIDE" strokeWidth="0.0" text="12/02/2019" translateX="100.0" />
+                              </children>
+                              <padding>
+                                  <Insets bottom="10.0" />
+                              </padding>
+                          </HBox>
+                          <HBox layoutX="40.0" layoutY="138.0" prefHeight="6.0" prefWidth="538.0">
+                              <children>
+                                  <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-input-label" text="Date de Naissance">
+                                      <HBox.margin>
+                                          <Insets right="2.0" />
+                                      </HBox.margin>
+                                  </Text>
+                                  <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                                      <font>
+                                          <Font name="Montserrat Regular" size="16.0" />
+                                      </font>
+                                  </Text>
+                                  <Text fx:id="DateNaiss" strokeType="OUTSIDE" strokeWidth="0.0" text="12/02/2000" translateX="100.0" />
+                              </children>
+                              <padding>
+                                  <Insets bottom="10.0" />
+                              </padding>
+                          </HBox>
+                          <HBox layoutX="40.0" layoutY="170.0" prefHeight="6.0" prefWidth="538.0">
+                              <children>
+                                  <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-input-label" text="Type de Compte">
+                                      <HBox.margin>
+                                          <Insets right="2.0" />
+                                      </HBox.margin>
+                                  </Text>
+                                  <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                                      <font>
+                                          <Font name="Montserrat Regular" size="16.0" />
+                                      </font>
+                                  </Text>
+                                  <Text fx:id="TypeCompte" strokeType="OUTSIDE" strokeWidth="0.0" text="Epargne " translateX="120.0" />
+                              </children>
+                              <padding>
+                                  <Insets bottom="10.0" />
+                              </padding>
+                          </HBox>
+                          <HBox layoutX="40.0" layoutY="202.0" prefHeight="6.0" prefWidth="538.0">
+                              <children>
+                                  <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-input-label" text="Profession">
+                                      <HBox.margin>
+                                          <Insets right="2.0" />
+                                      </HBox.margin>
+                                  </Text>
+                                  <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                                      <font>
+                                          <Font name="Montserrat Regular" size="16.0" />
+                                      </font>
+                                  </Text>
+                                  <Text fx:id="Profession" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingénieur" translateX="155.0" />
+                              </children>
+                              <padding>
+                                  <Insets bottom="10.0" />
+                              </padding>
+                          </HBox>
+                          <HBox layoutX="40.0" layoutY="234.0" prefHeight="6.0" prefWidth="538.0">
+                              <children>
+                                  <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-input-label" text="Sexe ">
+                                      <HBox.margin>
+                                          <Insets right="2.0" />
+                                      </HBox.margin>
+                                  </Text>
+                                  <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                                      <font>
+                                          <Font name="Montserrat Regular" size="16.0" />
+                                      </font>
+                                  </Text>
+                                  <Text fx:id="Sexe" strokeType="OUTSIDE" strokeWidth="0.0" text="femme" translateX="190.0" />
+                              </children>
+                              <padding>
+                                  <Insets bottom="10.0" />
+                              </padding>
+                          </HBox>
+                          <HBox layoutX="40.0" layoutY="266.0" prefHeight="6.0" prefWidth="538.0">
+                              <children>
+                                  <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-input-label" text="Montant de dépot ">
+                                      <HBox.margin>
+                                          <Insets right="2.0" />
+                                      </HBox.margin>
+                                  </Text>
+                                  <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                                      <font>
+                                          <Font name="Montserrat Regular" size="16.0" />
+                                      </font>
+                                  </Text>
+                                  <Text fx:id="Montant" strokeType="OUTSIDE" strokeWidth="0.0" text="1999" translateX="100.0" />
+                              </children>
+                              <padding>
+                                  <Insets bottom="10.0" />
+                              </padding>
+                          </HBox>
+            <HBox layoutX="40.0" layoutY="170.0" prefHeight="6.0" prefWidth="538.0">
+               <children>
+                  <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-input-label" text="Numéro téléphone ">
+                     <HBox.margin>
+                        <Insets right="2.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                     <font>
+                        <Font name="Montserrat Regular" size="16.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="NumTel" strokeType="OUTSIDE" strokeWidth="0.0" text="22145987" translateX="100.0" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </HBox>
+                      </children>
+                  </VBox>
+                  <HBox fx:id="updateBtnContainer" alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0" translateX="1.0" translateY="-51.0" />
+              </children>
+</VBox>

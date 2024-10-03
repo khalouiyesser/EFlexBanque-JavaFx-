@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox prefHeight="516.0" prefWidth="519.0" spacing="10.0" xmlns="http://javafx.com/javafx/19"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FXML_HomeController">
+    <Label text="Add a new Evenement"/>
+
+    <GridPane alignment="CENTER" hgap="10" prefHeight="289.0" prefWidth="543.0" vgap="10">
+        <Label text="Type:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="fxType" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="Nom:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="fxNom" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="Prenom:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="fxPrenom" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <Label text="Sexe:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <TextField fx:id="fxSexe" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+        <Label text="Date de naissance:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <DatePicker fx:id="dateNaissancePicker" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+        <Label text="Pass:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+        <TextField fx:id="fxPass" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+        <columnConstraints>
+            <ColumnConstraints maxWidth="133.60001220703126" minWidth="103.19998779296876" prefWidth="126.4"/>
+            <ColumnConstraints maxWidth="170.40001220703124" minWidth="139.99998779296874" prefWidth="147.2"/>
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints/>
+            <RowConstraints/>
+            <RowConstraints/>
+            <RowConstraints/>
+            <RowConstraints/>
+            <RowConstraints/>
+        </rowConstraints>
+    </GridPane>
+
+    <HBox alignment="CENTER" prefHeight="125.0" prefWidth="370.0" spacing="10">
+        <Button onAction="#addEvenement" text="Ajouter"/>
+        <Button onAction="#cancel" text="Cancel"/>
+    </HBox>
+</VBox>

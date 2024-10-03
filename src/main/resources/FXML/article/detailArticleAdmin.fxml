@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1000.0" style="-fx-background-color: White;" stylesheets="@../../css/SideNavBar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.article.DetailArticleAdminController">
+    <children>
+      <ScrollPane prefHeight="690.0" prefWidth="885.0" style="-fx-background-color: White;">
+         <content>
+            <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: White;">
+               <children>
+                    <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="434.0" prefWidth="1112.0">
+                        <children>
+                            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="480.0">
+                                <children>
+                                    <ImageView fx:id="img" fitHeight="226.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="1.733" translateX="-12.0" translateY="-2.0">
+                                        <image>
+                                            <Image url="@../../imagesAct/eco-modified (3).png" />
+                                        </image>
+                                    </ImageView>
+                                </children>
+                            </HBox>
+                            <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="461.0">
+                                <children>
+                                    <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="64.0" prefWidth="137.0">
+                                        <children>
+                                            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="64.0" prefWidth="169.0">
+                                                <children>
+                                                    <Text fx:id="titreArt" fill="#43882b" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__Name" text="Titre" />
+                                                </children>
+                                            </HBox>
+                                            <HBox prefHeight="100.0" prefWidth="200.0" />
+                                        </children>
+                                    </HBox>
+                                    <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="32.0" prefWidth="630.0">
+                                        <children>
+                                            <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__categ" text="Catégorie :" wrappingWidth="91.1343994140625" />
+                                            <Text fx:id="category" fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__categGet" text="Categ1" />
+                                        </children>
+                                    </HBox>
+                                    <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="28.0" prefWidth="630.0" styleClass="productDetails__categ">
+                                        <children>
+                                            <ImageView fx:id="star1" fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@../../imagesAct/star.png" />
+                                                </image>
+                                            </ImageView>
+                                            <ImageView fx:id="star2" fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@../../imagesAct/star.png" />
+                                                </image>
+                                            </ImageView>
+                                            <ImageView fx:id="star3" fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@../../imagesAct/star.png" />
+                                                </image>
+                                            </ImageView>
+                                            <ImageView fx:id="star4" fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@../../imagesAct/star.png" />
+                                                </image>
+                                            </ImageView>
+                                            <ImageView fx:id="star5" fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@../../imagesAct/star.png" />
+                                                </image>
+                                            </ImageView>
+                                            <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" text="(" translateY="2.0">
+                                                <HBox.margin>
+                                                    <Insets left="5.0" />
+                                                </HBox.margin>
+                                            </Text>
+                                            <Text fx:id="total_verif_reviews" fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" text="20" translateY="2.0" />
+                                            <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" text="votes)" translateY="2.0" />
+                                        </children>
+                                    </HBox>
+                                    <HBox fx:id="offreRow" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="622.0">
+                                        <children>
+                                            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="79.0">
+                                                <children>
+                                                    <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__priceTND" text="Date de publication :    ">
+                                                        <HBox.margin>
+                                                            <Insets left="3.0" />
+                                                        </HBox.margin>
+                                                    </Text>
+                                                </children>
+                                            </HBox>
+                                            <HBox alignment="CENTER" prefHeight="35.0" prefWidth="50.0" styleClass="productDetails__OFFRE">
+                                                <children>
+                                                    <Text fx:id="offre" fill="#32bb6f" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__priceTND" text="13/03/2024" textAlignment="CENTER" wrappingWidth="106.32421875" />
+                                                </children>
+                                            </HBox>
+                                        </children>
+                                        <VBox.margin>
+                                            <Insets bottom="10.0" />
+                                        </VBox.margin>
+                                    </HBox>
+                                    <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="24.0" prefWidth="630.0">
+                                        <children>
+                                            <Text fill="#43882b" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__descTitle" text="Description: " />
+                                        </children>
+                                    </HBox>
+                                    <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="176.0" prefWidth="408.0">
+                                        <children>
+                                            <Text fx:id="description" fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__descText" text="Contenu de l'article" wrappingWidth="601.699951171875" />
+                                        </children>
+                                    </HBox>
+                                    <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="24.0" prefWidth="630.0">
+                                        <children>
+                                            <Text fx:id="piece" fill="#43882b" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__descTitle" text="Voir la piece jointe" />
+                                        </children>
+                                        <VBox.margin>
+                                            <Insets bottom="10.0" top="10.0" />
+                                        </VBox.margin>
+                                    </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" />
+                                </children>
+                                <HBox.margin>
+                                    <Insets />
+                                </HBox.margin>
+                                <padding>
+                                    <Insets left="10.0" right="20.0" />
+                                </padding>
+                            </VBox>
+                        </children>
+                    </HBox>
+                    <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="286.0" prefWidth="1122.0">
+                        <children>
+                            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="277.0" prefWidth="548.0">
+                                <children>
+                                    <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="62.0" prefWidth="750.0">
+                                        <children>
+                                            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="45.0" prefWidth="534.0">
+                                                <children>
+                                                    <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="paymentMethodTitle" text="Commentaires :" />
+                                                </children>
+                                            </HBox>
+                                            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="308.0" />
+                                        </children>
+                                    </HBox>
+                              <ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="227.0" prefWidth="998.0" style="-fx-background-color: White;">
+                                 <content>
+                                    <VBox fx:id="CommentListContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="394.0" prefWidth="938.0" style="-fx-background-color: White;" />
+                                 </content>
+                              </ScrollPane>
+                                </children>
+                            </VBox>
+                        </children>
+                    </HBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+    </children>
+    <padding>
+        <Insets left="30.0" right="30.0" top="20.0" />
+    </padding>
+</VBox>

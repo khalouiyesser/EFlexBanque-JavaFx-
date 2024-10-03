@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="microsoft-translator-java-api-0.6.2">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/maryem/microsoft-translator-java-api-0.6.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/maryem/json-simple-1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

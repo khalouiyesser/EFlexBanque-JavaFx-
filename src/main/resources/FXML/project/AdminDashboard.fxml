@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.*?>
+<?import java.lang.String?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
+            prefWidth="1366.0" styleClass="bg" stylesheets="@../../assets/style/aliStyle.css"
+            xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.AdminDashboardController">
+    <children>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0"
+              prefWidth="250.0" styleClass="dash__side-bar">
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <children>
+                <ImageView fitHeight="243.0" fitWidth="201.0" pickOnBounds="true" preserveRatio="true" translateX="8.0"
+                           translateY="-15.0">
+                    <Image url="@../../assets/img/logo.png"/>
+                </ImageView>
+                <VBox maxWidth="-Infinity" minHeight="-Infinity" prefHeight="349.0" prefWidth="250.0" translateY="1.0">
+                    <children>
+                        <HBox fx:id="dashboardBtn" alignment="CENTER_LEFT" maxHeight="-Infinity"
+                              maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                              onMouseClicked="#open_dashboard" prefHeight="50.0" prefWidth="200.0">
+                            <padding>
+                                <Insets left="20.0"/>
+                            </padding>
+                            <styleClass>
+                                <String fx:value="nav-links"/>
+                                <String fx:value="activeLink"/>
+                            </styleClass>
+                            <ImageView fx:id="dashboardIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                       preserveRatio="true">
+                                <image>
+                                    <Image url="@../../assets/img/menu-active.png"/>
+                                </image>
+                                <HBox.margin>
+                                    <Insets right="25.0"/>
+                                </HBox.margin>
+                            </ImageView>
+                            <Label fx:id="dashboardText" text="Dashboard" textFill="WHITE">
+                                <font>
+                                    <Font name="Montserrat Regular" size="14.0"/>
+                                </font>
+                                <styleClass>
+                                    <String fx:value="text"/>
+                                    <String fx:value="activeText"/>
+                                </styleClass>
+                            </Label>
+                        </HBox>
+                        <!--                  <HBox fx:id="usersBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" onMouseClicked="#open_usersList" prefHeight="50.0" prefWidth="200.0" styleClass="nav-links">-->
+                        <!--                     <children>-->
+                        <!--                        <ImageView fx:id="usersIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">-->
+                        <!--                           <image>-->
+                        <!--                              <Image url="@../assets/img/user.png" />-->
+                        <!--                           </image>-->
+                        <!--                           <HBox.margin>-->
+                        <!--                              <Insets right="25.0" />-->
+                        <!--                           </HBox.margin>-->
+                        <!--                        </ImageView>-->
+                        <!--                        <Label fx:id="usersText" styleClass="text" text="Users" textFill="WHITE">-->
+                        <!--                           <font>-->
+                        <!--                              <Font name="Montserrat Regular" size="14.0" />-->
+                        <!--                           </font>-->
+                        <!--                        </Label>-->
+                        <!--                     </children>-->
+                        <!--                     <padding>-->
+                        <!--                        <Insets left="20.0" />-->
+                        <!--                     </padding>-->
+                        <!--                     <VBox.margin>-->
+                        <!--                        <Insets top="10.0" />-->
+                        <!--                     </VBox.margin>-->
+                        <!--                  </HBox>-->
+                        <!--                  <HBox fx:id="fundrisingBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" onMouseClicked="#open_fundrisingList" prefHeight="50.0" prefWidth="200.0" styleClass="nav-links">-->
+                        <!--                     <children>-->
+                        <!--                        <ImageView fx:id="fundrisingIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">-->
+                        <!--                           <image>-->
+                        <!--                              <Image url="@../assets/img/heart.png" />-->
+                        <!--                           </image>-->
+                        <!--                           <HBox.margin>-->
+                        <!--                              <Insets right="25.0" />-->
+                        <!--                           </HBox.margin>-->
+                        <!--                        </ImageView>-->
+                        <!--                        <Label fx:id="fundrisingText" styleClass="text" text="Fundrising" textFill="WHITE">-->
+                        <!--                           <font>-->
+                        <!--                              <Font name="Montserrat Regular" size="18.0" />-->
+                        <!--                           </font>-->
+                        <!--                        </Label>-->
+                        <!--                     </children>-->
+                        <!--                     <padding>-->
+                        <!--                        <Insets left="20.0" />-->
+                        <!--                     </padding>-->
+                        <!--                     <VBox.margin>-->
+                        <!--                        <Insets top="10.0" />-->
+                        <!--                     </VBox.margin>-->
+                        <!--                  </HBox>-->
+
+
+                        <HBox fx:id="projetsBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity"
+                              onMouseClicked="#open_ProjectList" prefHeight="50.0" prefWidth="200.0"
+                              styleClass="nav-links">
+                            <children>
+                                <ImageView fx:id="projetsIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                           preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../assets/img/heart.png"/>
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="25.0"/>
+                                    </HBox.margin>
+                                </ImageView>
+                                <Label fx:id="projetsText" styleClass="text" text="Projets" textFill="WHITE">
+                                    <font>
+                                        <Font name="Montserrat Regular" size="18.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets left="20.0"/>
+                            </padding>
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                        </HBox>
+
+                        <!--                  <HBox fx:id="productsBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" onMouseClicked="#open_productsList" prefHeight="50.0" prefWidth="200.0" styleClass="nav-links">-->
+                        <!--                     <children>-->
+                        <!--                        <ImageView fx:id="productsIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">-->
+                        <!--                           <image>-->
+                        <!--                              <Image url="@../assets/img/store.png" />-->
+                        <!--                           </image>-->
+                        <!--                           <HBox.margin>-->
+                        <!--                              <Insets right="25.0" />-->
+                        <!--                           </HBox.margin>-->
+                        <!--                        </ImageView>-->
+                        <!--                        <Label fx:id="productsText" styleClass="text" text="products" textFill="WHITE">-->
+                        <!--                           <font>-->
+                        <!--                              <Font name="Montserrat Regular" size="14.0" />-->
+                        <!--                           </font>-->
+                        <!--                           <HBox.margin>-->
+                        <!--                              <Insets />-->
+                        <!--                           </HBox.margin>-->
+                        <!--                        </Label>-->
+                        <!--                     </children>-->
+                        <!--                     <padding>-->
+                        <!--                        <Insets left="20.0" />-->
+                        <!--                     </padding>-->
+                        <!--                     <VBox.margin>-->
+                        <!--                        <Insets top="10.0" />-->
+                        <!--                     </VBox.margin>-->
+                        <!--                  </HBox>-->
+
+
+                        <HBox fx:id="commentaireBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity"
+                              onMouseClicked="#open_commentaireList" prefHeight="50.0" prefWidth="200.0"
+                              styleClass="nav-links">
+                            <children>
+                                <ImageView fx:id="commentaireIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                           preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../assets/img/store.png"/>
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="25.0"/>
+                                    </HBox.margin>
+                                </ImageView>
+                                <Label fx:id="commentaireText" styleClass="text" text="Commentaires" textFill="WHITE">
+                                    <font>
+                                        <Font name="Montserrat Regular" size="14.0"/>
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets/>
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets left="20.0"/>
+                            </padding>
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                        </HBox>
+
+
+                        <HBox fx:id="evenementsBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity"
+                              onMouseClicked="#open_evenementsList" prefHeight="50.0" prefWidth="200.0"
+                              styleClass="nav-links">
+                            <children>
+                                <ImageView fx:id="evenementsIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                           preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../assets/img/store.png"/>
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="25.0"/>
+                                    </HBox.margin>
+                                </ImageView>
+                                <Label fx:id="evenementsText" styleClass="text" text="Evenements" textFill="WHITE">
+                                    <font>
+                                        <Font name="Montserrat Regular" size="14.0"/>
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets/>
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets left="20.0"/>
+                            </padding>
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                        </HBox>
+
+                        <HBox fx:id="collectBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity"
+                              onMouseClicked="#open_collectList" prefHeight="50.0" prefWidth="200.0"
+                              styleClass="nav-links">
+                            <children>
+                                <ImageView fx:id="collectIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                           preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../assets/img/recycle.png"/>
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="25.0"/>
+                                    </HBox.margin>
+                                </ImageView>
+                                <Label fx:id="collectText" styleClass="text" text="Collect" textFill="WHITE">
+                                    <font>
+                                        <Font name="Montserrat Regular" size="14.0"/>
+                                    </font>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets left="20.0"/>
+                            </padding>
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="commandsBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity"
+                              onMouseClicked="#open_commandsList" prefHeight="50.0" prefWidth="200.0"
+                              styleClass="nav-links">
+                            <children>
+                                <ImageView fx:id="commandsIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                                           preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../assets/img/shopping-cart.png"/>
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="25.0"/>
+                                    </HBox.margin>
+                                </ImageView>
+                                <Label fx:id="commandsText" styleClass="text" text="Commands" textFill="WHITE">
+                                    <font>
+                                        <Font name="Montserrat Regular" size="14.0"/>
+                                    </font>
+                                    <HBox.margin>
+                                        <Insets/>
+                                    </HBox.margin>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets left="20.0"/>
+                            </padding>
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                </VBox>
+                <HBox fx:id="sideBarLogout" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity"
+                      onMouseClicked="#logout" prefHeight="50.0" prefWidth="200.0" styleClass="nav-links"
+                      translateY="72.0">
+                    <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../assets/img/logout.png"/>
+                            </image>
+                            <HBox.margin>
+                                <Insets right="23.0"/>
+                            </HBox.margin>
+                        </ImageView>
+                        <Label styleClass="text" text="Logout" textFill="WHITE">
+                            <font>
+                                <Font name="Montserrat Regular" size="14.0"/>
+                            </font>
+                            <HBox.margin>
+                                <Insets/>
+                            </HBox.margin>
+                        </Label>
+                    </children>
+                    <padding>
+                        <Insets left="23.0"/>
+                    </padding>
+                </HBox>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER_RIGHT" layoutX="250.0" prefHeight="78.0" prefWidth="1115.0">
+            <children>
+                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="nav-user-fullname"
+                      text="Dashboard" translateX="-690.0">
+                    <font>
+                        <Font name="Montserrat ExtraBold" size="18.0"/>
+                    </font>
+                </Text>
+                <HBox fx:id="navBarLogout" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+                      minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#logout" prefHeight="50.0"
+                      prefWidth="50.0" styleClass="nav-icon">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../assets/img/logout.png"/>
+                            </image>
+                            <HBox.margin>
+                                <Insets/>
+                            </HBox.margin>
+                        </ImageView>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="16.0"/>
+                    </HBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                      minWidth="-Infinity" prefHeight="50.0" prefWidth="50.0" styleClass="nav-icon">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true"
+                                   translateX="10.0">
+                            <image>
+                                <Image url="@../../assets/img/bell.png"/>
+                            </image>
+                        </ImageView>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                              minWidth="-Infinity" prefHeight="20.0" prefWidth="20.0" styleClass="nav-notif-bg"
+                              translateX="-8.0" translateY="-14.0">
+                            <children>
+                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="3" translateY="-1.0">
+                                    <font>
+                                        <Font name="Montserrat ExtraBold" size="15.0"/>
+                                    </font>
+                                </Text>
+                            </children>
+                        </HBox>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="16.0"/>
+                    </HBox.margin>
+                </HBox>
+                <Text fx:id="navFullname" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="nav-user-fullname"
+                      text="Braiek Ali">
+                    <font>
+                        <Font name="Montserrat Bold" size="18.0"/>
+                    </font>
+                    <HBox.margin>
+                        <Insets right="16.0"/>
+                    </HBox.margin>
+                </Text>
+                <Circle fx:id="circle" fill="DODGERBLUE" radius="25.0" stroke="BLACK" strokeType="INSIDE"
+                        strokeWidth="0.0">
+                    <HBox.margin>
+                        <Insets right="16.0"/>
+                    </HBox.margin>
+                </Circle>
+            </children>
+        </HBox>
+        <Pane fx:id="content_area" layoutX="266.0" layoutY="78.0" maxHeight="-Infinity" maxWidth="-Infinity"
+              minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1084.0"
+              styleClass="dash__container-card">
+            <children>
+                <HBox alignment="CENTER_LEFT" layoutX="22.0" layoutY="28.0"
+                      stylesheets="@../../assets/style/nabilStyle.css">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="home__msg" text="Home |">
+                            <HBox.margin>
+                                <Insets right="8.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="home__msg__text"
+                              text="Hello Nabil admin, Are you ready to help people and the nature again ?"/>
+                    </children>
+                </HBox>
+                <HBox fx:id="chartContainer" layoutX="22.0" layoutY="92.0"/>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="javafx-base-22.0.1-linux">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/libraries/javafx-base-22.0.1-linux.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libraries/javafx-graphics-22.0.1-linux.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

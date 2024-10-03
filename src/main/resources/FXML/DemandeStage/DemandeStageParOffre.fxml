@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="demandeStagePane" prefHeight="720.0" prefWidth="1300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.demandeStage.DemandeStageParOffreController">
+    <children>
+        <VBox fx:id="content_area" prefHeight="750.0" prefWidth="1366.0" style="-fx-background-color: white;" styleClass="productAddedToCart__card">
+            <children>
+                <HBox prefHeight="53.0" prefWidth="570.0" translateX="230.0">
+                    <children>
+                        <Text fill="#59b462" strokeType="OUTSIDE" strokeWidth="0.0" text="Demande de Stage " textAlignment="CENTER" wrappingWidth="301.7109375">
+                            <HBox.margin>
+                                <Insets left="250.0" top="15.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </HBox>
+            <Button fx:id="retour" mnemonicParsing="false" onMouseClicked="#RetourBack" prefHeight="52.0" prefWidth="61.0" styleClass="checkoutCard__btn" translateX="10.0" translateY="-20.0">
+               <graphic>
+                  <ImageView fitHeight="45.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imgYesser/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+                <Line endX="500.0" startX="-100.0" stroke="#c5ff98" translateX="250.0" translateY="10.0" />
+                <ScrollPane prefHeight="630.0" prefWidth="1366.0" style="-fx-background-color: white;" translateY="15.0">
+                    <content>
+                        <VBox prefHeight="1250.0" prefWidth="1347.0" styleClass="productAddedToCart__card" stylesheets="@../../css/yesser/SideNavBar.css" translateY="-20.0">
+                            <children>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="111.0" prefWidth="701.0" translateX="250.0">
+                                    <children>
+                                        <HBox prefHeight="27.0" prefWidth="701.0">
+                                            <children>
+                                                <Label styleClass="stage-input-label" stylesheets="@../../css/yesser/ajout.css" text="Nom">
+                                                    <HBox.margin>
+                                                        <Insets bottom="15.0" left="15.0" top="15.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <TextField fx:id="NomDemInput" promptText="saisir votre nom" styleClass="product__add-input">
+                                            <VBox.margin>
+                                                <Insets left="15.0" right="20.0" />
+                                            </VBox.margin>
+                                 <stylesheets>
+                                    <URL value="@../../css/yesser/ajout.css" />
+                                    <URL value="@../../css/yesser/SideNavBar.css" />
+                                 </stylesheets>
+                                        </TextField>
+                                        <HBox prefHeight="40.0" prefWidth="701.0">
+                                            <children>
+                                                <Text fx:id="nomError" fill="#e81a1a" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez Saisir votre Nom  !">
+                                                    <HBox.margin>
+                                                        <Insets left="15.0" top="10.0" />
+                                                    </HBox.margin>
+                                                </Text>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="108.0" prefWidth="701.0" translateX="250.0">
+                                    <children>
+                                        <HBox prefHeight="31.0" prefWidth="686.0">
+                                            <children>
+                                                <Label styleClass="stage-input-label" stylesheets="@../../css/yesser/ajout.css" text="Prenom">
+                                                    <HBox.margin>
+                                                        <Insets bottom="15.0" top="15.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets left="15.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <TextField fx:id="PrenomDemInput" promptText="saisir votre prénom" styleClass="product__add-input">
+                                            <VBox.margin>
+                                                <Insets left="15.0" right="20.0" />
+                                            </VBox.margin>
+                                 <stylesheets>
+                                    <URL value="@../../css/yesser/ajout.css" />
+                                    <URL value="@../../css/yesser/SideNavBar.css" />
+                                 </stylesheets>
+                                        </TextField>
+                                        <HBox prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text fx:id="prenomError" fill="#e81a1a" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez saisir votre prenom !">
+                                                    <HBox.margin>
+                                                        <Insets left="15.0" top="15.0" />
+                                                    </HBox.margin>
+                                                </Text>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="134.0" prefWidth="702.0" translateX="250.0" translateY="10.0">
+                                    <children>
+                                        <HBox prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Label styleClass="stage-input-label" stylesheets="@../../css/yesser/ajout.css" text="Email">
+                                                    <HBox.margin>
+                                                        <Insets bottom="15.0" left="15.0" top="15.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <TextField fx:id="EmailDemInput" promptText="saisir votre email" styleClass="product__add-input">
+                                            <VBox.margin>
+                                                <Insets left="15.0" right="20.0" />
+                                            </VBox.margin>
+                                 <stylesheets>
+                                    <URL value="@../../css/yesser/ajout.css" />
+                                    <URL value="@../../css/yesser/SideNavBar.css" />
+                                 </stylesheets>
+                                        </TextField>
+                                        <HBox prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text fx:id="EmailError" fill="#e81a1a" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez saisir votre Email !">
+                                                    <HBox.margin>
+                                                        <Insets left="15.0" top="15.0" />
+                                                    </HBox.margin>
+                                                </Text>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="126.0" prefWidth="702.0" translateX="250.0">
+                                    <children>
+                                        <HBox prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Label styleClass="stage-input-label" stylesheets="@../../css/yesser/ajout.css" text="Numéro de téléphone">
+                                                    <HBox.margin>
+                                                        <Insets left="15.0" top="15.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <TextField fx:id="NumeroDemInput" promptText="saisir votre numero" styleClass="product__add-input">
+                                            <VBox.margin>
+                                                <Insets left="15.0" right="20.0" top="15.0" />
+                                            </VBox.margin>
+                                 <stylesheets>
+                                    <URL value="@../../css/yesser/ajout.css" />
+                                    <URL value="@../../css/yesser/SideNavBar.css" />
+                                 </stylesheets>
+                                        </TextField>
+                                        <HBox prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text fx:id="NumeroError" fill="#e81a1a" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez Saisir vote Numéro ! ">
+                                                    <HBox.margin>
+                                                        <Insets left="15.0" top="15.0" />
+                                                    </HBox.margin>
+                                                </Text>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="79.0" prefWidth="701.0" translateX="250.0">
+                                    <children>
+                                        <HBox prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Label styleClass="stage-input-label" stylesheets="@../../css/yesser/ajout.css" text="Domaine">
+                                                    <HBox.margin>
+                                                        <Insets left="15.0" top="6.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <ComboBox fx:id="Domaine" prefHeight="49.0" prefWidth="296.0" styleClass="product__add-input" stylesheets="@../../css/yesser/SideNavBar.css">
+                                            <VBox.margin>
+                                                <Insets bottom="15.0" left="25.0" top="15.0" />
+                                            </VBox.margin>
+                                            <padding>
+                                                <Insets top="10.0" />
+                                            </padding>
+                                        </ComboBox>
+                                        <HBox prefHeight="100.0" prefWidth="200.0" translateY="-8.0">
+                                            <children>
+                                                <Text fx:id="domainError" fill="#fc3131" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez saisir votre Domaine !">
+                                                    <HBox.margin>
+                                                        <Insets left="15.0" top="15.0" />
+                                                    </HBox.margin>
+                                                </Text>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets top="15.0" />
+                                    </VBox.margin>
+                                </VBox>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="57.0" prefWidth="701.0" translateX="250.0" translateY="40.0">
+                                    <VBox.margin>
+                                        <Insets top="15.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <HBox prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Label styleClass="stage-input-label" stylesheets="@../../css/yesser/ajout.css" text="Cv">
+                                                    <HBox.margin>
+                                                        <Insets left="15.0" top="6.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <TextField fx:id="cv" promptText="CV" styleClass="product__add-input">
+                                            <VBox.margin>
+                                                <Insets left="15.0" right="20.0" top="15.0" />
+                                            </VBox.margin>
+                                 <stylesheets>
+                                    <URL value="@../../css/yesser/ajout.css" />
+                                    <URL value="@../../css/yesser/SideNavBar.css" />
+                                 </stylesheets>
+                                        </TextField>
+                                        <Button fx:id="upload" mnemonicParsing="false" onAction="#Upload" prefHeight="23.0" prefWidth="124.0" styleClass="checkoutCard__btn" text="Importer">
+                                            <VBox.margin>
+                                                <Insets left="300.0" top="15.0" />
+                                            </VBox.margin>
+                                 <stylesheets>
+                                    <URL value="@../../css/yesser/ajout.css" />
+                                    <URL value="@../../css/yesser/SideNavBar.css" />
+                                 </stylesheets>
+                                        </Button>
+                                        <HBox prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text fx:id="CvError" fill="#f23a3a" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez Saisir votre Cv !">
+                                                    <HBox.margin>
+                                                        <Insets left="15.0" top="15.0" />
+                                                    </HBox.margin>
+                                                </Text>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="701.0" translateX="250.0" translateY="150.0">
+                                    <children>
+                                        <HBox prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Label styleClass="stage-input-label" stylesheets="@../../css/yesser/ajout.css" text="Date Début Stage ">
+                                                    <HBox.margin>
+                                                        <Insets left="15.0" top="15.0" />
+                                                    </HBox.margin>
+                                                </Label>
+                                            </children>
+                                        </HBox>
+                                        <DatePicker fx:id="date" styleClass="product__add-input" stylesheets="@../../css/yesser/SideNavBar.css">
+                                            <VBox.margin>
+                                                <Insets left="15.0" top="15.0" />
+                                            </VBox.margin>
+                                        </DatePicker>
+                                        <HBox prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text fx:id="dateError" fill="#e42c2c" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez saisir la date ! ">
+                                                    <HBox.margin>
+                                                        <Insets left="15.0" top="15.0" />
+                                                    </HBox.margin>
+                                                </Text>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="701.0" translateX="250.0" translateY="190.0">
+                                    <children>
+                                        <HBox prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Label styleClass="stage-input-label" stylesheets="@../../css/yesser/ajout.css" text="Lettre de motivation" />
+                                            </children>
+                                        </HBox>
+                                        <TextField fx:id="LettreDemInput" promptText="saisir votre lettre de motivation" styleClass="product__add-input">
+                                            <VBox.margin>
+                                                <Insets right="20.0" top="15.0" />
+                                            </VBox.margin>
+                                 <stylesheets>
+                                    <URL value="@../../css/yesser/ajout.css" />
+                                    <URL value="@../../css/yesser/SideNavBar.css" />
+                                 </stylesheets>
+                                        </TextField>
+                                        <HBox prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text fx:id="lettreError" fill="#eb2b2b" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez saisir votre lettre de motivation !">
+                                                    <HBox.margin>
+                                                        <Insets top="15.0" />
+                                                    </HBox.margin>
+                                                </Text>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets left="15.0" top="15.0" />
+                                    </VBox.margin>
+                                </VBox>
+                                <HBox prefHeight="95.0" prefWidth="687.0" translateX="550.0" translateY="290.0">
+                                    <VBox.margin>
+                                        <Insets />
+                                    </VBox.margin>
+                           <children>
+                              <Button fx:id="ajouterDemande" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#ajouterDemande" prefHeight="45.0" prefWidth="93.0" styleClass="checkoutCard__btn" stylesheets="@../../css/yesser/SideNavBar.css" text="Ajouter " />
+                           </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </content>
+                </ScrollPane>
+            </children>
+         <stylesheets>
+            <URL value="@../../css/yesser/SideNavBar.css" />
+            <URL value="@../../css/SideNavBar.css" />
+         </stylesheets>
+        </VBox>
+    </children>
+
+</AnchorPane>

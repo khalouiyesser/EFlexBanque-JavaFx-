@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1100.0"
+      prefWidth="700.0" styleClass="addProductCard" stylesheets="@../../assets/style/aliStyle.css"
+      xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.AddProjectCardController">
+    <children>
+        <HBox prefHeight="53.0" prefWidth="570.0">
+            <children>
+                <Text fx:id="productName" fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                      styleClass="product__card-title" text="Détails du projet">
+                    <font>
+                        <Font name="Montserrat ExtraBold" size="19.0"/>
+                    </font>
+                </Text>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="16.0" top="26.0"/>
+            </padding>
+        </HBox>
+        <HBox prefHeight="33.0" prefWidth="570.0">
+            <children>
+                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-desc"
+                      text="Ajoutez les détails de votre projet pour aider les clients à s'informer">
+                    <font>
+                        <Font name="Montserrat Regular" size="13.0"/>
+                    </font>
+                </Text>
+            </children>
+            <padding>
+                <Insets bottom="27.0" left="16.0"/>
+            </padding>
+        </HBox>
+        <Line endX="488.0" startX="-100.0" stroke="#defee6" strokeWidth="2.0">
+            <VBox.margin>
+                <Insets bottom="27.0" left="16.0" right="16.0"/>
+            </VBox.margin>
+        </Line>
+        <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="102.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Nom">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <TextField fx:id="nameInput" maxHeight="-Infinity" minHeight="-Infinity" onKeyTyped="#nameTypedInput"
+                           prefHeight="40.0" promptText="Nom" styleClass="product__add-input">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </TextField>
+                <HBox fx:id="nameInputErrorHbox" prefHeight="67.0" prefWidth="598.0" styleClass="form_errors-product"
+                      stylesheets="@../../assets/style/aliStyle.css">
+                    <children>
+                        <Text fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="form_errors-product-point" text=".  " translateY="-15.0"
+                              wrappingWidth="23.18400001525879"/>
+                        <Text fx:id="nameInputError" fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="le nom du projet ne peut pas être vide !">
+                            <HBox.margin>
+                                <Insets top="5.0"/>
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="183.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Description">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <TextArea fx:id="fxDescription" maxHeight="-Infinity" minHeight="-Infinity"
+                          onKeyTyped="#descriptionTypedInput" prefHeight="200.0" prefWidth="200.0"
+                          promptText="Description" styleClass="product__add-input-textArea"/>
+                <HBox fx:id="descriptionInputErrorHbox" prefHeight="67.0" prefWidth="598.0"
+                      styleClass="form_errors-product" stylesheets="@../../assets/style/aliStyle.css">
+                    <children>
+                        <Text fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="form_errors-product-point" text=". " translateY="-15.0"
+                              wrappingWidth="23.18400001525879"/>
+                        <Text fx:id="descriptionInputError" fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="la description du projet ne peut pas être vide !">
+                            <HBox.margin>
+                                <Insets top="5.0"/>
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                </HBox>
+            </children>
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </VBox>
+        <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="100.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Date">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <DatePicker fx:id="fxdate" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0"
+                            promptText="Date" styleClass="product__add-input"/>
+                <HBox fx:id="dateInputErrorHbox" prefHeight="67.0" prefWidth="598.0" styleClass="form_errors-product"
+                      stylesheets="@../../assets/style/aliStyle.css">
+                    <children>
+                        <Text fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="form_errors-product-point" text=".  " translateY="-15.0"
+                              wrappingWidth="23.18400001525879"/>
+                        <Text fx:id="dateInputError" fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="La date ne peut pas être vide !">
+                            <HBox.margin>
+                                <Insets top="5.0"/>
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <HBox>
+
+            <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="100.0" prefWidth="570.0">
+                <padding>
+                    <Insets left="16.0" right="16.0"/>
+                </padding>
+                <children>
+                    <HBox prefHeight="6.0" prefWidth="538.0">
+                        <children>
+                            <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                                  styleClass="product__add-input-label" text="Catégorie">
+                                <HBox.margin>
+                                    <Insets right="2.0"/>
+                                </HBox.margin>
+                            </Text>
+                            <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                                <font>
+                                    <Font name="Montserrat Regular" size="16.0"/>
+                                </font>
+                            </Text>
+                        </children>
+                        <padding>
+                            <Insets bottom="10.0"/>
+                        </padding>
+                    </HBox>
+                    <TextField fx:id="fxCategorie" maxHeight="-Infinity" minHeight="-Infinity"
+                                prefHeight="40.0" promptText="Categorie"
+                               styleClass="product__add-input"/>
+                    <HBox fx:id="CategorieInputErrorHbox" prefHeight="67.0" prefWidth="598.0"
+                          styleClass="form_errors-product" stylesheets="@../../assets/style/aliStyle.css">
+                        <children>
+                            <Text fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                                  styleClass="form_errors-product-point" text=".  " translateY="-15.0"
+                                  wrappingWidth="23.18400001525879"/>
+                            <Text fx:id="categoryInputError" fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                                  text="le categorie du projet ne peut pas être vide !">
+                                <HBox.margin>
+                                    <Insets top="5.0"/>
+                                </HBox.margin>
+                            </Text>
+                        </children>
+                    </HBox>
+                </children>
+            </VBox>
+            <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="100.0" prefWidth="570.0">
+                <padding>
+                    <Insets left="16.0" right="16.0"/>
+                </padding>
+                <children>
+                    <HBox prefHeight="6.0" prefWidth="538.0">
+                        <children>
+                            <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                                  styleClass="product__add-input-label" text="Budget">
+                                <HBox.margin>
+                                    <Insets right="2.0"/>
+                                </HBox.margin>
+                            </Text>
+                            <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                                <font>
+                                    <Font name="Montserrat Regular" size="16.0"/>
+                                </font>
+                            </Text>
+                        </children>
+                        <padding>
+                            <Insets bottom="10.0"/>
+                        </padding>
+                    </HBox>
+                    <TextField fx:id="fxBudget" maxHeight="-Infinity" minHeight="-Infinity"
+                               onKeyTyped="#priceTypedInput" prefHeight="40.0" promptText="Prix"
+                               styleClass="product__add-input"/>
+                    <HBox fx:id="BudgetInputErrorHbox" prefHeight="67.0" prefWidth="598.0"
+                          styleClass="form_errors-product" stylesheets="@../../assets/style/aliStyle.css">
+                        <children>
+                            <Text fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                                  styleClass="form_errors-product-point" text=".  " translateY="-15.0"
+                                  wrappingWidth="23.18400001525879"/>
+                            <Text fx:id="BudgetInputError" fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                                  text="le budget du projet ne peut pas être vide !">
+                                <HBox.margin>
+                                    <Insets top="5.0"/>
+                                </HBox.margin>
+                            </Text>
+                        </children>
+                    </HBox>
+                </children>
+            </VBox>
+        </HBox>
+        <HBox>
+            <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="100.0" prefWidth="570.0">
+                <padding>
+                    <Insets left="16.0" right="16.0"/>
+                </padding>
+                <children>
+                    <HBox prefHeight="6.0" prefWidth="538.0">
+                        <children>
+                            <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                                  styleClass="product__add-input-label" text="Durée">
+                                <HBox.margin>
+                                    <Insets right="2.0"/>
+                                </HBox.margin>
+                            </Text>
+                            <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                                <font>
+                                    <Font name="Montserrat Regular" size="16.0"/>
+                                </font>
+                            </Text>
+                        </children>
+                        <padding>
+                            <Insets bottom="10.0"/>
+                        </padding>
+                    </HBox>
+                    <TextField fx:id="fxDuree" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0"
+                               promptText="Quantité" styleClass="product__add-input"/>
+                    <HBox fx:id="DureeInputErrorHbox" prefHeight="67.0" prefWidth="598.0"
+                          styleClass="form_errors-product" stylesheets="@../../assets/style/aliStyle.css">
+                        <children>
+                            <Text fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                                  styleClass="form_errors-product-point" text=".  " translateY="-15.0"
+                                  wrappingWidth="23.18400001525879"/>
+                            <Text fx:id="DureeInputError" fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                                  text="la durée du projet ne peut pas être vide !">
+                                <HBox.margin>
+                                    <Insets top="5.0"/>
+                                </HBox.margin>
+                            </Text>
+                        </children>
+                    </HBox>
+                </children>
+            </VBox>
+            <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="100.0" prefWidth="570.0">
+                <padding>
+                    <Insets left="16.0" right="16.0"/>
+                </padding>
+                <children>
+                    <HBox prefHeight="6.0" prefWidth="538.0">
+                        <children>
+                            <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                                  styleClass="product__add-input-label" text="Statut">
+                                <HBox.margin>
+                                    <Insets right="2.0"/>
+                                </HBox.margin>
+                            </Text>
+                            <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                                <font>
+                                    <Font name="Montserrat Regular" size="16.0"/>
+                                </font>
+                            </Text>
+                        </children>
+                        <padding>
+                            <Insets bottom="10.0"/>
+                        </padding>
+                    </HBox>
+                    <TextField fx:id="fxStatut" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0"
+                               promptText="Quantité" styleClass="product__add-input"/>
+                    <HBox fx:id="StatutInputErrorHbox" prefHeight="67.0" prefWidth="598.0"
+                          styleClass="form_errors-product" stylesheets="@../../assets/style/aliStyle.css">
+                        <children>
+                            <Text fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                                  styleClass="form_errors-product-point" text=".  " translateY="-15.0"
+                                  wrappingWidth="23.18400001525879"/>
+                            <Text fx:id="StatutInputError" fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                                  text="la statut du projet ne peut pas être vide !">
+                                <HBox.margin>
+                                    <Insets top="5.0"/>
+                                </HBox.margin>
+                            </Text>
+                        </children>
+                    </HBox>
+                </children>
+            </VBox>
+        </HBox>
+        <Line endX="498.0" startX="-100.0" stroke="#defee6" strokeWidth="2.0">
+            <VBox.margin>
+                <Insets bottom="30.0" left="16.0"/>
+            </VBox.margin>
+        </Line>
+        <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="263.0" prefWidth="680.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Image">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                              minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"
+                              styleClass="product__add-img-container">
+                            <children>
+                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../assets/img/cloud-computing.png"/>
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <HBox alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                              prefHeight="100.0" prefWidth="200.0" translateX="-200.0">
+                            <children>
+                                <ImageView fx:id="imageInput" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true"
+                                           preserveRatio="true"/>
+                            </children>
+                        </HBox>
+                        <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                              minWidth="-Infinity" prefHeight="200.0" prefWidth="218.0" translateX="-200.0">
+                            <children>
+                                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                                      styleClass="product__add-desc-img" text="Résolution : 1920x1080 px">
+                                    <font>
+                                        <Font name="Montserrat Regular" size="16.0"/>
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0"/>
+                                    </VBox.margin>
+                                </Text>
+                                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                                      styleClass="product__add-desc-img" text="Types de fichiers pris en charge : jpg,">
+                                    <font>
+                                        <Font name="Montserrat Regular" size="16.0"/>
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0"/>
+                                    </VBox.margin>
+                                </Text>
+                                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                                      styleClass="product__add-desc-img" text=".jpeg ,. gif ou .png Aucun texte">
+                                    <font>
+                                        <Font name="Montserrat Regular" size="16.0"/>
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0"/>
+                                    </VBox.margin>
+                                </Text>
+                                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                                      styleClass="product__add-desc-img" text="sur l'image.">
+                                    <font>
+                                        <Font size="16.0"/>
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0"/>
+                                    </VBox.margin>
+                                </Text>
+                                <HBox fx:id="choose_photoBtn" alignment="CENTER" maxHeight="-Infinity"
+                                      minHeight="-Infinity" onMouseClicked="#ajouter_image" prefHeight="48.0"
+                                      prefWidth="200.0" styleClass="product__add-img-btn">
+                                    <children>
+                                        <ImageView fitHeight="23.0" fitWidth="32.0" pickOnBounds="true"
+                                                   preserveRatio="true" translateY="-3.0">
+                                            <image>
+                                                <Image url="@../../assets/img/upload-big-arrow.png"/>
+                                            </image>
+                                        </ImageView>
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              styleClass="product__add-textBtn" text="Choisir une photo">
+                                            <font>
+                                                <Font name="Montserrat Bold" size="16.0"/>
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets left="20.0"/>
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="30.0"/>
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                </HBox>
+                <HBox fx:id="photoInputErrorHbox" prefHeight="67.0" prefWidth="598.0" styleClass="form_errors-product"
+                      stylesheets="@../../assets/style/aliStyle.css">
+                    <children>
+                        <Text fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="form_errors-product-point" text=".  " translateY="-15.0"
+                              wrappingWidth="23.18400001525879"/>
+                        <Text fx:id="photoInputError" fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0"
+                              text="Choisissez une photo !">
+                            <HBox.margin>
+                                <Insets top="5.0"/>
+                            </HBox.margin>
+                        </Text>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Line endX="498.0" startX="-100.0" stroke="#defee6" strokeWidth="2.0">
+            <VBox.margin>
+                <Insets bottom="30.0" left="16.0"/>
+            </VBox.margin>
+        </Line>
+        <HBox alignment="CENTER" prefHeight="46.0" prefWidth="630.0">
+            <children>
+                <Button fx:id="add_new_EvenementBtn" mnemonicParsing="false" onMouseClicked="#addNewProject"
+                        styleClass="product__add-new-productBtn" text="Ajouter un nouveau projet" textFill="WHITE">
+                    <font>
+                        <Font name="Montserrat Regular" size="16.0"/>
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
+                    </padding>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="annotations-13.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Currency Converter/lib/annotations-13.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Currency Converter/lib/gson-2.10.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Currency Converter/lib/kotlin-stdlib-1.3.50.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Currency Converter/lib/okhttp-4.2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Currency Converter/lib/okio-2.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

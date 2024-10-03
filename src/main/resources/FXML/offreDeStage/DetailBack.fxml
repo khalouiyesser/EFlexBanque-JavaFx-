@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1300.0" stylesheets="@../../css/SideNavBar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.offreDeStage.DetailsBackController">
+    <children>
+        <ScrollPane prefHeight="816.0" prefWidth="1100.0" stylesheets="@../../css/SideNavBar.css">
+            <content>
+                <VBox fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1800.0" prefWidth="1340.0" style="-fx-background-color: #fff;" stylesheets="@../../css/SideNavBar.css">
+                    <children>
+                        <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="434.0" prefWidth="1112.0" styleClass="productDetails__Container" stylesheets="@../../css/SideNavBar.css">
+                            <children>
+                                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="438.0" prefWidth="480.0">
+                                    <children>
+                                        <ImageView fx:id="img" fitHeight="249.0" fitWidth="390.0" pickOnBounds="true" preserveRatio="true" scaleX="1.2" scaleY="1.733" translateX="-12.0" translateY="-2.0">
+                                            <image>
+                                                <Image url="@../../img/admin.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="641.0">
+                                    <children>
+                                        <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="64.0" prefWidth="630.0">
+                                            <children>
+                                                <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="64.0" prefWidth="544.0">
+                                                    <children>
+                                                        <Text fx:id="title" fill="#43882b" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__Name" text="Ingénieur Sécurité informatique " />
+                                                    </children>
+                                                </HBox>
+                                                <HBox prefHeight="100.0" prefWidth="200.0">
+                                                    <children>
+                                                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+                                                    </children>
+                                                </HBox>
+                                            </children>
+                                        </HBox>
+                                        <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="32.0" prefWidth="630.0" />
+                                        <Line endX="510.0" startX="-100.0" stroke="#defee6" strokeWidth="2.0" translateY="-30.0">
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" top="3.0" />
+                                            </VBox.margin>
+                                        </Line>
+                                        <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="36.0" prefWidth="622.0" styleClass="productDetails__price">
+                                            <VBox.margin>
+                                                <Insets top="5.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox layoutX="20.0" layoutY="204.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="24.0" prefWidth="630.0" translateY="-20.0">
+                                            <children>
+                                                <Text fill="#43882b" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__descTitle" text="Type d'offre : " />
+                                                <Text fx:id="typeOffre" strokeType="OUTSIDE" strokeWidth="0.0" text="5" translateX="40.0" />
+                                            </children>
+                                        </HBox>
+                                        <HBox layoutX="20.0" layoutY="163.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="24.0" prefWidth="630.0" translateY="-20.0">
+                                            <children>
+                                                <Text fill="#43882b" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__descTitle" text="Niveau : " />
+                                                <Text fx:id="Niveau" strokeType="OUTSIDE" strokeWidth="0.0" text="5" translateX="75.0" />
+                                            </children>
+                                        </HBox>
+                                        <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="24.0" prefWidth="630.0" translateY="-100.0">
+                                            <children>
+                                                <Text fill="#43882b" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__descTitle" text="Poste Vacante" />
+                                                <Text fx:id="poste" strokeType="OUTSIDE" strokeWidth="0.0" text="5" translateX="40.0" />
+                                            </children>
+                                        </HBox>
+                                        <HBox layoutX="20.0" layoutY="187.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="24.0" prefWidth="630.0" translateY="-40.0">
+                                            <children>
+                                                <Text fill="#43882b" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__descTitle" text="Expérience : " />
+                                                <Text fx:id="experience" strokeType="OUTSIDE" strokeWidth="0.0" text="5" translateX="50.0" />
+                                            </children>
+                                        </HBox>
+                                        <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="24.0" prefWidth="630.0" translateY="-45.0">
+                                            <children>
+                                                <Text fill="#43882b" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__descTitle" text="Langue :" />
+                                                <Text fx:id="langue" strokeType="OUTSIDE" strokeWidth="0.0" text="5" translateX="78.0" />
+                                            </children>
+                                            <VBox.margin>
+                                                <Insets bottom="10.0" top="10.0" />
+                                            </VBox.margin>
+                                        </HBox>
+                                        <HBox  alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="46.0" prefWidth="622.0" styleClass="productDetails__addToCartBtn" translateY="-30.0">
+                                            <VBox.margin>
+                                                <Insets />
+                                            </VBox.margin>
+                                 <children>
+                                    <Button fx:id="recommender" mnemonicParsing="false" onAction="#recommander" prefHeight="38.0" prefWidth="130.0" styleClass="productDetails__addToCartBtn" text="Recemmonder " />
+                                 </children>
+                                        </HBox>
+                                    </children>
+                                    <HBox.margin>
+                                        <Insets />
+                                    </HBox.margin>
+                                    <padding>
+                                        <Insets left="10.0" right="20.0" />
+                                    </padding>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1280.0" styleClass="productDetails__Container" translateY="20.0">
+                            <children>
+                                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="94.0" prefWidth="440.0">
+                                    <children>
+                                        <Text fill="#43882b" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__verifiedText" text="Description" translateX="21.0" translateY="-10.0">
+                                            <font>
+                                                <Font size="11.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="488.0" prefWidth="1220.0" translateX="-100.0" translateY="100.0">
+                                    <children>
+                                        <Text fx:id="Description" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" translateX="20.0" translateY="20.0" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="327.0" prefWidth="1280.0" styleClass="productDetails__Container" translateY="35.0">
+                            <children>
+                                <HBox prefHeight="403.0" prefWidth="0.0" />
+                                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="42.0" prefWidth="1252.0" translateX="20.0" translateY="30.0">
+                                    <children>
+                                        <Text fill="#43882b" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__verifiedText" text="Exigence " translateX="21.0" translateY="-10.0">
+                                            <font>
+                                                <Font size="11.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="255.0" prefWidth="1207.0" translateX="-90.0" translateY="60.0">
+                                    <children>
+                                        <Text fx:id="Exigence" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" translateX="20.0" translateY="20.0" />
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <HBox layoutX="40.0" layoutY="1064.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="193.0" prefWidth="1280.0" styleClass="productDetails__Container" translateY="50.0">
+                            <children>
+                                <HBox prefHeight="403.0" prefWidth="0.0" />
+                                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="203.0" translateX="20.0" translateY="30.0">
+                                    <children>
+                                        <Text fill="#43882b" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__verifiedText" text="Mots Clés :" translateX="21.0" translateY="-10.0">
+                                            <font>
+                                                <Font size="11.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="152.0" prefWidth="1230.0" translateX="-160.0" translateY="60.0">
+                                    <children>
+                                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="950.0" translateX="60.0">
+                                            <children>
+                                                <Text fx:id="MotCle" strokeType="OUTSIDE" strokeWidth="0.0" text="- Banque ">
+                                                    <font>
+                                                        <Font name="Bodoni MT" size="12.0" />
+                                                    </font>
+                                                </Text>
+                                            </children>
+                                        </HBox>
+                                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="956.0" translateX="60.0">
+                                            <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Java" />
+                                            </children>
+                                        </HBox>
+                                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="851.0" translateX="60.0">
+                                            <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="- Python" />
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <HBox layoutX="40.0" layoutY="1392.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="1280.0" styleClass="productDetails__Container" translateY="70.0">
+                            <children>
+                                <HBox prefHeight="403.0" prefWidth="0.0" />
+                                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="346.0" translateX="20.0" translateY="30.0">
+                                    <children>
+                                        <Text fx:id="datet1" fill="#43882b" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__verifiedText" text="Date de Postulation :" translateX="21.0" translateY="-10.0">
+                                            <font>
+                                                <Font size="11.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="58.0" prefWidth="1230.0" translateX="-300.0" translateY="70.0">
+                                    <children>
+                                        <HBox fx:id="DatePost" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="38.0" prefWidth="950.0" translateX="60.0">
+                                            <children>
+                                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="12/05/2024" translateY="10.0">
+                                                    <font>
+                                                        <Font name="Bodoni MT" size="12.0" />
+                                                    </font>
+                                                </Text>
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                    </children>
+                    <padding>
+                        <Insets left="30.0" right="30.0" top="20.0" />
+                    </padding>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+</VBox>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="617.0" prefWidth="1071.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.demandeStage.AfficheDemandeVisiteurController">
+   <children>
+      <HBox fx:id="userTableHead" alignment="CENTER_LEFT" layoutX="24.0" layoutY="14.0" prefHeight="74.0" prefWidth="1023.0" styleClass="compteTableHead">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Nom" translateX="10.0" wrappingWidth="68.95468521118164">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Prénom" translateX="8.0" wrappingWidth="89.35475540161133">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Email" translateX="30.0" wrappingWidth="95.95473098754883">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Numéro de Tel" translateX="60.0" wrappingWidth="100.35464477539062">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Domaine" translateX="70.0" wrappingWidth="87.35477066040039" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Date début de stage" textAlignment="CENTER" translateX="60.0" translateY="3.0" wrappingWidth="106.4496441334486">
+               <HBox.margin>
+                  <Insets left="1.0" />
+               </HBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Lettre de motivation " translateX="80.0" wrappingWidth="163.3546485900879">
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="CV" translateX="70.0" wrappingWidth="40.783203125">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Actions" translateX="80.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+         <stylesheets>
+            <URL value="@../../css/yesser/ajout.css" />
+            <URL value="@../../css/SideNavBar.css" />
+         </stylesheets>
+      </HBox>
+      <ScrollPane hbarPolicy="NEVER" layoutX="18.0" layoutY="93.0" prefHeight="520.0" prefWidth="1048.0" styleClass="user_listScrollPane">
+         <content>
+            <VBox fx:id="userListContainer" prefHeight="447.0" prefWidth="1013.0" spacing="13.0" styleClass="userTableBody" />
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="controllers.PaymentFormController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+    <Label text="Card Number:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <TextField fx:id="cardNumberField" promptText="Card Number" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    <Label text="Expiration Month:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="expMonthField" promptText="Expiration Month" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Label text="Expiration Year:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="expYearField" promptText="Expiration Year" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Label text="CVC:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <TextField fx:id="cvcField" promptText="CVC" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <Label text="Amount:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <TextField fx:id="amountField" promptText="Amount" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+    <Button text="Pay" onAction="#processPayment" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+</GridPane>

@@ -1,0 +1,48 @@
+/* Style de fond */
+.bgfront {
+    -fx-background-image: url('../img/front.jpg');
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+
+
+/* Style des boutons */
+/* Style des boutons */
+.button-custom {
+    -fx-background-color: transparent; /* Couleur de fond transparente */
+    -fx-text-fill: #ffffff; /* Couleur du texte en blanc */
+    -fx-font-size: 14px; /* Taille de la police */
+    -fx-padding: 8px 16px; /* Espacement interne */
+    -fx-border-color: #ffffff; /* Couleur de la bordure */
+    -fx-border-width: 2px; /* Largeur de la bordure */
+    -fx-border-radius: 4px; /* Rayon des coins */
+}
+
+/* Style du hover sur le bouton */
+.button-custom:hover {
+    -fx-background-color: #ffffff; /* Couleur de fond au survol */
+    -fx-text-fill: #4CAF50; /* Couleur du texte au survol */
+}
+
+
+/* Style du HBox contenant le bouton */
+.hbox-button {
+    -fx-background-color: #4CAF50; /* Couleur de fond */
+    -fx-padding: 10px; /* Espacement interne */
+    -fx-border-radius: 4px; /* Rayon des coins */
+}
+
+.text-custom {
+    -fx-font-family: "Segoe UI", "Helvetica", sans-serif; /* Utilisation d'une police élégante */
+    -fx-font-size: 16px; /* Taille de police */
+    -fx-font-weight: bold; /* Texte en gras */
+    -fx-text-fill: #ffffff; /* Couleur du texte en blanc */
+}
+
+/* Style des textes pour les titres */
+.title-custom {
+    -fx-font-family: "Arial"; /* Style de police */
+    -fx-font-size: 20px; /* Taille de police pour les titres */
+    -fx-font-weight: bold; /* Texte en gras */
+    -fx-text-fill: #ffffff; /* Couleur du texte en blanc */
+}

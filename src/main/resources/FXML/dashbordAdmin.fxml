@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="750.0" prefWidth="1353.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.user.DashbordAdminController">
+    <children>
+       
+
+    </children>
+    <BorderPane prefHeight="750.0" prefWidth="1371.0">
+        <left>
+            <fx:include source="SideNavBar.fxml" />
+        </left>
+    </BorderPane>
+</AnchorPane>

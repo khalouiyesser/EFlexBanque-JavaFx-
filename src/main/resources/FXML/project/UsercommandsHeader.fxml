@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="1100.0" stylesheets="@../../assets/style/aliStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="1100.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="143.0" prefWidth="1100.0" styleClass="commandHeaderCard" stylesheets="@../../assets/style/aliStyle.css">
+               <children>
+                  <Text fill="#5ba890" strokeType="OUTSIDE" strokeWidth="0.0" text="Carte">
+                     <HBox.margin>
+                        <Insets right="790.0" />
+                     </HBox.margin>
+                  </Text>
+                  <ImageView fitHeight="140.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/img/cart2.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="111.0" prefWidth="1100.0" stylesheets="@../../assets/style/aliStyle.css">
+               <children>
+                  <Text fill="#97d158" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="commanditem" text="event(s)" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

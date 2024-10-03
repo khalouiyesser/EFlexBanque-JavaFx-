@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="HboxCompte" alignment="CENTER_LEFT" prefHeight="81.0" prefWidth="1060.0" styleClass="userItem" stylesheets="@../css/SideNavBar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Compte.CompteItems">
+    <children>
+        <Text fx:id="Email" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__name" text="shayma@gmail.com" translateX="10.0" wrappingWidth="336.0480728149414">
+            <HBox.margin>
+                <Insets left="8.0" right="4.0" />
+            </HBox.margin>
+        </Text>
+        <Text fx:id="Nom" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field" text="ouerhani " wrappingWidth="207.24795532226562">
+            <HBox.margin>
+                <Insets right="4.0" />
+            </HBox.margin>
+        </Text>
+        <Text fx:id="Prenom" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field" text="shayma" wrappingWidth="164.048095703125">
+            <HBox.margin>
+                <Insets right="4.0" />
+            </HBox.margin>
+        </Text>
+        <Label fx:id="ApprouveBtn" styleClass="userItem__btn" translateX="100.0">
+            <graphic>
+                <ImageView fx:id="ApprouverC" fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/verifier.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </Label>
+        <Label fx:id="RefusBtn" onMouseClicked="#RefuserCompte" styleClass="userItem__btn">
+            <graphic>
+                <ImageView fx:id="reffuserC" fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/delete.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <HBox.margin>
+                <Insets left="100.0" />
+            </HBox.margin>
+        </Label>
+        <Label fx:id="ShowBtn" onMouseClicked="#showCompte">
+            <graphic>
+                <ImageView fx:id="showC" fitHeight="26.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/oeil.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Label>
+    </children>
+</HBox>

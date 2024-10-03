@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="747.0" style="-fx-background-color: #fff;" styleClass="productDetails__Container" stylesheets="@../../assets/yesser/style/aliStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.offreDeStage.RatingController">
+    <children>
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="150.0" prefWidth="1110.0">
+            <children>
+                <Text fill="#43882b" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="productDetails__verifiedText" text="Vérifier Avis Client " translateX="220.0" />
+            </children>
+        </HBox>
+        <HBox maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="686.0" styleClass="productDetails__Container">
+            <children>
+                <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="374.0" prefWidth="688.0">
+                    <children>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="100.0" prefWidth="200.0" />
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="669.0" styleClass="productDetails__reviewsContainer">
+                            <VBox.margin>
+                                <Insets left="30.0" right="30.0" />
+                            </VBox.margin>
+                            <children>
+                                <HBox alignment="CENTER" prefHeight="35.0" prefWidth="239.0">
+                                    <VBox.margin>
+                                        <Insets bottom="15.0" />
+                                    </VBox.margin>
+                                    <children>
+                                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                                    </children>
+                                </HBox>
+                                <HBox alignment="CENTER" prefHeight="116.0" prefWidth="782.0">
+                                    <children>
+                                        <ImageView fx:id="reviewsBox_star1" fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../assets/yesser/img/star.png" />
+                                            </image>
+                                        </ImageView>
+                                        <ImageView fx:id="reviewsBox_star2" fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../assets/yesser/img/star.png" />
+                                            </image>
+                                        </ImageView>
+                                        <ImageView fx:id="reviewsBox_star3" fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../assets/yesser/img/star.png" />
+                                            </image>
+                                        </ImageView>
+                                        <ImageView fx:id="reviewsBox_star4" fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../assets/yesser/img/star.png" />
+                                            </image>
+                                        </ImageView>
+                                        <ImageView fx:id="reviewsBox_star5" fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../assets/yesser/img/star.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="22.0" />
+                                    </VBox.margin></HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+                <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="750.0" />
+            </children>
+        </HBox>
+    </children>
+    <padding>
+        <Insets left="30.0" right="30.0" top="20.0" />
+    </padding>
+</VBox>

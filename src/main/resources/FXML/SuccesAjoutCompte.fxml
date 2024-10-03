@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="content_area" prefHeight="708.0" prefWidth="1366.0" translateX="-30.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Compte.Succes">
+    <children>
+        <ImageView fitHeight="750.0" fitWidth="1336.0" layoutX="30.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../img/istockphoto-1363583906-1024x1024.jpg" />
+            </image>
+        </ImageView>
+        <VBox  layoutY="41.0" prefHeight="307.0" prefWidth="300.0" style="-fx-background-color: rgba(255, 255, 255, 0.5);" stylesheets="@../css/SideNavBar.css" translateX="430.0" translateY="100.0">
+            <children>
+                <HBox prefHeight="60.0" prefWidth="578.0" styleClass="categoriesModel-card-title" stylesheets="@../css/SideNavBar.css">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="categoriesModel-card-title" text="Votre compte a été créé avec succès. " textAlignment="CENTER" translateY="15.0" wrappingWidth="577.90234375">
+                            <font>
+                                <Font name="Eras Bold ITC" size="12.0" />
+                            </font>
+                        </Text>
+                        <HBox prefHeight="100.0" prefWidth="200.0" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="categoriesModel-card-title" text="Veuillez patienter pendant que notre équipe administrative examine votre demande." textAlignment="CENTER" translateY="15.0" wrappingWidth="554.9813842773438" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="78.0" prefWidth="578.0">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="categoriesModel-card-title" text="Vous recevrez bientôt un e-mail avec plus de détails." textAlignment="CENTER" translateX="50.0" translateY="15.0" wrappingWidth="459.2906494140625" />
+                    </children>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="okBtn" mnemonicParsing="false" onMouseClicked="#retourFront" prefHeight="37.0" prefWidth="122.0" styleClass="checkoutCard__btn" text="OK" translateX="220.0" translateY="30.0" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

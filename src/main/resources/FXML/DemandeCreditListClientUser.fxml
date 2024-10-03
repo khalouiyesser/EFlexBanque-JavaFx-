@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" styleClass="dash__container-card" stylesheets="@../../resources/css/Compte.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Credit.DemandeCreditListClientUser">
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutX="27.0" layoutY="5.0" prefHeight="86.0" prefWidth="1205.0">
+            <children>
+                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DemandeCard__title" text="Les Demande de credits ">
+                    <font>
+                        <Font name="Bell MT" size="22.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="30.0" right="190.0" />
+                    </HBox.margin></Text>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateX="90.0">
+               <image>
+               </image>
+            </ImageView>
+                <Button fx:id="chequebtn" layoutX="1.0" layoutY="1.0" mnemonicParsing="false" onMouseClicked="#ajoutercredit" prefHeight="41.0" prefWidth="21.0" styleClass="AddBtn" stylesheets="@../css/Compte.css">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
+                            <image>
+                                <Image url="@../img/add-list.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <HBox.margin>
+                        <Insets left="78.0" />
+                    </HBox.margin>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+                </Button>
+            <Button fx:id="chequebtn1" layoutX="1081.0" layoutY="33.0" mnemonicParsing="false" onMouseClicked="#prendrerdv" prefHeight="41.0" prefWidth="38.0" styleClass="AddBtn" stylesheets="@../css/Compte.css">
+               <graphic>
+                  <ImageView fitHeight="22.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/event.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="chequebtn11" layoutX="1061.0" layoutY="33.0" mnemonicParsing="false" onMouseClicked="#convertir" prefHeight="41.0" prefWidth="111.0" styleClass="AddBtn" stylesheets="@../css/Compte.css" text="CONVERTIR" textFill="#f2c709" translateX="150.0" />
+            </children>
+        </HBox>
+        <HBox fx:id="userTableHead" alignment="CENTER_LEFT" layoutX="33.0" layoutY="92.0" prefHeight="20.0" prefWidth="1166.0" styleClass="VirementTableHead" stylesheets="@../css/Compte.css" translateX="-15.0" />
+        <ScrollPane hbarPolicy="NEVER" layoutX="33.0" layoutY="134.0" prefHeight="474.0" prefWidth="1174.0" styleClass="user_listScrollPane" translateX="-20.0" translateY="-20.0">
+            <content>
+                <GridPane fx:id="userListContainer" prefHeight="469.0" prefWidth="1169.0">
+                    <!-- Le contenu sera chargé dans ce GridPane -->
+                </GridPane>
+            </content>
+        </ScrollPane>
+    </children>
+</Pane>

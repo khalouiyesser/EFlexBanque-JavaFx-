@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="TrayTester11">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Desktop/TrayTester.jar!/" />
+      <root url="jar://$USER_HOME$/Documents/nl.captcha.simplecaptcha-1.1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="597.0" prefWidth="691.0" styleClass="bg" stylesheets="@../css/SideNavBar.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RdvController">
+    <children>
+        <VBox layoutX="9.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="576.0" prefWidth="211.0" styleClass="dash__side-bar">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <children>
+                <ImageView fx:id="logo" fitHeight="110.0" fitWidth="162.0" onMouseClicked="#smallSide" pickOnBounds="true" preserveRatio="true" translateX="30.0" translateY="-15.0">
+                    <image>
+                        <Image url="@../img/logo.png" />
+                    </image>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin></ImageView>
+
+                <HBox fx:id="sideBarLogout" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" prefWidth="200.0" styleClass="nav-links" translateY="180.0">
+                    <padding>
+                        <Insets left="23.0" />
+                    </padding>
+                </HBox>
+            </children>
+        </VBox>
+        <Pane fx:id="content_area" layoutX="131.0" layoutY="48.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="524.0" styleClass="dash__container-card">
+            <children>
+                <HBox alignment="CENTER_LEFT" layoutX="22.0" layoutY="28.0" />
+                <HBox fx:id="chartContainer" layoutX="22.0" layoutY="92.0" />
+            <ListView fx:id="idcreditchoisei" layoutX="96.0" layoutY="51.0" onMouseClicked="#getrdvdata" prefHeight="453.0" prefWidth="274.0" styleClass="list-cell" />
+            <Label layoutX="172.0" layoutY="28.0" prefHeight="25.0" prefWidth="91.0" text="id rdv" textFill="#60dd41">
+               <font>
+                  <Font size="42.0" />
+               </font></Label>
+            </children>
+        </Pane>
+            <Label layoutX="56.0" layoutY="750.0" styleClass="text" text="Se déconnecter" textFill="WHITE">
+                <font>
+                    <Font name="Montserrat Regular" size="14.0" />
+                </font>
+            </Label>
+    </children>
+</AnchorPane>

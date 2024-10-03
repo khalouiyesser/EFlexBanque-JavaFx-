@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="534.0" style="-fx-effect: none;" styleClass="addProductCard" stylesheets="@../../assets/style/aliStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.reponse.UpdateReponseCardController">
+    <children>
+        <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="183.0" prefWidth="478.0">
+            <padding>
+                <Insets left="16.0" right="16.0" />
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-input-label" text="Contenu">
+                            <HBox.margin>
+                                <Insets right="2.0" />
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0" />
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" />
+                    </padding>
+                </HBox>
+                <TextArea fx:id="contenuInput" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="289.0" promptText="Description" styleClass="product__add-input-textArea" text="Contenu&#10;" />
+            </children>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </VBox>
+        <VBox maxWidth="-Infinity" minWidth="-Infinity" prefHeight="102.0" prefWidth="474.0">
+            <padding>
+                <Insets left="16.0" right="16.0" />
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-input-label" text="Pièce jointe">
+                            <HBox.margin>
+                                <Insets right="2.0" />
+
+
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0" />
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="71.0" prefWidth="249.0">
+                    <children>
+                        <ImageView fx:id="pieceJArtInput" fitHeight="45.0" fitWidth="45.0" onMouseClicked="#PieceJArtInput" pickOnBounds="true" preserveRatio="true" translateX="-20.0">
+                            <image>
+                                <Image url="@../../imagesAct/add-image.png" />
+                            </image>
+                        </ImageView>
+                        <Text fx:id="addpieceJBtn" onMouseClicked="#ajouterPiece" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="category__add-btn-icon" text="Ajouter une pièce jointe" />
+
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+
+        <HBox alignment="CENTER" prefHeight="46.0" prefWidth="630.0">
+            <children>
+                <Button fx:id="reponseBtn" mnemonicParsing="false" onMouseClicked="#updateProject" styleClass="product__add-img-btn" text="Modifier " textFill="WHITE" translateY="-46.0">
+                    <font>
+                        <Font name="Montserrat Regular" size="16.0" />
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                    </padding>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets bottom="-25.0" top="60.0" />
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>

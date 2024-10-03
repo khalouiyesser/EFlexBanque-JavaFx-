@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<?import javafx.scene.layout.Pane?>
+<AnchorPane prefHeight="750.0" prefWidth="1366.0" stylesheets="@../../css/front.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.FrontControlleur">
+     <children>
+        <ScrollPane prefHeight="750.0" prefWidth="1366.0">
+            <content>
+                <VBox prefHeight="1000.0" prefWidth="1366.0">
+                    <children>
+                        <VBox prefHeight="762.0" prefWidth="1366.0" styleClass="bgfront" stylesheets="@../../css/front.css">
+                            <children>
+                                <HBox prefHeight="33.0" prefWidth="1366.0">
+                                    <children>
+                                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="134.0">
+                                            <children>
+                                                <ImageView fitHeight="68.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                                                    <image>
+                                                        <Image url="@../../img/logo.png" />
+                                                    </image>
+                                                </ImageView>
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-custom" text="E-Flex Bank" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-custom" text="Acceuil" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-custom" text="Actualités" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="title-custom">
+                                            <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Stages" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="title-custom">
+                                            <children>
+                                                <Text  onMouseClicked="#open_evenementsList" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Evenement" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="title-custom">
+                                            <children>
+                                                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Se connecter" />
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </VBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0" styleClass="compteFront">
+                            <children>
+                                <VBox prefHeight="100.0" prefWidth="1152.0" styleClass="hbox-button">
+                                    <children>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text fill="WHITE" styleClass="text-custom" text="Vous n'avez pas un compte bancaire ?Vous n'avez pas un compte bancaire ?" translateX="20.0" />
+                                            </children>
+                                        </HBox>
+                                        <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                            <children>
+                                                <Text fill="WHITE" styleClass="text-custom" text="Profitez d’une relation bancaire de proximité et des services personnalisés pour réaliser tous vos projets répondant à vos besoins et exigences d'engagement et d'efficacité." translateX="20.0" wrappingWidth="976.2952880859375" />
+                                            </children>
+                                        </HBox>
+                                    </children>
+                                </VBox>
+                                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox-button">
+                                    <children>
+                                        <Button mnemonicParsing="false" styleClass="button-custom" text="Créer un compte" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </HBox>
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+
+
+   <children>
+      <ScrollPane prefHeight="750.0" prefWidth="1366.0">
+         <content>
+            <VBox prefHeight="1000.0" prefWidth="1366.0">
+               <children>
+                  <VBox prefHeight="762.0" prefWidth="1366.0" styleClass="bgfront" stylesheets="@../../css/front.css">
+                     <children>
+                        <HBox prefHeight="33.0" prefWidth="1366.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="134.0">
+                                 <children>
+                                    <ImageView fitHeight="68.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../../img/logo.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-custom" text="E-Flex Bank" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-custom" text="Acceuil" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-custom" text="Actualités" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="title-custom">
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Stages" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="title-custom">
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" onMouseClicked="#open_evenementsList"  text="Evenement" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="title-custom">
+                                 <children>
+                                    <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Se connecter" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0" styleClass="compteFront">
+                     <children>
+                        <VBox prefHeight="100.0" prefWidth="1152.0" styleClass="hbox-button">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fill="WHITE" styleClass="text-custom" text="Vous n'avez pas un compte bancaire ?Vous n'avez pas un compte bancaire ?" translateX="20.0" />
+                                 </children>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <Text fill="WHITE" styleClass="text-custom" text="Profitez d’une relation bancaire de proximité et des services personnalisés pour réaliser tous vos projets répondant à vos besoins et exigences d'engagement et d'efficacité." translateX="20.0" wrappingWidth="976.2952880859375" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="hbox-button">
+                           <children>
+                              <Button mnemonicParsing="false" styleClass="button-custom" text="Créer un compte" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

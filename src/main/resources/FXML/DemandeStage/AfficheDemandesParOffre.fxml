@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1084.0" styleClass="dash__container-card" stylesheets="@../../css/yesser/ajout.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.demandeStage.AffichageParOffreController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="27.0" layoutY="5.0" prefHeight="100.0" prefWidth="1035.0">
+         <children>
+            <Button fx:id="RetourS" mnemonicParsing="false" onMouseClicked="#RetourBack" styleClass="checkoutCard__btn" stylesheets="@../../css/SideNavBar.css">
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imgYesser/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DemandeCard__title" text="Les Demandes de Stage" translateX="60.0">
+               <font>
+                  <Font name="Bell MT" size="22.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="9.0" top="5.0" />
+               </HBox.margin></Text>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateX="320.0">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../../imgYesser/magnifier.png" />
+               </image>
+            </ImageView>
+            <TextField styleClass="product__list-searchInput" stylesheets="@../../css/SideNavBar.css" translateX="40.0">
+               <padding>
+                  <Insets left="37.0" right="40.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="40.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+
+            <Text fill="#97d158" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="sort-text" text="Trier par :" translateX="35.0">
+               <HBox.margin>
+                  <Insets left="30.0" right="2.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="statusInput" maxHeight="-Infinity" minHeight="-Infinity" minWidth="134.0" onAction="#statusChange" prefHeight="40.0" prefWidth="167.0" promptText="All" styleClass="product__add-comboBox" stylesheets="@../../css/SideNavBar.css" translateX="30.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets top="4.0" />
+               </padding></ComboBox>
+         </children>
+      </HBox>
+      <HBox fx:id="userTableHead" alignment="CENTER_LEFT" layoutX="33.0" layoutY="92.0" prefHeight="74.0" prefWidth="1023.0" styleClass="compteTableHead">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Nom" translateX="10.0" wrappingWidth="68.95468521118164">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Prénom" translateX="8.0" wrappingWidth="89.35475540161133">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Email" translateX="30.0" wrappingWidth="95.95473098754883">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Numéro de Tel" translateX="60.0" wrappingWidth="100.35464477539062">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Domaine" translateX="70.0" wrappingWidth="87.35477066040039" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Date début de stage" textAlignment="CENTER" translateX="60.0" translateY="3.0" wrappingWidth="106.4496441334486">
+               <HBox.margin>
+                  <Insets left="1.0" />
+               </HBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Lettre de motivation " translateX="80.0" wrappingWidth="163.3546485900879">
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="CV" translateX="70.0" wrappingWidth="40.783203125">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Actions" translateX="80.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+         <stylesheets>
+            <URL value="@../../css/yesser/ajout.css" />
+            <URL value="@../../css/SideNavBar.css" />
+         </stylesheets>
+      </HBox>
+      <ScrollPane hbarPolicy="NEVER" layoutX="33.0" layoutY="167.0" prefHeight="449.0" prefWidth="1023.0" styleClass="user_listScrollPane">
+         <content>
+            <VBox fx:id="userListContainer" prefHeight="446.0" prefWidth="1005.0" spacing="13.0" styleClass="userTableBody" />
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>

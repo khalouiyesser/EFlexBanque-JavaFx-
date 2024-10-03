@@ -1,0 +1,37 @@
+<component name="libraryTable">
+  <library name="opencensus-api-0.31.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/opencensus-api-0.31.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/opencensus-contrib-http-util-0.31.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/opencensus-proto-0.2.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/perfmark-api-0.26.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/poi-5.2.3.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/poi-excelant-5.2.3.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/poi-ooxml-5.2.3.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/poi-ooxml-lite-5.2.3.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/proto-google-cloud-vision-v1-3.13.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/proto-google-cloud-vision-v1p1beta1-0.102.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/proto-google-cloud-vision-v1p2beta1-3.13.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/proto-google-cloud-vision-v1p3beta1-0.102.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/proto-google-cloud-vision-v1p4beta1-0.102.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/proto-google-common-protos-2.16.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/protobuf-java-3.21.12.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/protobuf-java-util-3.21.12.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/re2j-1.6.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/slf4j-api-1.7.30.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/slf4j-api-1.7.33.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/SparseBitSet-1.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/stax2-api-4.2.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/stripe-java-22.17.0-beta.2.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/swingx-all-1.6.5-1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/threetenbp-1.6.8.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/TrayTester.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/twilio-9.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/woodstox-core-6.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/xmlbeans-5.1.1.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lib/lib/zxing-javase-1.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

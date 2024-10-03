@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="Hboxvirement" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="81.0" prefWidth="1055.0" styleClass="userItem" stylesheets="@../css/SideNavBar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Virement.VirementItemsAdmin">
+    <children>
+        <Text fx:id="Rib" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__name" text="123456789098" wrappingWidth="98.44808197021484">
+            <HBox.margin>
+                <Insets left="8.0" right="4.0" />
+            </HBox.margin>
+        </Text>
+        <Text fx:id="Cin" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field" text="12345678" translateX="-10.0" wrappingWidth="72.04792785644531">
+            <HBox.margin>
+                <Insets right="4.0" />
+            </HBox.margin>
+        </Text>
+      <ImageView fx:id="photoCin" fitHeight="47.0" fitWidth="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/cloud-computing.png" />
+         </image>
+         <HBox.margin>
+            <Insets bottom="5.0" />
+         </HBox.margin>
+      </ImageView>
+        <Text fx:id="NometPrenom" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field" text="shayma ouerhani" translateX="10.0" wrappingWidth="120.84813690185547">
+            <HBox.margin>
+                <Insets left="20.0" right="4.0" />
+            </HBox.margin>
+        </Text>
+        <Text fx:id="NumTel" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field" text="22121212" wrappingWidth="111.24803161621094">
+            <HBox.margin>
+                <Insets right="4.0" />
+            </HBox.margin>
+        </Text>
+        <Text fx:id="TypeVir" strokeType="OUTSIDE" strokeWidth="0.0" text="Personne" translateX="-20.0" wrappingWidth="82.70153427124023" />
+        <Text fx:id="Transferez" strokeType="OUTSIDE" strokeWidth="0.0" text="shyheb ouerhani" translateX="10.0" wrappingWidth="92.3485107421875" />
+        <Text fx:id="NumBenif" strokeType="OUTSIDE" strokeWidth="0.0" text="111212121" translateX="40.0" wrappingWidth="118.14996337890625" />
+        <Text fx:id="Montant" strokeType="OUTSIDE" strokeWidth="0.0" text="22,000" translateX="40.0" wrappingWidth="72.55004501342773" />
+        <Label fx:id="ApprouveBtnV" onMouseClicked="#approuverVir" styleClass="userItem__btn" translateX="50.0">
+            <graphic>
+                <ImageView fx:id="Approuver" fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/verifier.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </Label>
+        <Label fx:id="RefusBtnV" onMouseClicked="#refuserVir" styleClass="userItem__btn" translateX="-26.0">
+            <graphic>
+                <ImageView fx:id="Refuser" fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/delete.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <HBox.margin>
+                <Insets left="70.0" />
+            </HBox.margin>
+        </Label>
+    </children>
+</HBox>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1084.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Virement.ListVirementAdmin">
+    <children>
+        <Pane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1084.0" styleClass="container-card" stylesheets="@../css/SideNavBar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+            <children>
+                <HBox layoutX="16.0" layoutY="18.0" prefHeight="82.0" prefWidth="1045.0">
+                    <children>
+                        <Button fx:id="retourVir" mnemonicParsing="false" onMouseClicked="#returnBackVir" styleClass="checkoutCard__btn" stylesheets="@../css/SideNavBar.css">
+                            <graphic>
+                                <ImageView fitHeight="28.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../img/back.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                        </Button>
+                        <Text fill="#2e2c2c" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="LiteCheque__Title" text="Les Demande des Virements Bancaires :">
+                            <font>
+                                <Font size="21.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="10.0" top="26.0" />
+                            </HBox.margin>
+                        </Text>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateX="230.0">
+                            <HBox.margin>
+                                <Insets top="30.0" />
+                            </HBox.margin>
+                            <image>
+                                <Image url="@../img/magnifier.png" />
+                            </image>
+                        </ImageView>
+                        <TextField fx:id="VirementclientsfSearchInputAdmin" onKeyReleased="#VirementclientsfSearchInputAdmin" prefWidth="218.0" styleClass="product__list-searchInput" stylesheets="@../css/SideNavBar.css" translateX="30.0">
+                            <HBox.margin>
+                                <Insets top="20.0" />
+                            </HBox.margin>
+                        </TextField>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="LiteCheque__Title" text=" Trier par : ">
+                            <HBox.margin>
+                                <Insets left="70.0" right="25.0" top="26.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Bell MT Bold" size="22.0" />
+                            </font>
+                        </Text>
+                        <ComboBox fx:id="trie" onAction="#trier" prefWidth="150.0" promptText="Tout " styleClass="product__add-comboBox" stylesheets="@../css/SideNavBar.css">
+                            <HBox.margin>
+                                <Insets bottom="19.0" top="25.0" />
+                            </HBox.margin>
+                        </ComboBox>
+                    </children>
+                </HBox>
+                <HBox layoutX="15.0" layoutY="92.0" prefHeight="74.0" prefWidth="1057.0" styleClass="compteTableHead" stylesheets="@../css/SideNavBar.css">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="RIB" wrappingWidth="39.23434066772461">
+                            <HBox.margin>
+                                <Insets left="20.0" top="25.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Bell MT" size="12.0" />
+                            </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="cin " translateX="15.0" wrappingWidth="29.503141403198242">
+                            <font>
+                                <Font name="Bell MT" size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="45.0" top="21.0" />
+                            </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Photo Cin " translateX="26.0" wrappingWidth="76.18902587890625">
+                            <HBox.margin>
+                                <Insets left="25.0" top="22.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Bell MT" size="14.0" />
+                            </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nom et Prenom" textAlignment="CENTER" translateX="15.0" wrappingWidth="91.1812744140625">
+                            <font>
+                                <Font name="Bell MT" size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="25.0" top="15.0" />
+                            </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Num tel" translateX="15.0">
+                            <HBox.margin>
+                                <Insets left="25.0" top="20.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Bell MT" size="14.0" />
+                            </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Type Virement" textAlignment="CENTER" translateX="15.0" translateY="-7.0" wrappingWidth="72.21734619140625">
+                            <font>
+                                <Font name="Bell MT" size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="25.0" top="20.0" />
+                            </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Transférez A " translateX="15.0">
+                            <font>
+                                <Font name="Bell MT" size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="25.0" top="20.0" />
+                            </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Num bénéf " textAlignment="CENTER" translateX="30.0" wrappingWidth="61.373409271240234">
+                            <HBox.margin>
+                                <Insets left="25.0" top="15.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Bell MT" size="14.0" />
+                            </font>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Montant " translateX="60.0" wrappingWidth="70.81884765625">
+                            <font>
+                                <Font name="Bell MT" size="14.0" />
+                            </font>
+                            <HBox.margin>
+                                <Insets left="25.0" top="20.0" />
+                            </HBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Actions " translateX="80.0">
+                            <HBox.margin>
+                                <Insets left="35.0" top="20.0" />
+                            </HBox.margin>
+                            <font>
+                                <Font name="Bell MT" size="14.0" />
+                            </font>
+                        </Text>
+                    </children>
+                </HBox>
+                <ScrollPane hbarPolicy="NEVER" layoutX="16.0" layoutY="167.0" prefHeight="449.0" prefWidth="1057.0" styleClass="cheque_listScrollPane" stylesheets="@../css/SideNavBar.css">
+                    <content>
+                        <VBox fx:id="VireContainer" prefHeight="446.0" prefWidth="1050.0" spacing="13.0" styleClass="compteTableBody" stylesheets="@../css/SideNavBar.css" />
+                    </content>
+                </ScrollPane>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

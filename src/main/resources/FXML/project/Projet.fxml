@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox prefHeight="516.0" prefWidth="519.0" spacing="10.0" xmlns="http://javafx.com/javafx/19"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.FXML_HomeController">
+    <Label text="Add a new Projet"/>
+
+    <GridPane alignment="CENTER" hgap="10" prefHeight="289.0" prefWidth="543.0" vgap="10">
+        <Label text="Nom Projet:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <TextField fx:id="fxNomProjet" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+        <Label text="Image:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <TextField fx:id="fxImg" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+        <Label text="Catégorie:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+        <TextField fx:id="fxCategorie" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+        <Label text="Description Projet:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+        <TextField fx:id="fxDescriptionProjet" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+        <Label text="Budget Projet:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+        <TextField fx:id="fxBudgetProjet" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+        <Label text="Date de création:" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+        <TextField fx:id="fxDateCreation" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+
+        <Label text="Durée Projet:" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+        <TextField fx:id="fxDureeProjet" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+        <Label text="Statut Projet:" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+        <TextField fx:id="fxStatutProjet" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+    </GridPane>
+
+    <HBox alignment="CENTER" prefHeight="125.0" prefWidth="370.0" spacing="10">
+        <Button onAction="#addProjet" text="Ajouter"/>
+        <Button onAction="#cancel" text="Cancel"/>
+    </HBox>
+</VBox>

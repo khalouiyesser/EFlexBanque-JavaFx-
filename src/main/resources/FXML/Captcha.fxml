@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="CaptchaPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="711.0" prefWidth="1313.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Compte.captchaController">
+    <children>
+        <Button fx:id="submit" layoutX="406.0" layoutY="579.0" mnemonicParsing="false" onAction="#submit" prefHeight="34.0" prefWidth="166.0" styleClass="confirm-button" stylesheets="@../css/SideNavBar.css" text="Enregistrer " translateX="80.0" />
+        <Button fx:id="reset" layoutX="585.0" layoutY="579.0" mnemonicParsing="false" onAction="#reseting" prefHeight="34.0" prefWidth="166.0" styleClass="refus-button" stylesheets="@../css/SideNavBar.css" text="Réinitialiser" translateX="90.0" />
+        <ImageView fx:id="cap" fitHeight="287.0" fitWidth="477.0" layoutX="415.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true" translateX="70.0" />
+        <TextField fx:id="code" layoutX="415.0" layoutY="517.0" prefHeight="45.0" prefWidth="339.0" promptText="Ecrire le code ici .." styleClass="product__add-input" stylesheets="@../css/SideNavBar.css" translateX="70.0" />
+        <Text fill="#5ba890" fontSmoothingType="LCD" layoutX="110.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Merci de résoudre ce captcha pour" textAlignment="CENTER" translateX="150.0" wrappingWidth="904.2589721679688">
+            <font>
+                <Font name="Bell MT Bold" size="36.0" />
+            </font>
+        </Text>
+        <Button fx:id="Retour" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#FormAJoutBack" prefHeight="34.0" prefWidth="30.0" styleClass="btn" stylesheets="@../css/SideNavBar.css">
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/back.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Label layoutX="376.0" layoutY="108.0" prefHeight="54.0" prefWidth="571.0" text=" continuer la Création de Compte ! " textFill="#5ba890" translateX="60.0">
+            <font>
+                <Font name="Bell MT Bold" size="36.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

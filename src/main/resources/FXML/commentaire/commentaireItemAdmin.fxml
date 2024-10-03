@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER_LEFT" prefHeight="81.0" prefWidth="1002.0" styleClass="userItem" stylesheets="@../../css/SideNavBar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.commentaireArticle.CommentaireItemAdminController">
+<children>
+    <Text fx:id="titreartcom" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__name" text="Titre article" textAlignment="CENTER" wrappingWidth="177.3547248840332">
+        <HBox.margin>
+            <Insets right="4.0" />
+        </HBox.margin>
+    </Text>
+    <Text fx:id="contComment" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field" text="Commentaire" textAlignment="CENTER" wrappingWidth="257.3547706604004">
+        <HBox.margin>
+            <Insets right="4.0" />
+        </HBox.margin>
+    </Text>
+    <Text fx:id="datecom" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field" text="date commentaire" textAlignment="CENTER" wrappingWidth="169.3547019958496">
+        <HBox.margin>
+            <Insets right="4.0" />
+        </HBox.margin>
+    </Text>
+      <Text fx:id="nomusercom" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field" text="nom" textAlignment="CENTER" wrappingWidth="130.1545753479004" />
+      <Text fx:id="dateartitemDateText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field" text="Date" textAlignment="CENTER" wrappingWidth="186.15474319458008" />
+      <ImageView fx:id="deleteComment" fitHeight="35.0" fitWidth="22.0" onMouseClicked="#deleteComment" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../imagesAct/trash-bin.gif" />
+         </image>
+      </ImageView>
+
+
+</children>
+</HBox>

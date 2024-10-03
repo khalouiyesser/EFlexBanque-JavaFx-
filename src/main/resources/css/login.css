@@ -1,0 +1,10 @@
+.vbox_background_center {
+    -fx-background-image: url("../img/bglogo.png");
+    -fx-background-size: cover; /* Adjust the size as needed */
+}
+
+.vbox_background_right {
+    -fx-background-image: url("../img/wave.png");
+    -fx-background-size: cover; /* Adjust the size as needed */
+}
+

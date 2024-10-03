@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="152.0" prefWidth="752.0" styleClass="product-card" stylesheets="@../../assets/style/aliStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.OneCommentListCardController">
+        <children>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="153.0" prefWidth="160.0" styleClass="product__list-imgContainer">
+                <children>
+                    <ImageView fx:id="img" fitHeight="144.0" fitWidth="201.0" pickOnBounds="true" preserveRatio="true">
+                        <clip>
+                            <Rectangle arcHeight="30" arcWidth="30" height="130" width="210" />
+                        </clip>
+                    </ImageView>
+                </children>
+            </HBox>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="125.0" prefWidth="599.0" translateY="2.0">
+                <HBox.margin>
+                    <Insets left="20.0" />
+                </HBox.margin>
+                <children>
+                    <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="42.0" prefWidth="599.0">
+                        <children>
+                            <Text fx:id="Nomuser" fill="#DC284C" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__card-title">
+                                <font>
+                                    <Font name="Montserrat ExtraBold" size="19.0" />
+                                </font>
+                            </Text>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="599.0">
+                        <children>
+                            <Text fx:id="Contenu" fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product-price-text" translateY="-5.0" />
+                            <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="6.0">
+                                <children>
+                                    <Text fx:id="stockProduitValue" fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__card-stock" translateY="-5.0">
+                                        <HBox.margin>
+                                            <Insets left="5.0" right="5.0" />
+                                        </HBox.margin>
+                                    </Text>
+                                </children>
+                            </HBox>
+                            <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="0.0" translateY="-5.0">
+                                <children>
+                                    <Text fx:id="test" fill="#43882b" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__card-stock" />
+                                </children>
+                            </HBox>
+                            <HBox fx:id="test1" prefHeight="20.0" prefWidth="30.0" translateX="5.0">
+                                <children>
+                                    <Text fill="#f53737" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product-price-text" />
+                                    <Text fx:id="" fill="#f53737" strokeType="OUTSIDE" strokeWidth="0.0" text="🔥">
+                                        <HBox.margin>
+                                            <Insets left="4.0" />
+                                        </HBox.margin>
+                                        <styleClass>
+                                            <String fx:value="product-price-text" />
+                                        </styleClass>
+                                    </Text>
+                                    <HBox prefHeight="5.0" prefWidth="15.0" translateX="20.0" translateY="-5.0">
+                                        <children>
+                                            <Text fill="#34be82" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product-price-text" />
+                                            <Text fill="#34be82" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product-price-text">
+                                                <HBox.margin>
+                                                    <Insets left="4.0" />
+                                                </HBox.margin>
+                                            </Text>
+                                        </children>
+                                        <padding>
+                                            <Insets top="5.0" />
+                                        </padding>
+                                    </HBox>
+                                </children>
+                                <HBox.margin>
+                                    <Insets />
+                                </HBox.margin>
+                                <padding>
+                                    <Insets top="5.0" />
+                                </padding>
+                            </HBox>
+                            <HBox fx:id="priceHbox" prefHeight="39.0" prefWidth="72.0" translateX="5.0">
+                                <children>
+                                    <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product-price-text" />
+                                    <Text fx:id="pricefx" fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product-price-text">
+                                        <HBox.margin>
+                                            <Insets left="4.0" />
+                                        </HBox.margin>
+                                    </Text>
+                                </children>
+                                <padding>
+                                    <Insets top="5.0" />
+                                </padding>
+                            </HBox>
+                        </children>
+                    </HBox>
+                    <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="599.0">
+                        <children>
+                            <Label />
+                            <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="349.0">
+                                <children>
+                                    <HBox fx:id="categoryProduit" styleClass="product__card-categ">
+                                        <Text fx:id="lieufx" fill="#a61e1e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__card-title">
+                                            <font>
+                                                <Font name="Montserrat ExtraBold" size="12.0" />
+                                            </font>
+                                        </Text>
+                                    </HBox>
+                        <HBox prefHeight="42.0" prefWidth="191.0">
+                           <children>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../assets/img/check-mark.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="15.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <Text fill="#43882b" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="comment_dateAjout" text="Commentaire vérifié" />
+                           </children>
+                        </HBox>
+                                </children>
+                            </HBox>
+                            <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="206.0">
+                                <children>
+                                    <HBox  fx:id="adddislike" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"  prefHeight="35.0" prefWidth="46.0" styleClass="product__card-btnsL">
+                                        <children>
+                                            <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@../../assets/img/dislikee.jpg" />
+                                                </image>
+                                            </ImageView>
+                                        </children>
+                                        <HBox.margin>
+                                            <Insets left="6.0" />
+                                        </HBox.margin>
+                                    </HBox>
+                                    <HBox  fx:id="addlike" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#adddislike" prefHeight="35.0" prefWidth="46.0" styleClass="product__card-btns1">
+                                        <children>
+                                            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                                <image>
+                                                    <Image url="@../../assets/img/like.png" />
+                                                </image>
+                                            </ImageView>
+                                        </children>
+                                        <HBox.margin>
+                                            <Insets left="6.0" />
+                                        </HBox.margin>
+                                    </HBox>
+                                </children>
+                            </HBox>
+                        </children>
+                    </HBox>
+
+                    <HBox prefHeight="100.0" prefWidth="200.0" />
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="589.0">
+               <children>
+                  <Label />
+                  <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="349.0">
+                     <children>
+                        <HBox fx:id="categoryProduit1" styleClass="product__card-categ">
+                           <children>
+                              <Text fx:id="lieufx1" fill="#a61e1e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__card-title">
+                                 <font>
+                                    <Font name="Montserrat ExtraBold" size="12.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="42.0" prefWidth="191.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="39.0" prefWidth="171.0">
+                     <children>
+                        <Text fx:id="dislikef" fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" text="20">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Text>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"   prefHeight="35.0" prefWidth="21.0">
+                           <HBox.margin>
+                              <Insets left="6.0" />
+                           </HBox.margin>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <Text fx:id="likef" fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" text="20">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+                </children>
+            </VBox>
+        </children>
+    </HBox>

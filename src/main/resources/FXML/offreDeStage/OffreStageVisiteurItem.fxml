@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="328.0" prefWidth="1340.0" style="-fx-background-color: #fff;" stylesheets="@../../css/SideNavBar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.offreDeStage.OffreStageVisiteurItemController">
+   <children>
+      <HBox alignment="BOTTOM_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="258.0" prefWidth="1301.0" styleClass="commands-dash__row" stylesheets="@../../css/SideNavBar.css" translateX="10.0" translateY="39.0">
+         <children>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="66.0" prefWidth="358.0" styleClass="commands-dash__date-container" stylesheets="@../../assets/style/aliStyle.css" translateX="200.0" translateY="-220.0">
+               <children>
+                  <Text fx:id="Titre" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Ingénieur Sécurité Informatique H/R">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="194.0" prefWidth="1212.0" translateX="-150.0" translateY="-13.0">
+               <children>
+                  <Button fx:id="details" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="54.0" prefWidth="166.0" styleClass="sort__stockBtn" text="Détails" translateX="550.0" translateY="60.0" />
+                  <Text fx:id="Text" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" translateX="-160.0" translateY="-70.0" wrappingWidth="1123.7367782592773" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</HBox>

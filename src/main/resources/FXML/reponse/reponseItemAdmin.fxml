@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="itemRep" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="92.0" prefWidth="994.0" styleClass="userItem" stylesheets="@../../css/SideNavBar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.reponse.ReponseItemAdminController">
+    <children>
+        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="186.0" styleClass="one-categoryCard-imgContainer" translateX="10.0">
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+            <children>
+                <Text fx:id="mailRep" fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="one-categoryCard-Name" text="hadhemi.mahmoud@esprit.tn" wrappingWidth="182.78793108463287">
+                    <font>
+                        <Font size="11.0" />
+                    </font>
+                </Text>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="216.0" translateX="15.0">
+            <children>
+                <Text fx:id="ContenuRep" strokeType="OUTSIDE" strokeWidth="0.0" text="Contenu de la réponse" wrappingWidth="262.78800201416016" />
+            </children>
+
+        </HBox>
+        <ImageView fx:id="piecejrep" fitHeight="20.0" fitWidth="18.0" onMouseClicked="#piecejrep" pickOnBounds="true" preserveRatio="true" translateX="95.0">
+            <image>
+                <Image url="@../../imagesAct/attach.png" />
+            </image>
+        </ImageView>
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="196.0" translateX="195.0">
+            <children>
+                <Text fx:id="dateRep" strokeType="OUTSIDE" strokeWidth="0.0" text="Date réponse" wrappingWidth="262.78800201416016" />
+
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="159.0" translateX="130.0">
+            <children>
+                <Text fx:id="dateRec" strokeType="OUTSIDE" strokeWidth="0.0" text="Date réclamation" wrappingWidth="170.78795623779297" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="73.0" translateX="30.0">
+            <children>
+                <HBox fx:id="editrep" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="35.0" styleClass="one-categoryCard-btns" translateX="65.0">
+                    <children>
+                        <ImageView fx:id="editRep" fitHeight="20.0" fitWidth="18.0" onMouseClicked="#editRep" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../imagesAct/editCateg.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox fx:id="deleteRep" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#deleteRep" prefHeight="35.0" prefWidth="35.0" styleClass="one-categoryCard-btns" translateX="65.0">
+
+                    <children>
+                        <ImageView fx:id="deleterep" fitHeight="20.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../imagesAct/trashCateg.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+    </children>
+</HBox>

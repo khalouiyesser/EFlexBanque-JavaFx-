@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1236.0" styleClass="userProductsContainer" stylesheets="@../../css/SideNavBar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ListeArticlesFrontController">
+    <children>
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="77.0" prefWidth="1225.0">
+            <children>
+                <Text fill="#7b88ff" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="searchText" text=" Articles| " />
+                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="searchText" text="Tous" />
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateX="117.0">
+                    <image>
+                        <Image url="@../../imagesAct/magnifier.png" />
+                    </image>
+                </ImageView>
+                <TextField fx:id="ArticlesclientsfSearchInput" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#searchProduct" prefWidth="265.0" styleClass="product__list-searchInput" translateX="87.0">
+                    <padding>
+                        <Insets left="37.0" right="40.0" />
+                    </padding>
+                </TextField>
+                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#SearchByImage" prefHeight="40.0" prefWidth="40.0" styleClass="searchByImage" stylesheets="@../../css/SideNavBar.css" translateX="47.0">
+                    <children>
+                        <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" translateX="-2.0">
+                            <image>
+                                <Image url="@../../imagesAct/searchByImage.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox fx:id="getPromotionalItemsBtn" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#getPromotionalItems" prefHeight="40.0" prefWidth="239.0" styleClass="onlyOfferItemsBtn" translateX="220.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="onlyOfferItemsBtnText" text="Bienvenue dans l'univers de E-Flex Bank" />
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets left="15.0" />
+            </padding>
+        </HBox>
+        <VBox layoutY="77.0" prefHeight="533.0" prefWidth="232.0" stylesheets="@../../css/SideNavBar.css" translateX="5.0" translateY="5.0">
+            <children>
+                <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="249.0" prefWidth="217.0" styleClass="productList_BoxContainer">
+                    <children>
+                        <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="29.0" prefWidth="207.0" styleClass="searchText" stylesheets="@../../css/SideNavBar.css">
+                            <children>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="searchText" text="Trié par :" />
+                            </children>
+                        </HBox>
+                        <ComboBox fx:id="categoryInput" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" prefWidth="197.0" promptText="Categories" styleClass="product__add-comboBox" stylesheets="@../../css/SideNavBar.css">
+                            <VBox.margin>
+                                <Insets bottom="15.0" />
+                            </VBox.margin>
+                        </ComboBox>
+                        <Line endX="100.0" startX="-100.0" stroke="#defee6" strokeWidth="2.0" />
+                        <Text fill="#7b88ff" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="searchText" text="Avis sur nos articles">
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </Text>
+                        <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="197.0" styleClass="reviewsFilterBtn">
+                            <children>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star-empty.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" />
+                            </children>
+                            <padding>
+                                <Insets bottom="5.0" right="10.0" top="5.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets top="2.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="197.0" styleClass="reviewsFilterBtn">
+                            <children>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star-empty.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star-empty.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                            <padding>
+                                <Insets bottom="5.0" right="10.0" top="5.0" />
+                            </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="197.0" styleClass="reviewsFilterBtn">
+                            <children>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star-empty.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star-empty.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star-empty.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                            <padding>
+                                <Insets bottom="5.0" right="10.0" top="5.0" />
+                            </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="197.0" styleClass="reviewsFilterBtn">
+                            <children>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star-empty.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star-empty.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star-empty.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                                <ImageView fitHeight="17.0" fitWidth="17.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../imagesAct/star-empty.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="5.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                            <padding>
+                                <Insets bottom="5.0" right="10.0" top="5.0" />
+                            </padding>
+                        </HBox>
+                    </children>
+                    <padding>
+                        <Insets left="10.0" top="10.0" />
+                    </padding>
+                    <VBox.margin>
+                        <Insets bottom="20.0" />
+                    </VBox.margin>
+                </VBox>
+                <VBox prefHeight="214.0" prefWidth="217.0" styleClass="productList_BoxContainer">
+                    <children>
+                        <HBox prefHeight="29.0" prefWidth="250.0" styleClass="searchText" stylesheets="@../../css/SideNavBar.css">
+                            <children>
+                                <Text fill="#7b88ff" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="searchText" text="Autres critères" />
+                            </children>
+                        </HBox>
+                        <ComboBox fx:id="dateclientsfInput" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" prefWidth="197.0" promptText="Date" styleClass="product__add-comboBox" stylesheets="@../../css/SideNavBar.css">
+                            <VBox.margin>
+                                <Insets bottom="20.0" />
+                            </VBox.margin>
+                        </ComboBox>
+                        <ComboBox fx:id="titreclientsfInput" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" prefWidth="197.0" promptText="Titre" styleClass="product__add-comboBox" stylesheets="@../../css/SideNavBar.css">
+                            <VBox.margin>
+                                <Insets bottom="20.0" />
+                            </VBox.margin>
+                        </ComboBox>
+                        <ComboBox fx:id="notesfclientsInput" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" prefWidth="197.0" promptText="Notes" styleClass="product__add-comboBox" stylesheets="@../../css/SideNavBar.css" />
+                    </children>
+                    <padding>
+                        <Insets left="10.0" top="10.0" />
+                    </padding>
+                </VBox>
+            </children>
+            <padding>
+                <Insets left="15.0" top="20.0" />
+            </padding>
+        </VBox>
+        <ScrollPane layoutX="256.0" layoutY="87.0" prefHeight="524.0" prefWidth="969.0" styleClass="product-card-scrollPane" stylesheets="@../../css/SideNavBar.css">
+            <content>
+                <GridPane fx:id="productsListContainer">
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                </GridPane>
+            </content>
+        </ScrollPane>
+        <ScrollPane layoutX="266.0" layoutY="97.0" prefHeight="524.0" prefWidth="969.0" styleClass="product-card-scrollPane" stylesheets="@../../css/SideNavBar.css">
+            <content>
+                <BorderPane prefHeight="900.0" prefWidth="1200.0" stylesheets="@../../css/articles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <center>
+                        <BorderPane prefHeight="751.0" prefWidth="1129.0" BorderPane.alignment="CENTER">
+                            <center>
+                                <AnchorPane fx:id="Empty" prefHeight="530.0" prefWidth="950.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+                                    <children>
+                                        <BorderPane fx:id="borderPost" layoutX="341.0" layoutY="47.2" prefHeight="522.0" prefWidth="442.0" style="-fx-border-color: #DCDCDC; -fx-border-radius: 10; -fx-background-color: white; -fx-background-radius: 10;" AnchorPane.leftAnchor="341.0" AnchorPane.topAnchor="47.0">
+                                            <bottom>
+                                                <Pane prefHeight="166.0" prefWidth="445.0" style="-fx-border-color: #DCDCDC;" BorderPane.alignment="CENTER">
+                                                    <children>
+                                                        <Label fx:id="contenuArt" alignment="TOP_LEFT" layoutY="44.0" prefHeight="116.0" prefWidth="444.0" style="-fx-border-color: #DCDCDC; -fx-border-width: 1 0 0 0;" text="Contenu" textAlignment="CENTER">
+                                                            <font>
+                                                                <Font name="Calibri Italic" size="20.0" />
+                                                            </font>
+                                                            <padding>
+                                                                <Insets left="10.0" top="10.0" />
+                                                            </padding>
+                                                        </Label>
+                                                        <Label layoutX="14.0" layoutY="14.0" prefHeight="23.0" prefWidth="186.0" text="Catégorie">
+                                                            <font>
+                                                                <Font name="Calibri Bold Italic" size="20.0" />
+                                                            </font>
+                                                            <padding>
+                                                                <Insets left="10.0" />
+                                                            </padding>
+                                                        </Label>
+                                                        <Label fx:id="categorieart" layoutX="299.0" layoutY="7.0" prefHeight="29.0" prefWidth="132.0" text="Label">
+                                                            <font>
+                                                                <Font name="Calibri Bold Italic" size="20.0" />
+                                                            </font>
+                                                        </Label>
+                                                    </children>
+                                                </Pane>
+                                            </bottom>
+                                            <top>
+                                                <Pane prefHeight="92.0" prefWidth="659.0" style="-fx-border-color: #43882b; -fx-background-color: #43882b;" BorderPane.alignment="CENTER">
+                                                    <children>
+                                                        <Button fx:id="titreArt" alignment="TOP_LEFT" mnemonicParsing="false" onAction="#go_details_Posts" prefHeight="48.0" prefWidth="264.0" styleClass="buttonFront" text="Titre Articles">
+                                                            <font>
+                                                                <Font name="Calibri Bold Italic" size="25.0" />
+                                                            </font>
+                                                        </Button>
+                                                        <Label fx:id="userNom" layoutX="312.0" layoutY="25.0" prefHeight="54.0" prefWidth="61.0" text="Admin" textFill="WHITE">
+                                                            <font>
+                                                                <Font name="Calibri Bold Italic" size="20.0" />
+                                                            </font>
+                                                        </Label>
+                                                        <ImageView fx:id="userImg" fitHeight="53.0" fitWidth="60.0" layoutX="385.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                                                            <image>
+                                                                <Image url="@../../imagesAct/admin.png" />
+                                                            </image>
+                                                        </ImageView>
+                                                        <Button fx:id="dateArt" alignment="TOP_LEFT" layoutY="38.0" mnemonicParsing="false" onAction="#go_details_Posts" prefHeight="48.0" prefWidth="264.0" styleClass="buttonFront" text="Date">
+                                                            <font>
+                                                                <Font name="Calibri Bold Italic" size="16.0" />
+                                                            </font>
+                                                        </Button>
+                                                    </children>
+                                                </Pane>
+                                            </top>
+                                            <center>
+                                                <ImageView fx:id="imageP" fitHeight="277.0" fitWidth="260.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                                                    <viewport>
+                                                        <Rectangle2D />
+                                                    </viewport>
+                                                </ImageView>
+                                            </center>
+                                        </BorderPane>
+                                        <Button fx:id="newtP" layoutX="528.0" layoutY="278.0" mnemonicParsing="false" onAction="#nextPost" prefHeight="64.0" prefWidth="61.0" styleClass="buttonNext" AnchorPane.leftAnchor="880.0" AnchorPane.topAnchor="278.0" />
+                                        <Label fx:id="postNbr" layoutX="348.0" layoutY="3.0" text="1#">
+                                            <font>
+                                                <Font name="Calibri Bold Italic" size="36.0" />
+                                            </font>
+                                        </Label>
+                                        <ImageView fitHeight="54.0" fitWidth="58.0" layoutX="853.0" layoutY="251.0" onMouseClicked="#Go_New_Post" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../imagesAct/fleche.png" />
+                                            </image>
+                                        </ImageView>
+                                        <ImageView fitHeight="53.0" fitWidth="51.0" layoutX="193.0" layoutY="253.0" nodeOrientation="RIGHT_TO_LEFT" onMouseClicked="#PreviousPost" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../imagesAct/fleche.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </AnchorPane>
+                            </center>
+                            <right>
+                                <HBox alignment="CENTER" prefHeight="628.0" prefWidth="178.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER" />
+                            </right>
+                        </BorderPane>
+                    </center>
+                </BorderPane>
+            </content>
+        </ScrollPane>
+    </children>
+</Pane>

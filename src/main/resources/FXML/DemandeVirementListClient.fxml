@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" styleClass="dash__container-card" stylesheets="@../../resources/css/Compte.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Virement.DemandeVirementListClient">
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutX="27.0" layoutY="5.0" prefHeight="86.0" prefWidth="1205.0">
+            <children>
+                <Button fx:id="retourCh" mnemonicParsing="false" onMouseClicked="#RetourBackV" styleClass="checkoutCard__btn" stylesheets="@../css/SideNavBar.css" translateY="-5.0">
+                    <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/back.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DemandeCard__title" text="Les Demande de Virement  Bancaires " textAlignment="CENTER" wrappingWidth="294.50469970703125">
+                    <font>
+                        <Font name="Bell MT Bold" size="22.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="30.0" />
+                    </HBox.margin></Text>
+
+                <Text fill="#97d158" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="sort-text" text="Trier par :" translateX="-40.0" wrappingWidth="113.8538818359375">
+                    <HBox.margin>
+                        <Insets left="50.0" right="10.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Text>
+                <ComboBox fx:id="statusInput" maxHeight="-Infinity" minHeight="-Infinity" minWidth="146.0" onAction="#statusChange" prefHeight="40.0" prefWidth="146.0" promptText="Type" styleClass="product__add-comboBox" stylesheets="@../css/SideNavBar.css" translateX="-50.0">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin></ComboBox>
+                <Button fx:id="Refresh" mnemonicParsing="false" prefHeight="35.0" prefWidth="36.0" styleClass="AddBtnCapt" stylesheets="@../css/SideNavBar.css" translateX="-20.0">
+                    <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/symbole-de-recyclage.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="captureEcran" mnemonicParsing="false" prefHeight="38.0" prefWidth="158.0" styleClass="AddBtnCapt" stylesheets="@../css/SideNavBar.css" text="Capturer " textFill="WHITE" translateX="20.0">
+                    <graphic>
+                        <ImageView fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/capturer (1).png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="VirementBtn" mnemonicParsing="false" onMouseClicked="#AjouterV" prefHeight="41.0" prefWidth="91.0" styleClass="AddBtnCapt" stylesheets="@../css/SideNavBar.css" translateX="50.0">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/add-list.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <HBox.margin>
+                        <Insets left="80.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+        <HBox fx:id="userTableHead" alignment="CENTER_LEFT" layoutX="33.0" layoutY="92.0" prefHeight="13.0" prefWidth="1187.0" styleClass="VirementTableHead" stylesheets="@../css/Compte.css" translateX="-29.0" />
+        <ScrollPane hbarPolicy="NEVER" layoutX="7.0" layoutY="112.0" prefHeight="482.0" prefWidth="1181.0" styleClass="user_listScrollPane">
+            <content>
+                <GridPane fx:id="VirementList" prefHeight="458.0" prefWidth="1161.0" translateX="20.0">
+                    <!-- Le contenu sera chargé dans ce GridPane -->
+                </GridPane>
+            </content>
+        </ScrollPane>
+        <HBox fx:id="updateVirementModel" layoutX="-274.0" layoutY="-85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1478.0" styleClass="updateUserModel" stylesheets="@../assets/yesser/style/nabilStyle.css">
+            <children>
+                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="630.0" style="-fx-background-color: white;" styleClass="updateUserModel-card" stylesheets="@../assets/yesser/style/nabilStyle.css" translateX="520.0" translateY="130.0">
+                    <children>
+                        <HBox prefHeight="100.0" prefWidth="630.0">
+                            <children>
+                                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="updateUserModel-card-title" text="Modifier Virement " translateX="40.0" translateY="30.0" />
+                                <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close_updateProjectModel" prefHeight="40.0" prefWidth="40.0" styleClass="updateUserModel-card-exitBtn" translateX="390.0" translateY="20.0">
+                                    <children>
+                                        <ImageView fitHeight="30.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" translateX="8.0" translateY="8.0">
+                                            <image>
+                                                <Image url="@../img/cross.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </HBox>
+                        <Line endX="450.0" startX="-100.0" stroke="#defee6" translateX="150.0" translateY="90.0" />
+                        <ScrollPane layoutX="30.0" layoutY="111.0" prefHeight="407.0" prefWidth="571.0" styleClass="updateProjectModel-scrollPane" stylesheets="../assets/yesser/style/nabilStyle.css">
+                            <content>
+                                <VBox fx:id="updateVirementModelContent" prefHeight="402.0" prefWidth="551.0" />
+                            </content>
+                        </ScrollPane>
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+    </children>
+</Pane>

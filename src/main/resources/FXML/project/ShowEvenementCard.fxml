@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<Pane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="629.0" prefWidth="1084.0" styleClass="dash__container-card"
+      stylesheets="@../../assets/style/aliStyle.css"
+      xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.ShowEvenementCardController">
+    <children>
+        <ScrollPane layoutX="27.0" layoutY="115.0" prefHeight="493.0" prefWidth="1035.0"
+                    styleClass="product-card-scrollPane" stylesheets="@../../assets/style/aliStyle.css">
+            <content>
+                <VBox>
+                    <GridPane fx:id="evenementsListContainerfront">
+                        <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        </rowConstraints>
+                    </GridPane>
+                    <GridPane layoutX="400.0" layoutY="115.0" fx:id="CommentsListContainer">
+                        <rowConstraints>
+                            <RowConstraints  minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                        </rowConstraints>
+                    </GridPane>
+                </VBox>
+            </content>
+        </ScrollPane>
+        <HBox alignment="CENTER_LEFT" layoutX="27.0" layoutY="5.0" prefHeight="100.0" prefWidth="1035.0">
+            <children>
+                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product-title"
+                      text="📅 Détails de l'événement "/>
+                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                      minWidth="-Infinity" prefHeight="40.0" prefWidth="76.0" styleClass="sort-text"
+                      stylesheets="@../../assets/style/aliStyle.css">
+                    <children>
+                    </children>
+                    <opaqueInsets>
+                        <Insets/>
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="10.0"/>
+                    </padding>
+                </HBox>
+            </children>
+        </HBox>
+    </children>
+</Pane>

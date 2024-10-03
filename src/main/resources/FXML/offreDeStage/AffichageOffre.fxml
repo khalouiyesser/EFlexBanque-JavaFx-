@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1084.0" styleClass="dash__container-card" stylesheets="@../../css/yesser/ajout.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.offreDeStage.AfficheOffreController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="27.0" layoutY="5.0" prefHeight="100.0" prefWidth="1035.0">
+         <children>
+            <Button fx:id="RetourL" mnemonicParsing="false" onMouseClicked="#RetourBack" prefHeight="37.0" prefWidth="42.0" styleClass="checkoutCard__btn" stylesheets="@../../css/SideNavBar.css">
+               <graphic>
+                  <ImageView fitHeight="30.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imgYesser/back.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DemandeCard__title" text="Liste des Offres des Stages " translateX="20.0">
+               <font>
+                  <Font name="Bell MT" size="22.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="9.0" top="5.0" />
+               </HBox.margin></Text>
+            <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateX="300.0">
+               <image>
+                  <Image url="@../../imgYesser/magnifier.png" />
+               </image>
+            </ImageView>
+            <TextField prefHeight="26.0" prefWidth="309.0" styleClass="product__list-searchInput" stylesheets="@../../css/SideNavBar.css" translateX="20.0" />
+
+            <Text fill="#97d158" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="sort-text" text="Trier par :" translateX="30.0">
+               <HBox.margin>
+                  <Insets left="10.0" right="2.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="statusInput" maxHeight="-Infinity" minHeight="-Infinity" minWidth="150.0" onAction="#statusChange" prefHeight="40.0" promptText="All" styleClass="product__add-comboBox" stylesheets="@../../css/SideNavBar.css" translateX="20.0">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <padding>
+                  <Insets top="4.0" />
+               </padding></ComboBox>
+            <Button fx:id="ajoutOffre" mnemonicParsing="false" onMouseClicked="#AjouterOffre" prefHeight="44.0" prefWidth="58.0" styleClass="productBtn" stylesheets="@../../css/SideNavBar.css" translateX="10.0">
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../imgYesser/add-list.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </HBox>
+      <HBox fx:id="userTableHead" alignment="CENTER_LEFT" layoutX="33.0" layoutY="92.0" prefHeight="74.0" prefWidth="1023.0" styleClass="compteTableHead" stylesheets="@../../css/SideNavBar.css">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Title" translateX="8.0" wrappingWidth="227.95464706420898">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Calibri Light" size="12.0" />
+               </font></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Type" wrappingWidth="102.7547378540039">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Expérience " wrappingWidth="91.15481948852539" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Descriptions" translateX="10.0" wrappingWidth="284.7546730041504">
+               <HBox.margin>
+                  <Insets left="2.0" />
+               </HBox.margin></Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Exigence " translateY="5.0" wrappingWidth="69.5986328125">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Actions" translateX="90.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Text>
+         </children>
+      </HBox>
+      <ScrollPane hbarPolicy="NEVER" layoutX="33.0" layoutY="167.0" prefHeight="449.0" prefWidth="1023.0" styleClass="user_listScrollPane">
+         <content>
+            <VBox fx:id="userListContainer" prefHeight="446.0" prefWidth="1005.0" spacing="13.0" styleClass="userTableBody" />
+         </content>
+      </ScrollPane>
+   </children>
+</Pane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="itemRep" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="48.0" prefWidth="1038.0" styleClass="userItem" stylesheets="@../../css/SideNavBar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.reponse.ReponseItemController">
+<children>
+    <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="244.0" styleClass="one-categoryCard-imgContainer" translateX="10.0">
+        <HBox.margin>
+            <Insets right="10.0" />
+        </HBox.margin>
+         <children>
+            <Text fx:id="mailRep" fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="one-categoryCard-Name" text="hadhemi.mahmoud@esprit.tn" wrappingWidth="182.78793108463287">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Text>
+         </children>
+    </HBox>
+    <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="287.0" translateX="15.0">
+        <children>
+            <Text fx:id="ContenuRep" strokeType="OUTSIDE" strokeWidth="0.0" text="Contenu de la réponse" wrappingWidth="262.78800201416016" />
+        </children>
+
+    </HBox>
+      <ImageView fx:id="piecejrep" fitHeight="20.0" fitWidth="18.0" onMouseClicked="#piecejrep" pickOnBounds="true" preserveRatio="true" translateX="95.0">
+         <image>
+            <Image url="@../../imagesAct/attach.png" />
+         </image>
+      </ImageView>
+    <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="196.0" translateX="195.0">
+        <children>
+            <Text fx:id="dateRep" strokeType="OUTSIDE" strokeWidth="0.0" text="Date réponse" wrappingWidth="262.78800201416016" />
+
+        </children>
+    </HBox>
+    <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="73.0" translateX="30.0" />
+</children>
+</HBox>

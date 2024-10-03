@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="361.0" styleClass="userProductCard" stylesheets="@../css/SideNavBar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ChequeItemsController">
+    <children>
+        <HBox alignment="CENTER" minHeight="-Infinity" prefHeight="60.0" prefWidth="354.0" styleClass="userProductCard-name" stylesheets="@../css/SideNavBar.css">
+            <children>
+                <Text fx:id="productName" fill="#5ba890" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="commandDetailsProductName" text="Demande de Chéque " textAlignment="CENTER" wrappingWidth="256.2749938964844">
+                    <font>
+                        <Font name="Agency FB" size="21.0" />
+                    </font></Text>
+            </children>
+            <padding>
+                <Insets bottom="10.0" top="10.0" />
+            </padding>
+        </HBox>
+        <HBox prefHeight="48.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="RIB :">
+                    <HBox.margin>
+                        <Insets left="50.0" top="10.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="userItemName" strokeType="OUTSIDE" strokeWidth="0.0" text="10987654">
+                    <HBox.margin>
+                        <Insets left="93.0" top="10.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox prefHeight="37.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Cin :">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="userItemEmail" strokeType="OUTSIDE" strokeWidth="0.0" text="10987654">
+                    <HBox.margin>
+                        <Insets left="93.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox prefHeight="37.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Nom et Prénom :">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="userItemTel" strokeType="OUTSIDE" strokeWidth="0.0" text="shayma ouerhani">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox prefHeight="37.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Email : " wrappingWidth="55.0999755859375">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="userItemRole" strokeType="OUTSIDE" strokeWidth="0.0" text="shayma@gmail.com" translateX="-25.0">
+                    <HBox.margin>
+                        <Insets left="67.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox layoutX="18.0" layoutY="160.0" prefHeight="42.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Date  : " wrappingWidth="52.699951171875">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="date" strokeType="OUTSIDE" strokeWidth="0.0" text="19/08/2024">
+                    <HBox.margin>
+                        <Insets left="70.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox layoutX="18.0" layoutY="338.0" prefHeight="42.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Bénéficiaire : " wrappingWidth="107.10003662109375">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="personne" strokeType="OUTSIDE" strokeWidth="0.0" text="Personne">
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox layoutX="18.0" layoutY="231.0" prefHeight="44.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Numéro  : " wrappingWidth="91.9000244140625">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="hhh" strokeType="OUTSIDE" strokeWidth="0.0" text="22222222">
+                    <HBox.margin>
+                        <Insets left="30.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox layoutX="18.0" layoutY="324.0" prefHeight="26.0" prefWidth="346.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Montant :" wrappingWidth="91.9000244140625">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="montant" strokeType="OUTSIDE" strokeWidth="0.0" text="20000">
+                    <HBox.margin>
+                        <Insets left="30.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox alignment="TOP_CENTER" prefHeight="38.0" prefWidth="335.0">
+            <VBox.margin>
+                <Insets right="11.0" />
+            </VBox.margin>
+            <padding>
+                <Insets top="2.0" />
+            </padding>
+            <children>
+                <Label styleClass="userItem__field-active" stylesheets="@../css/Compte.css">
+                    <graphic>
+                        <Text fx:id="userItemStateText" strokeType="OUTSIDE" strokeWidth="0.0" text="En cours" translateX="5.0" wrappingWidth="70.37738037109375" />
+                    </graphic>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+        <HBox fx:id="pdf" onMouseClicked="#genererPDF" prefHeight="34.0" prefWidth="38.0">
+            <children>
+                <ImageView fitHeight="30.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true" translateX="150.0">
+                    <image>
+                        <Image url="@../img/format-de-fichier-pdf.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+        <HBox fx:id="shayma" prefHeight="34.0" prefWidth="295.0">
+            <children>
+                <HBox fx:id="userItemUpdateBtn" onMouseClicked="#UpdateCheque" prefHeight="35.0" prefWidth="46.0" styleClass="product__card-btns" translateX="-10.0">
+                    <children>
+                        <ImageView fitHeight="25.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/edit.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="12.0" top="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                    </children>
+                    <HBox.margin>
+                        <Insets left="105.0" />
+                    </HBox.margin>
+                </HBox>
+                <HBox fx:id="userItemStateBtn" onMouseClicked="#DeleteCheque" prefHeight="35.0" prefWidth="46.0" styleClass="Refus__card-btns" translateX="10.0">
+                    <children>
+                        <ImageView fitHeight="25.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                            <HBox.margin>
+                                <Insets left="11.0" top="5.0" />
+                            </HBox.margin>
+                            <image>
+                                <Image url="@../img/trash.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <HBox.margin>
+                        <Insets left="30.0" />
+                    </HBox.margin>
+                </HBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" styleClass="dash__container-card" stylesheets="@../css/SideNavBar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Cheque.DemandeChequeListClient">
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutX="27.0" layoutY="5.0" prefHeight="86.0" prefWidth="1205.0">
+            <children>
+                <Button fx:id="retourCh" mnemonicParsing="false" onMouseClicked="#RetourBackC" styleClass="checkoutCard__btn" stylesheets="@../css/SideNavBar.css" translateY="-4.0">
+                    <graphic>
+                        <ImageView fitHeight="36.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/back.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="DemandeCard__title" text="Les Demande de Chéque Bancaires " textAlignment="CENTER" wrappingWidth="267.88687658309937">
+                    <font>
+                        <Font name="Bell MT Bold" size="21.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="30.0" />
+                    </HBox.margin></Text>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateX="180.0">
+                    <image>
+                        <Image url="@../img/magnifier.png" />
+                    </image>
+                </ImageView>
+                <TextField fx:id="ChequeclientsfSearchInput" onKeyReleased="#ChequeclientsfSearchInput" prefHeight="27.0" prefWidth="210.0" styleClass="product__list-searchInput" stylesheets="@../css/SideNavBar.css" translateX="-39.0">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </TextField>
+
+                <Text fill="#97d158" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="sort-text" text="Trier par :" translateX="-25.0" wrappingWidth="113.8538818359375">
+                    <HBox.margin>
+                        <Insets left="20.0" right="10.0" />
+                    </HBox.margin>
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Text>
+                <ComboBox fx:id="statusInput" maxHeight="-Infinity" minHeight="-Infinity" minWidth="150.0" onAction="#statusChange" prefHeight="40.0" prefWidth="185.0" promptText="Bénéficiaire " styleClass="product__add-comboBox" stylesheets="@../css/SideNavBar.css" translateX="-50.0">
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                    <padding>
+                        <Insets top="4.0" />
+                    </padding></ComboBox>
+
+
+                <Button fx:id="Refresh" mnemonicParsing="false" prefHeight="35.0" prefWidth="41.0" styleClass="AddBtnCapt" stylesheets="@../css/SideNavBar.css" translateX="-40.0">
+                    <graphic>
+                        <ImageView fitHeight="21.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/symbole-de-recyclage.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="captureEcran" mnemonicParsing="false" prefHeight="39.0" prefWidth="143.0" styleClass="AddBtnCapt" stylesheets="@../css/SideNavBar.css" text="Capturer" textFill="#fcfcfc" translateX="-20.0">
+                    <graphic>
+                        <ImageView fitHeight="25.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/capturer (1).png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="chequebtn" mnemonicParsing="false" onMouseClicked="#AjouterC" prefHeight="41.0" prefWidth="91.0" styleClass="AddBtnCapt" translateX="-70.0">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="73.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/add-list.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <HBox.margin>
+                        <Insets left="78.0" />
+                    </HBox.margin>
+                    <stylesheets>
+                        <URL value="@../css/Compte.css" />
+                        <URL value="@../css/SideNavBar.css" />
+                    </stylesheets>
+                </Button>
+            </children>
+        </HBox>
+        <HBox fx:id="userTableHead" alignment="CENTER_LEFT" layoutX="33.0" layoutY="92.0" prefHeight="13.0" prefWidth="1187.0" styleClass="VirementTableHead" stylesheets="@../css/Compte.css" translateX="-29.0" />
+        <ScrollPane hbarPolicy="NEVER" layoutX="7.0" layoutY="112.0" prefHeight="482.0" prefWidth="1181.0" styleClass="user_listScrollPane" stylesheets="@../css/SideNavBar.css">
+            <content>
+                <GridPane fx:id="userListContainer" onKeyTyped="#fixType" prefHeight="458.0" prefWidth="1161.0" translateX="20.0">
+                    <!-- Le contenu sera chargé dans ce GridPane -->
+                </GridPane>
+            </content>
+        </ScrollPane>
+        <HBox fx:id="updateChequeModel" alignment="CENTER" layoutX="-274.0" layoutY="-85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1478.0" styleClass="updateUserModel">
+            <children>
+                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="630.0" style="-fx-background-color: #fff;" styleClass="updateUserModel-card" translateX="100.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="84.0" prefWidth="600.0">
+                            <children>
+                                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="updateUserModel-card-title" text="Modifier le Chéque " />
+                                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close_updateProjectModel" prefHeight="30.0" prefWidth="30.0" styleClass="updateUserModel-card-exitBtn" translateX="357.0" translateY="-13.0">
+                                    <children>
+                                        <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../img/cross.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <padding>
+                                <Insets left="30.0" right="30.0" />
+                            </padding>
+                        </HBox>
+                        <Line endX="540.0" layoutX="30.0" layoutY="84.0" stroke="#defee6" strokeWidth="2.0" />
+                        <ScrollPane hbarPolicy="NEVER" layoutX="30.0" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="571.0" styleClass="updateProjectModel-scrollPane" stylesheets="@../assets/yesser/style/nabilStyle.css">
+                            <content>
+                                <VBox fx:id="updateChequeModelContent" prefHeight="402.0" prefWidth="551.0" />
+                            </content>
+                        </ScrollPane>
+                    </children>
+               <stylesheets>
+                  <URL value="@../assets/yesser/style/nabilStyle.css" />
+                  <URL value="@../assets/style/nabilStyle.css" />
+               </stylesheets>
+                </Pane>
+            </children>
+         <stylesheets>
+            <URL value="@../assets/yesser/style/nabilStyle.css" />
+            <URL value="@../assets/style/nabilStyle.css" />
+         </stylesheets>
+        </HBox>
+    </children>
+</Pane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox alignment="CENTER_LEFT" prefHeight="99.0" prefWidth="1274.0" styleClass="userItem" stylesheets="@../../css/yesser/ItemStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.offreDeStage.OffreStageItem">
+   <children>
+      <Text fx:id="titre" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__name" text="Khaloui yesser" wrappingWidth="246.84808349609375">
+         <HBox.margin>
+            <Insets right="4.0" />
+         </HBox.margin>
+      </Text>
+      <Text fx:id="type" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field" text="41156289" wrappingWidth="93.84814453125">
+         <HBox.margin>
+            <Insets right="4.0" />
+         </HBox.margin>
+      </Text>
+      <Text fx:id="experience" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__name" text="Khaloui yesser" wrappingWidth="63.84808349609375" />
+      <Text fx:id="description" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__name" text="Khaloui yesser" wrappingWidth="439.84808349609375" />
+      <Text fx:id="exigence" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__name" text="Khaloui yesser" wrappingWidth="267.84808349609375" />
+      <Label fx:id="listeDesDemandes" styleClass="userItem__btn">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imgYesser/lock-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <HBox.margin>
+            <Insets right="20.0" />
+         </HBox.margin>
+      </Label>
+      <Label fx:id="UpdateOffre" styleClass="userItem__btn">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="26.0" onMouseClicked="#edit" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imgYesser/update-icon.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <Label fx:id="deleteOffre" onMouseClicked="#delete" styleClass="userItem__btn">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imgYesser/64fad72e-917a-4529-af06-9207cc8566f0.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </Label>
+   </children>
+</HBox>

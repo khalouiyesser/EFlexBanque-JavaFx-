@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="630.0" styleClass="addProductCard" stylesheets="@../../css/SideNavBar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.reponse.ModifierRéponseController">
+<children>
+    <HBox prefHeight="53.0" prefWidth="570.0">
+        <children>
+            <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__card-title" text="Modifier une réponse">
+                <font>
+                    <Font name="Montserrat ExtraBold" size="19.0" />
+                </font>
+            </Text>
+        </children>
+        <padding>
+            <Insets bottom="10.0" left="16.0" top="26.0" />
+        </padding>
+    </HBox>
+    <HBox prefHeight="33.0" prefWidth="570.0">
+        <children>
+            <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-desc" text="Votre modification sera envoyée en cliquant sur Modifier">
+                <font>
+                    <Font name="Montserrat Regular" size="13.0" />
+                </font>
+            </Text>
+        </children>
+        <padding>
+            <Insets bottom="27.0" left="16.0" />
+        </padding>
+    </HBox>
+    <Line endX="488.0" startX="-100.0" stroke="#defee6" strokeWidth="2.0">
+        <VBox.margin>
+            <Insets bottom="27.0" left="16.0" right="16.0" />
+        </VBox.margin>
+    </Line>
+
+    <Line endX="498.0" startX="-100.0" stroke="#defee6" strokeWidth="2.0" translateY="50.0">
+        <VBox.margin>
+            <Insets bottom="30.0" left="16.0" />
+        </VBox.margin>
+    </Line>
+      <ScrollPane prefHeight="579.0" prefWidth="630.0" translateY="-50.0">
+         <content>
+          <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="326.0" prefWidth="570.0">
+              <padding>
+                  <Insets left="16.0" right="16.0" />
+              </padding>
+              <children>
+                  <HBox prefHeight="6.0" prefWidth="538.0" translateY="20.0">
+                      <children>
+                          <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-input-label" text="Contenu">
+                              <HBox.margin>
+                                  <Insets right="2.0" />
+                              </HBox.margin>
+                          </Text>
+                          <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                              <font>
+                                  <Font name="Montserrat Regular" size="16.0" />
+                              </font>
+                          </Text>
+                      </children>
+                      <padding>
+                          <Insets bottom="10.0" />
+                      </padding>
+                  </HBox>
+                  <TextArea fx:id="contenuInput" prefHeight="105.0" prefWidth="598.0" promptText="Tappez le contenu de la réponse ici ..." styleClass="product__add-input-textArea" translateY="20.0" />
+                  <HBox fx:id="contenuInputErrorBox" prefHeight="67.0" prefWidth="598.0" styleClass="form_errors-product" stylesheets="@../../css/SideNavBar.css">
+                      <children>
+                          <Text fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="form_errors-product-point" text=".  " translateY="5.0" wrappingWidth="23.18400001525879" />
+                          <Text fx:id="contenuInputError" fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0" text="Le contenu est obligatoire !" translateY="20.0">
+                              <HBox.margin>
+                                  <Insets top="5.0" />
+                              </HBox.margin>
+                          </Text>
+                      </children>
+                  </HBox>
+                <VBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="102.0" prefWidth="570.0">
+                    <padding>
+                        <Insets left="16.0" right="16.0" />
+                    </padding>
+                    <children>
+                        <HBox prefHeight="6.0" prefWidth="538.0" translateY="20.0">
+                            <children>
+                                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__add-input-label" text="Pièce jointe">
+                                    <HBox.margin>
+                                        <Insets right="2.0" />
+                                    </HBox.margin>
+                                </Text>
+                                <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                                    <font>
+                                        <Font name="Montserrat Regular" size="16.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                            <padding>
+                                <Insets bottom="10.0" />
+                            </padding>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="339.0" stylesheets="@../../css/SideNavBar.css" translateY="30.0">
+                            <children>
+                                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="60.0" styleClass="product__add-img-container">
+                                    <children>
+                                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../imagesAct/add-image.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                                <ImageView fx:id="imageInput" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" translateX="-60.0" />
+                                <Text fx:id="addpieceJBtn" onMouseClicked="#ajouter_image" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="category__add-btn-icon" text="Ajouter une pièce jointe" translateX="-50.0" />
+                            </children>
+                            <VBox.margin>
+                                <Insets />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="pieceJointeInputErrorBox" prefHeight="91.0" prefWidth="534.0" styleClass="form_errors-product" stylesheets="@../../css/SideNavBar.css" translateY="7.0">
+                           <children>
+                              <Text fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="form_errors-product-point" text=".  " translateY="5.0" wrappingWidth="23.18400001525879" />
+                              <Text fx:id="pieceJRepInputError" fill="#dc284c" strokeType="OUTSIDE" strokeWidth="0.0" text="La pièce jointe est obligatoire !" translateY="20.0">
+                                 <HBox.margin>
+                                    <Insets top="5.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                        </HBox>
+                      <HBox alignment="CENTER" prefHeight="94.0" prefWidth="506.0">
+                          <VBox.margin>
+                              <Insets />
+                          </VBox.margin>
+                          <children>
+                              <Button fx:id="reponseBtn" mnemonicParsing="false" onMouseClicked="#reponseBtn" styleClass="product__add-new-productBtn" text="Modifier" textFill="WHITE" translateY="60.0">
+                                  <font>
+                                      <Font name="Montserrat Regular" size="16.0" />
+                                  </font>
+                                  <padding>
+                                      <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+                                  </padding>
+                              </Button>
+                          </children>
+                      </HBox>
+                    </children>
+                </VBox>
+              </children>
+          </VBox>
+         </content></ScrollPane>
+</children>
+</VBox>

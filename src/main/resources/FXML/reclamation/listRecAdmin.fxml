@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="1084.0" styleClass="dash__container-card" stylesheets="@../../css/SideNavBar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.reclamation.ListRecAdminController">
+    <children>
+        <ScrollPane layoutX="27.0" layoutY="115.0" prefHeight="493.0" prefWidth="1035.0" styleClass="product-card-scrollPane" stylesheets="@../../css/SideNavBar.css">
+
+        </ScrollPane>
+        <HBox alignment="CENTER" layoutX="27.0" layoutY="5.0" prefHeight="100.0" prefWidth="1035.0">
+            <children>
+                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product-title" text="Liste des réclamations" />
+                <HBox fx:id="listRec" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#openListRep" prefHeight="41.0" prefWidth="50.0" styleClass="productBtn" translateX="420.0">
+                    <children>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../imagesAct/category.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </HBox>
+
+                <Text fill="#97d158" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="sort-text" text="Triée par :" translateX="60.0">
+                    <HBox.margin>
+                        <Insets right="25.0" />
+                    </HBox.margin>
+                </Text>
+                <ComboBox fx:id="inputRectrie" maxHeight="-Infinity" minHeight="-Infinity" minWidth="150.0" prefHeight="40.0" promptText="Tous" styleClass="product__add-comboBox" stylesheets="@../../css/SideNavBar.css" translateX="60.0" />
+            </children>
+        </HBox>
+        <HBox fx:id="recTableHead" alignment="CENTER_LEFT" layoutX="19.0" layoutY="92.0" prefHeight="74.0" prefWidth="1047.0" styleClass="userTableHead" stylesheets="@../../css/style.scss">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Adresse client" textAlignment="CENTER" wrappingWidth="194.15471267700195" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Objet" textAlignment="CENTER" translateX="-5.0" wrappingWidth="62.15469026565552" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Contenu" textAlignment="CENTER" translateX="3.0" wrappingWidth="141.35476303100586" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Département" textAlignment="CENTER" translateX="-6.0" wrappingWidth="92.55453109741211" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Statut" textAlignment="CENTER" translateX="10.0" wrappingWidth="116.55453109741211" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Date" textAlignment="CENTER" translateX="20.0" wrappingWidth="108.55453109741211" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Pièce jointe" textAlignment="CENTER" translateX="28.0" wrappingWidth="158.95449447631836" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Action" textAlignment="CENTER" translateX="35.0" wrappingWidth="74.95461654663086" />
+
+            </children>
+
+        </HBox>
+        <ScrollPane hbarPolicy="NEVER" layoutX="33.0" layoutY="167.0" prefHeight="449.0" prefWidth="1044.0" styleClass="user_listScrollPane" translateX="-12.0">
+            <content>
+                <VBox fx:id="RecListContainer" prefHeight="446.0" prefWidth="1200.0" spacing="13.0" styleClass="userTableBody" />
+            </content>
+        </ScrollPane>
+    </children>
+</Pane>

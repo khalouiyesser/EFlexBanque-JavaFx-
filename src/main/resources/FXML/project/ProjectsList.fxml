@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+
+<Pane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="596.0" prefWidth="1084.0" styleClass="dash__container-card" stylesheets="@../../assets/style/nabilStyle.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProjectListController">
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutX="27.0" layoutY="5.0" prefHeight="100.0" prefWidth="1035.0">
+            <children>
+<!--                <Button fx:id="retourCh" mnemonicParsing="false" onMouseClicked="#RetourBackC" styleClass="checkoutCard__btn" stylesheets="@../css/SideNavBar.css" translateY="-4.0">-->
+<!--                    <graphic>-->
+<!--                        <ImageView fitHeight="36.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                            <image>-->
+<!--                                <Image url="@../img/back.png" />-->
+<!--                            </image>-->
+<!--                        </ImageView>-->
+<!--                    </graphic>-->
+<!--                </Button>-->
+
+                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product-title" text="🚀 Liste des projets 🚀🚀" />
+                <TextField fx:id="productSearchInput" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyTyped="#searchProject" prefWidth="250.0" styleClass="product__list-searchInput">
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                    <padding>
+                        <Insets left="37.0" />
+                    </padding>
+                </TextField>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateX="-240.0">
+                    <image>
+                        <Image url="@../../assets/img/magnifier.png" />
+                    </image>
+                </ImageView>
+                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="76.0" styleClass="sort-text" stylesheets="@../../assets/style/aliStyle.css">
+                    <children>
+                        <Text fill="#97d158" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="sort-text" text="Trier par:" />
+                    </children>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </HBox>
+                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#open_addProject" prefHeight="41.0" prefWidth="50.0" styleClass="productBtn" translateX="80.0">
+                    <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../assets/img/add-list.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#pdf" prefHeight="60.0" prefWidth="60.0" styleClass="pdfBtn" stylesheets="@../../assets/style/aliStyle.css" translateX="230.0">
+                    <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../assets/img/pdf.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+        <HBox fx:id="projectTableHead" alignment="CENTER" layoutX="33.0" layoutY="92.0" prefHeight="74.0" prefWidth="1023.0" styleClass="projectTableHead" stylesheets="@../../assets/style/nabilStyle.css">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="projectTableHeadTitle" text="Nom projet" wrappingWidth="287.7546730041504" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="projectTableHeadTitle" text="Description" wrappingWidth="230.15475845336914" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="projectTableHeadTitle" text="Categorie" wrappingWidth="100.55472183227539" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="projectTableHeadTitle" text="Budget" wrappingWidth="106.15463638305664" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="projectTableHeadTitle" text="Date de creation" wrappingWidth="138.15475845336914" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="projectTableHeadTitle" text="Action" wrappingWidth="87.75467300415039" />
+            </children>
+        </HBox>
+        <ScrollPane hbarPolicy="NEVER" layoutX="33.0" layoutY="167.0" prefHeight="414.0" prefWidth="1023.0" styleClass="project_listScrollPane">
+            <content>
+                <VBox fx:id="projectListContainer" prefHeight="446.0" prefWidth="1005.0" spacing="13.0" styleClass="projectTableBody" />
+            </content>
+        </ScrollPane>
+        <HBox fx:id="updateProjectModel" alignment="CENTER" layoutX="-274.0" layoutY="-85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1384.0" styleClass="updateUserModel" stylesheets="@../../assets/style/nabilStyle.css">
+            <children>
+                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="630.0" style="-fx-background-color: #fff;" styleClass="updateUserModel-card" stylesheets="@../../assets/style/nabilStyle.css">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="84.0" prefWidth="600.0">
+                            <children>
+                                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="updateUserModel-card-title" text="Modifier le Projet" />
+                                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close_updateProjectModel" prefHeight="30.0" prefWidth="30.0" styleClass="updateUserModel-card-exitBtn" translateX="311.0">
+                                    <children>
+                                        <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../assets/img/cross.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <padding>
+                                <Insets left="30.0" right="30.0" />
+                            </padding>
+                        </HBox>
+                        <Line endX="540.0" layoutX="30.0" layoutY="84.0" stroke="#defee6" strokeWidth="2.0" />
+                        <ScrollPane hbarPolicy="NEVER" layoutX="30.0" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="571.0" styleClass="updateProjectModel-scrollPane" stylesheets="@../../assets/style/nabilStyle.css">
+                            <content>
+                                <VBox fx:id="updateProjectModelContent" prefHeight="402.0" prefWidth="551.0" />
+                            </content>
+                        </ScrollPane>
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+        <HBox fx:id="ShowProjectModel" alignment="CENTER" layoutX="-274.0" layoutY="-85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1384.0" styleClass="updateUserModel" stylesheets="@../../assets/style/nabilStyle.css">
+            <children>
+                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="630.0" style="-fx-background-color: #fff;" styleClass="updateUserModel-card" stylesheets="@../../assets/style/nabilStyle.css">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="84.0" prefWidth="600.0">
+                            <children>
+                                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="updateUserModel-card-title" text="Détails de projet" />
+
+                                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close_ShowProjectModel" prefHeight="30.0" prefWidth="30.0" styleClass="updateUserModel-card-exitBtn" translateX="311.0">
+                                    <children>
+                                        <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../assets/img/cross.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <padding>
+                                <Insets left="30.0" right="30.0" />
+                            </padding>
+                        </HBox>
+                        <Line endX="540.0" layoutX="30.0" layoutY="84.0" stroke="#defee6" strokeWidth="2.0" />
+                        <ScrollPane hbarPolicy="NEVER" layoutX="30.0" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="571.0" styleClass="updateUserModel-scrollPane" stylesheets="@../../assets/style/nabilStyle.css">
+                            <content>
+                                <VBox fx:id="ShowProjectModelContent" prefHeight="402.0" prefWidth="551.0" />
+                            </content>
+                        </ScrollPane>
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+        <HBox fx:id="addProjectModel" alignment="CENTER" layoutX="-274.0" layoutY="-85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1384.0" styleClass="updateUserModel" stylesheets="@../../assets/style/nabilStyle.css">
+            <children>
+                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="630.0" style="-fx-background-color: #fff;" styleClass="updateUserModel-card" stylesheets="@../../assets/style/nabilStyle.css">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="84.0" prefWidth="600.0">
+                            <children>
+                                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="updateUserModel-card-title" text="Modifier le Projet" />
+                                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close_updateProjectModel" prefHeight="30.0" prefWidth="30.0" styleClass="updateUserModel-card-exitBtn" translateX="311.0">
+                                    <children>
+                                        <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../assets/img/cross.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <padding>
+                                <Insets left="30.0" right="30.0" />
+                            </padding>
+                        </HBox>
+                        <Line endX="540.0" layoutX="30.0" layoutY="84.0" stroke="#defee6" strokeWidth="2.0" />
+                        <ScrollPane hbarPolicy="NEVER" layoutX="30.0" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="571.0" styleClass="updateProjectModel-scrollPane" stylesheets="@../../assets/style/nabilStyle.css">
+                            <content>
+                                <VBox fx:id="addProjectModelContent" prefHeight="402.0" prefWidth="551.0" />
+                            </content>
+                        </ScrollPane>
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+    </children>
+</Pane>

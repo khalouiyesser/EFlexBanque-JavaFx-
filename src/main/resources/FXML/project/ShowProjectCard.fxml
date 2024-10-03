@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.Cursor?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1040.0"
+      prefWidth="534.0" style="-fx-effect: none;" styleClass="addProductCard"
+      stylesheets="@../../assets/style/aliStyle.css"
+      xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.ShowProjectCardController">
+    <children>
+        <VBox prefHeight="263.0" prefWidth="680.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                              minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"
+                              styleClass="product__add-img-container">
+                            <children>
+                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../assets/img/cloud-computing.png"/>
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <HBox alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                              prefHeight="100.0" prefWidth="200.0" translateX="-200.0">
+                            <children>
+                                <ImageView fx:id="imageInput" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true"
+                                           preserveRatio="true"/>
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Line endX="500.0" stroke="#defee6" strokeWidth="2.0" translateX="10.0">
+            <VBox.margin>
+                <Insets bottom="27.0"/>
+            </VBox.margin>
+        </Line>
+        <HBox>
+        <VBox prefHeight="102.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Nom de projet">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <Text fx:id="nomProjetInput" styleClass="product__add-input">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </Text>
+            </children>
+        </VBox>
+        <VBox prefHeight="102.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Description">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <Text fx:id="descriptionProjetInput" styleClass="product__add-input">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </Text>
+            </children>
+        </VBox>
+         </HBox>
+        <HBox>
+        <VBox prefHeight="102.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Categorie">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <Text fx:id="categorieInput"  styleClass="product__add-input">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </Text>
+            </children>
+        </VBox>
+        <VBox prefHeight="102.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Durée">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <Text fx:id="dureeProjetInput"  styleClass="product__add-input">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </Text>
+            </children>
+        </VBox>
+        </HBox>
+        <HBox>
+        <VBox prefHeight="102.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Statut">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <Text fx:id="statutProjetInput"  styleClass="product__add-input">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </Text>
+            </children>
+        </VBox>
+        <VBox prefHeight="102.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Budget">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <Text fx:id="budgetProjetInput"  styleClass="product__add-input">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </Text>
+            </children>
+        </VBox>
+        </HBox>
+        <VBox prefHeight="102.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Date de creation">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <Text fx:id="dateCreationInput"  styleClass="product__add-input">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </Text>
+            </children>
+        </VBox>
+    </children>
+</VBox>

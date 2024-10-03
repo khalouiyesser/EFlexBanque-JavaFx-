@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="1140.0" styleClass="product-card" stylesheets="@../../css/SideNavBar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.reclamation.ReclamationItemclientController">
+    <children>
+        <HBox fx:id="objetrec" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="190.0" styleClass="product__list-imgContainer">
+            <children>
+                <Text fx:id="ObjetRec" fill="#32594a" strokeMiterLimit="70.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__card-title" text="Objet" wrappingWidth="71.36656188964844">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Text>
+            </children>
+        </HBox>
+        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="294.0" translateY="2.0">
+            <HBox.margin>
+                <Insets left="20.0" />
+            </HBox.margin>
+            <children>
+                <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="222.0">
+                    <children>
+                        <Label />
+                        <HBox fx:id="contenuRec" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                            <children>
+                                <Text fx:id="contenuArt" strokeMiterLimit="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contenu" />
+                            </children>
+                        </HBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER" prefHeight="130.0" prefWidth="153.0">
+            <children>
+                <Text fx:id="depRec" fill="#43882b" strokeMiterLimit="20.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="product__card-stock" text="Département" wrappingWidth="105.61565971374512" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="130.0" prefWidth="167.0">
+            <children>
+                <ImageView fx:id="statRec" fitHeight="38.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../imagesAct/chargement.gif" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="74.0" prefWidth="197.0">
+            <children>
+                <Text fx:id="dateRec" strokeMiterLimit="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18/01/2003" />
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="130.0" prefWidth="87.0">
+            <children>
+                <ImageView fx:id="voirPieceBtn" fitHeight="32.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                    <image>
+                        <Image url="@../../imagesAct/icons8-voir-le-fichier-50.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="130.0" prefWidth="96.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="130.0" prefWidth="84.0">
+                    <children>
+                        <ImageView fx:id="show_rep" fitHeight="23.0" fitWidth="37.0" onMouseClicked="#show_rep" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../imagesAct/icons8-visible.gif" />
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="deleteRecBtn" fitHeight="25.0" fitWidth="26.0" onMouseClicked="#deleteRecBtn" pickOnBounds="true" preserveRatio="true" translateX="15.0">
+                            <image>
+                                <Image url="@../../imagesAct/delete.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+    </children>
+</HBox>

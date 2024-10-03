@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1200.0" styleClass="userProductsContainer" stylesheets="@../../css/SideNavBar.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.article.ListeArticlesClientsController">
+    <children>
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="77.0" prefWidth="1200.0">
+            <children>
+                <Text fill="#7b88ff" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="searchText" text=" Articles| " />
+                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="searchText" text="Tous" />
+                <HBox fx:id="getPromotionalItemsBtn" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#getPromotionalItems" prefHeight="40.0" prefWidth="317.0" styleClass="onlyOfferItemsBtn" translateX="730.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="onlyOfferItemsBtnText" text="Bienvenue dans l'univers de E-Flex Bank" translateX="-18.0" />
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets left="15.0" />
+            </padding>
+        </HBox>
+        <VBox alignment="CENTER" layoutY="77.0" prefHeight="533.0" prefWidth="198.0" stylesheets="@../../css/SideNavBar.css" translateX="5.0" translateY="5.0">
+            <padding>
+                <Insets left="15.0" top="20.0" />
+            </padding>
+            <children>
+                <HBox fx:id="rssArt" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#rssArt" prefHeight="40.0" prefWidth="171.0" styleClass="onlyOfferItemsBtn">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="onlyOfferItemsBtnText" text="Divers articles" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <ScrollPane layoutX="256.0" layoutY="87.0" prefHeight="496.0" prefWidth="928.0" style="-fx-background-color: #ffff;">
+            <content>
+                <GridPane fx:id="productsListContainer" prefHeight="491.0" prefWidth="918.0" style="-fx-background-color: #ffff;">
+                    <columnConstraints>
+                        <ColumnConstraints />
+                    </columnConstraints>
+                </GridPane>
+            </content>
+        </ScrollPane>
+    </children>
+</Pane>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="660.0" prefWidth="378.0" styleClass="userProductCard" stylesheets="@../css/SideNavBar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Virement.VirementCard">
+    <children>
+        <HBox alignment="CENTER" minHeight="-Infinity" prefHeight="60.0" prefWidth="354.0" styleClass="userProductCard-name" stylesheets="@../css/SideNavBar.css">
+            <children>
+                <Text fx:id="productName" fill="#5ba890" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="commandDetailsProductName" text="Demande de Virement " textAlignment="CENTER" wrappingWidth="256.2749938964844">
+                    <font>
+                        <Font name="Agency FB" size="21.0" />
+                    </font></Text>
+            </children>
+            <padding>
+                <Insets bottom="10.0" top="10.0" />
+            </padding>
+        </HBox>
+        <HBox prefHeight="152.0" prefWidth="362.0">
+            <children>
+                <ImageView fx:id="qrCodeImage" fitHeight="150.0" fitWidth="206.0" pickOnBounds="true" preserveRatio="true" translateX="20.0">
+                    <HBox.margin>
+                        <Insets left="80.0" />
+                    </HBox.margin>
+                </ImageView>
+            </children>
+        </HBox>
+        <HBox prefHeight="48.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="RIB :">
+                    <HBox.margin>
+                        <Insets left="50.0" top="10.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="RibItems" strokeType="OUTSIDE" strokeWidth="0.0" text="10987654">
+                    <HBox.margin>
+                        <Insets left="93.0" top="10.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox prefHeight="37.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Cin :">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="cinItems" strokeType="OUTSIDE" strokeWidth="0.0" text="10987654">
+                    <HBox.margin>
+                        <Insets left="93.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox prefHeight="37.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Nom et Prénom :">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="NomPrenomItems" strokeType="OUTSIDE" strokeWidth="0.0" text="shayma ouerhani">
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox prefHeight="37.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Numéro Tel : " wrappingWidth="98.29998779296875">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="TelItems" strokeType="OUTSIDE" strokeWidth="0.0" text="22334321">
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox layoutX="18.0" layoutY="160.0" prefHeight="42.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Type de Virement :" wrappingWidth="143.89990997314453">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="TypeItems" strokeType="OUTSIDE" strokeWidth="0.0" text="personne">
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox layoutX="18.0" layoutY="338.0" prefHeight="42.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Transférer A:  " wrappingWidth="107.10003662109375">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="benfItems" strokeType="OUTSIDE" strokeWidth="0.0" text="Mustapha ouerhani">
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox layoutX="18.0" layoutY="231.0" prefHeight="44.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Numéro Bénéf : " wrappingWidth="120.70001220703125">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="NumBenefItems" strokeType="OUTSIDE" strokeWidth="0.0" text="2222234556">
+                    <HBox.margin>
+                        <Insets left="30.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox layoutX="18.0" layoutY="424.0" prefHeight="44.0" prefWidth="354.0">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="verifiedAddress_fullname" text="Montant :  " wrappingWidth="120.70001220703125">
+                    <HBox.margin>
+                        <Insets left="50.0" />
+                    </HBox.margin>
+                </Text>
+                <Text fx:id="MontantItems" strokeType="OUTSIDE" strokeWidth="0.0" text="220">
+                    <HBox.margin>
+                        <Insets left="30.0" />
+                    </HBox.margin>
+                </Text>
+            </children>
+        </HBox>
+        <HBox alignment="TOP_CENTER" prefHeight="47.0" prefWidth="342.0">
+            <VBox.margin>
+                <Insets right="11.0" />
+            </VBox.margin>
+            <padding>
+                <Insets top="2.0" />
+            </padding>
+            <children>
+                <Label styleClass="userItem__field-active" stylesheets="@../css/Compte.css">
+                    <graphic>
+                        <Text fx:id="DesicionItems" strokeType="OUTSIDE" strokeWidth="0.0" text="En cours" />
+                    </graphic>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </Label>
+            </children>
+        </HBox>
+        <HBox fx:id="shayma" prefHeight="34.0" prefWidth="295.0">
+            <children>
+                <HBox fx:id="userItemUpdateBtn" onMouseClicked="#updatevirement" prefHeight="35.0" prefWidth="46.0" styleClass="product__card-btns">
+                    <children>
+                        <ImageView fitHeight="25.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/edit.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets left="12.0" top="5.0" />
+                            </HBox.margin>
+                        </ImageView>
+                    </children>
+                    <HBox.margin>
+                        <Insets left="115.0" />
+                    </HBox.margin>
+                </HBox>
+                <HBox fx:id="userItemStateBtn" onMouseClicked="#deletevirement" prefHeight="35.0" prefWidth="46.0" styleClass="Refus__card-btns">
+                    <children>
+                        <ImageView fitHeight="25.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                            <HBox.margin>
+                                <Insets left="11.0" top="5.0" />
+                            </HBox.margin>
+                            <image>
+                                <Image url="@../img/trash.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <HBox.margin>
+                        <Insets left="30.0" />
+                    </HBox.margin>
+                </HBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>

@@ -1,0 +1,193 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+.datePicker{
+    -fx-background-color: linear-gradient(to bottom, #efefef, #eee);
+    -fx-border-color: #720000;
+    -fx-border-width: .8px;
+    -fx-font-family: "Tahoma";
+    -fx-border-radius: 4px;
+}
+
+.datePicker:focused{
+    -fx-border-width: 1.8px;
+    -fx-background-color: #fff;
+}
+
+.textfield{
+    -fx-background-color: linear-gradient(to bottom, #efefef, #eee);
+    -fx-border-color: #720000;
+    -fx-border-width: .8px;
+    -fx-font-family: "Tahoma";
+    -fx-border-radius: 4px;
+}
+
+.textarea{
+    -fx-background-color: linear-gradient(to bottom, #efefef, #eee);
+    -fx-border-color: #720000;
+    -fx-border-width: .8px;
+    -fx-font-family: "Tahoma";
+    -fx-border-radius: 4px;
+}
+
+.textarea:focused{
+    -fx-border-width: 1.8px;
+    -fx-background-color: #fff;
+}
+
+.textfield:focused{
+    -fx-border-width: 1.8px;
+    -fx-background-color: #fff;
+}
+
+.search{
+    -fx-background-color: transparent;
+    -fx-border-color: #720000;
+    -fx-border-radius: 5px;
+    -fx-font-size:13px;
+    -fx-font-family:"Arial";
+    -fx-border-width: 1px;
+    -fx-padding: 0px 0px 0px 12px;
+}
+
+.search:focused{
+    -fx-border-width: 2px;
+}
+
+.import-btn{
+    -fx-background-color: #ddd;
+    -fx-text-fill: #720000;    
+    -fx-cursor: hand;
+}
+
+.import-btn:hover{
+    -fx-background-color: #aeabab;
+    -fx-text-fill: #720000;    
+    -fx-cursor: hand;
+}
+
+.btn{
+    -fx-background-color: #720000;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #fff;
+    -fx-font-size:14px;
+    -fx-font-family:"Arial";
+    -fx-cursor: hand;
+}
+
+.btn:hover{
+    -fx-background-color: #5B0000;
+}
+
+.label-ajout{
+    -fx-text-fill: #720000;
+    -fx-font-size:12px;
+    -fx-font-family:"System";
+    -fx-font-weight: 800;
+}
+
+.btn{
+    -fx-background-color: #720000;
+    -fx-background-radius: 8px;
+    -fx-text-fill: #fff;
+    -fx-font-size:14px;
+    -fx-font-family:"System";
+    -fx-font-weight:800;
+    -fx-cursor: hand;
+}
+
+.btn:hover{
+    -fx-background-color: #5B0000;
+}
+
+.comboBox{
+    -fx-background-color: linear-gradient(to bottom, #efefef, #eee);
+    -fx-border-color: #720000;
+    -fx-border-width: .8px;
+    -fx-font-family: "Tahoma";
+    -fx-border-radius: 4px;
+}
+
+.comboBox:selected{
+    -fx-border-width: 2px;
+}
+.stage-input-label{
+    -fx-font-size: 12px;
+    -fx-font-weight: 700;
+}
+.stage__card-title {
+    -fx-font-size: 19px;
+    -fx-font-weight: 800;
+}
+ge-input-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+}
+.AddBtn {
+    -fx-background-color: #32bb6f;
+    -fx-background-radius: 100px;
+    -fx-border-radius: 100px;
+    -fx-cursor: hand;
+}
+
+.compte__add__btn{
+    -fx-background-color: #97d158;
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-cursor: hand;
+}
+.cheque__addBtn {
+    -fx-background-color: #97d158;
+    -fx-padding: 8px 18;
+    -fx-text-fill: #43882b;
+    -fx-font-weight: 700;
+    -fx-background-radius: 1000px;
+    -fx-border-radius: 1000px;
+    -fx-transition: all 2s ease;
+    -fx-cursor: hand;
+    -fx-font-size: 15px;
+}
+.categoriesModel {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+}
+.categoriesModel-card {
+    -fx-background-color: #fff;
+    -fx-background-radius: 30px;
+    -fx-border-radius: 30px;
+}
+.userTableHeadTitle {
+    -fx-fill: black;
+    -fx-font-size: 13px;
+    -fx-font-weight: 700;
+}
+.DemandeCard__title {
+    -fx-fill: black;
+    -fx-font-size:25px;
+    -fx-font-weight: 600;
+
+}
+.user_listScrollPane {
+    -fx-background: rgba(251, 237, 237, 0.166);
+    -fx-background-color: transparent;
+}
+.userTableBody {
+    -fx-padding: 15px 10px;
+}
+.userTableBody {
+    -fx-padding: 15px 10px;
+}
+.user_listScrollPane {
+    -fx-background: rgba(251, 237, 237, 0.166);
+    -fx-background-color: transparent;
+}
+.yesser {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-padding: 10px; /* Ajoute un padding de 10 pixels à gauche et à droite */
+    -fx-background-color: #fff;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+}
+

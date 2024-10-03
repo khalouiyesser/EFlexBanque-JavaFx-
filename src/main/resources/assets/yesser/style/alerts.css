@@ -1,0 +1,13 @@
+/* alerts.css */
+.my-dialog {
+    -fx-background-color: #f0f0f0; /* Light gray background */
+    -fx-font-size: 14px; /* Font size */
+    -fx-text-fill: #333; /* Text color */
+    -fx-border-color: #ccc; /* Border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-border-radius: 5px; /* Border radius */
+    -fx-padding: 10px; /* Padding */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 10, 0, 0, 0); /* Drop shadow effect */
+    -fx-background-radius: 5px; /* Background radius */
+    -fx-background-insets: 0; /* Background insets */
+}

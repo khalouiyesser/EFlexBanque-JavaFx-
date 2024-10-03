@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.*?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1040.0"
+      prefWidth="534.0" style="-fx-effect: none;" styleClass="addProductCard"
+      stylesheets="@../../assets/style/aliStyle.css"
+      xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.UpdateProjectCardController">
+    <children>
+        <VBox prefHeight="263.0" prefWidth="680.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Logo Image">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <HBox prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                              minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0"
+                              styleClass="product__add-img-container">
+                            <children>
+                                <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../assets/img/cloud-computing.png"/>
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </VBox>
+                        <HBox alignment="CENTER" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                              prefHeight="100.0" prefWidth="200.0" translateX="-200.0">
+                            <children>
+                                <ImageView fx:id="imageInput" fitHeight="200.0" fitWidth="200.0" pickOnBounds="true"
+                                           preserveRatio="true"/>
+                            </children>
+                        </HBox>
+                        <VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                              minWidth="-Infinity" prefHeight="200.0" prefWidth="218.0" translateX="-200.0">
+                            <children>
+                                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                                      styleClass="product__add-desc-img" text="Resolution : 1920x1080 px">
+                                    <font>
+                                        <Font name="Montserrat Regular" size="16.0"/>
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0"/>
+                                    </VBox.margin>
+                                </Text>
+                                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                                      styleClass="product__add-desc-img" text="Types de fichiers pris en charge : jpg,">
+                                    <font>
+                                        <Font name="Montserrat Regular" size="16.0"/>
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0"/>
+                                    </VBox.margin>
+                                </Text>
+                                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                                      styleClass="product__add-desc-img" text=".jpeg ,. gif ou .png No text">
+                                    <font>
+                                        <Font name="Montserrat Regular" size="16.0"/>
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0"/>
+                                    </VBox.margin>
+                                </Text>
+                                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                                      styleClass="product__add-desc-img" text="on the image.">
+                                    <font>
+                                        <Font size="16.0"/>
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets bottom="5.0"/>
+                                    </VBox.margin>
+                                </Text>
+                                <HBox fx:id="choose_photoBtn" alignment="CENTER" maxHeight="-Infinity"
+                                      minHeight="-Infinity" onMouseClicked="#ajouter_image" prefHeight="48.0"
+                                      prefWidth="200.0" styleClass="product__add-img-btn">
+                                    <children>
+                                        <ImageView fitHeight="23.0" fitWidth="32.0" pickOnBounds="true"
+                                                   preserveRatio="true" translateY="-3.0">
+                                            <image>
+                                                <Image url="@../../assets/img/upload-big-arrow.png"/>
+                                            </image>
+                                        </ImageView>
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0"
+                                              styleClass="product__add-textBtn" text="Choose a photo">
+                                            <font>
+                                                <Font name="Montserrat Bold" size="16.0"/>
+                                            </font>
+                                            <HBox.margin>
+                                                <Insets left="20.0"/>
+                                            </HBox.margin>
+                                        </Text>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <HBox.margin>
+                                <Insets left="30.0"/>
+                            </HBox.margin>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+        <Line endX="500.0" stroke="#defee6" strokeWidth="2.0" translateX="10.0">
+            <VBox.margin>
+                <Insets bottom="27.0"/>
+            </VBox.margin>
+        </Line>
+        <VBox prefHeight="102.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Nom de projet">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <TextField fx:id="nomProjetInput" promptText="Fullname" styleClass="product__add-input">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </TextField>
+            </children>
+        </VBox>
+        <VBox prefHeight="183.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Description">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <TextArea fx:id="descriptionProjetInput" prefHeight="200.0" prefWidth="200.0" promptText="Description"
+                          styleClass="product__add-input-textArea"/>
+            </children>
+            <VBox.margin>
+                <Insets/>
+            </VBox.margin>
+        </VBox>
+        <VBox prefHeight="102.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Categorie">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <TextField fx:id="categorieInput" promptText="Categorie" styleClass="product__add-input">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </TextField>
+            </children>
+        </VBox>
+        <VBox prefHeight="102.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Durée">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <TextField fx:id="dureeProjetInput" promptText="Profile URL" styleClass="product__add-input">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </TextField>
+            </children>
+        </VBox>
+        <VBox prefHeight="102.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Statut">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <TextField fx:id="statutProjetInput" promptText="Profile URL" styleClass="product__add-input">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </TextField>
+            </children>
+        </VBox>
+        <VBox prefHeight="102.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Budget">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <TextField fx:id="budgetProjetInput" promptText="Budget" styleClass="product__add-input">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </TextField>
+            </children>
+        </VBox>
+        <VBox prefHeight="102.0" prefWidth="570.0">
+            <padding>
+                <Insets left="16.0" right="16.0"/>
+            </padding>
+            <children>
+                <HBox prefHeight="6.0" prefWidth="538.0">
+                    <children>
+                        <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0"
+                              styleClass="product__add-input-label" text="Date de creation">
+                            <HBox.margin>
+                                <Insets right="2.0"/>
+                            </HBox.margin>
+                        </Text>
+                        <Text fill="#e43f52" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="*">
+                            <font>
+                                <Font name="Montserrat Regular" size="16.0"/>
+                            </font>
+                        </Text>
+                    </children>
+                    <padding>
+                        <Insets bottom="10.0"/>
+                    </padding>
+                </HBox>
+                <TextField fx:id="dateCreationInput" promptText="Date de creation" styleClass="product__add-input">
+                    <VBox.margin>
+                        <Insets/>
+                    </VBox.margin>
+                </TextField>
+            </children>
+        </VBox>
+
+        <HBox alignment="CENTER" prefHeight="46.0" prefWidth="630.0">
+            <children>
+                <Button fx:id="update_projectBtn" mnemonicParsing="false" onMouseClicked="#updateProject"
+                        styleClass="product__add-new-productBtn" text="Modifier le projet" textFill="WHITE"
+                        translateY="-46.0">
+                    <font>
+                        <Font name="Montserrat Regular" size="16.0"/>
+                    </font>
+                    <padding>
+                        <Insets bottom="10.0" left="20.0" right="20.0" top="10.0"/>
+                    </padding>
+                </Button>
+            </children>
+            <VBox.margin>
+                <Insets bottom="-25.0" top="60.0"/>
+            </VBox.margin>
+        </HBox>
+    </children>
+</VBox>

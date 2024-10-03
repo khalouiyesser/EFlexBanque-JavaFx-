@@ -1,0 +1,35 @@
+/* styles.css */
+
+/* Style for the top HBox */
+.top-container {
+  -fx-background-color: #333333;
+  -fx-padding: 10px;
+}
+
+/* Style for the logo image */
+.logo-image {
+  -fx-fit-height: 100.0;
+  -fx-fit-width: 300.0;
+  -fx-padding: 10px;
+}
+
+/* Style for the button */
+.custom-button {
+  -fx-background-color: lightblue;
+  -fx-text-fill: #333333;
+  -fx-padding: 10px 20px;
+  -fx-font-size: 14px;
+  -fx-font-weight: bold;
+  -fx-background-radius: 5px;
+}
+
+/* Style for the TabPane */
+.tab-pane {
+  -fx-background-color: #f4f4f4;
+}
+
+/* Style for the TableView */
+.table-view {
+  -fx-background-color: #ffffff;
+  -fx-font-size: 14px;
+}

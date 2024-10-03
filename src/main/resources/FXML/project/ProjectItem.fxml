@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<HBox alignment="CENTER_LEFT" prefHeight="81.0" prefWidth="1002.0" styleClass="projectItem"
+      stylesheets="@../../assets/style/nabilStyle.css" xmlns="http://javafx.com/javafx/19"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.ProjectItemController">
+    <children>
+        <ImageView fx:id="Itemimg" fitHeight="70.0" fitWidth="70.0" pickOnBounds="true" preserveRatio="true"
+                   styleClass="projectItem__img">
+            <image>
+                <Image url="@../../assets/img/me.jpg"/>
+            </image>
+            <HBox.margin>
+                <Insets right="10.0"/>
+            </HBox.margin>
+        </ImageView>
+        <Text fx:id="ItemnomProjet" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="projectItem__name"
+              text="Nabil Mersni" wrappingWidth="188.84808349609375">
+            <HBox.margin>
+                <Insets right="4.0"/>
+            </HBox.margin>
+        </Text>
+        <Text fx:id="ItemdescriptionProjet" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="projectItem__field"
+              text="nabilmersni123@gmail.com" wrappingWidth="224.04806518554688">
+            <HBox.margin>
+                <Insets right="4.0"/>
+            </HBox.margin>
+        </Text>
+        <Text fx:id="Itemcategorie" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="projectItem__field"
+              text="41156289" wrappingWidth="96.84814453125">
+            <HBox.margin>
+                <Insets right="4.0"/>
+            </HBox.margin>
+        </Text>
+        <Text fx:id="ItemBudget" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="projectItem__field" text="41156289"
+              wrappingWidth="96.84814453125">
+            <HBox.margin>
+                <Insets right="4.0"/>
+            </HBox.margin>
+        </Text>
+        <Text fx:id="ItemDateCreation" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="projectItem__field"
+              text="41156289" wrappingWidth="96.84814453125">
+            <HBox.margin>
+                <Insets right="4.0"/>
+            </HBox.margin>
+        </Text>
+
+        <Label fx:id="ItemUpdateBtn" styleClass="projectItem__btn">
+            <graphic>
+                <ImageView fx:id="projectItemUpdateBtnImg" fitHeight="22.0" fitWidth="26.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/img/update-icon.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </Label>
+        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity"
+              minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="40.0"
+              styleClass="product__card-btns">
+            <children>
+                <Label fx:id="ItemShowBtn" styleClass="projectItem__btn">
+                <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true"
+                           preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/img/view.png"/>
+                    </image>
+                </ImageView>
+                </graphic>
+                </Label>
+            </children>
+            <HBox.margin>
+                <Insets left="6.0"/>
+            </HBox.margin>
+        </HBox>
+        <HBox fx:id="deleteProject" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+              minWidth="-Infinity" prefHeight="30.0" prefWidth="40.0" styleClass="product__card-btns1">
+            <children>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../assets/img/trash.png"/>
+                    </image>
+                </ImageView>
+            </children>
+            <HBox.margin>
+                <Insets left="6.0"/>
+            </HBox.margin>
+        </HBox>
+    </children>
+</HBox>

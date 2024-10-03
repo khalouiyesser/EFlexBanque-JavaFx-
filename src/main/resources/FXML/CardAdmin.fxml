@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<Pane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1084.0" styleClass="dash__container-card" stylesheets="@../css/Compte.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CardAdmin">
+    <children>
+        <HBox alignment="CENTER" layoutX="-30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1084.0" styleClass="dash__container-card" stylesheets="@../css/SideNavBar.css" translateX="30.0">
+            <children>
+                <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="450.0" style="-fx-background-color: #fff;" styleClass="categoriesModel-card">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" layoutX="133.0" layoutY="-86.0" prefHeight="227.0" prefWidth="353.0">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <padding>
+                                <Insets left="30.0" right="30.0" />
+                            </padding>
+                            <children>
+                                <ImageView fitHeight="100.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true" translateY="20.0">
+                                    <image>
+                                        <Image url="@../img/carte-bancaire.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </HBox>
+                        <VBox fx:id="reductionForm" layoutX="-2.0" layoutY="102.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="3.0" prefWidth="457.0">
+                            <padding>
+                                <Insets left="20.0" right="16.0" />
+                            </padding>
+                            <children>
+                                <Line endX="391.0" startX="-16.0" stroke="#defee6" strokeWidth="2.0" />
+                                <Button fx:id="listC" mnemonicParsing="false" onMouseClicked="#OpenListeCompteAd" prefHeight="26.0" prefWidth="414.0" styleClass="compte__add__btn" stylesheets="@../css/Compte.css" text="Les Demande de Création de Compte Bancaire">
+                                    <VBox.margin>
+                                        <Insets top="20.0" />
+                                    </VBox.margin>
+                                </Button>
+                                <Button fx:id="listCh" mnemonicParsing="false" onMouseClicked="#OpenListeChequeAd" prefHeight="37.0" prefWidth="420.0" styleClass="compte__add__btn" text="Les Demandes de Chéques Bancaires">
+                                    <VBox.margin>
+                                        <Insets top="30.0" />
+                                    </VBox.margin>
+                                </Button>
+                                <Button fx:id="listV" mnemonicParsing="false" onMouseClicked="#OpenListeVirAd" prefHeight="39.0" prefWidth="422.0" styleClass="compte__add__btn" text="Les Demandes de Virements Bancaires">
+                                    <VBox.margin>
+                                        <Insets top="30.0" />
+                                    </VBox.margin>
+                                </Button>
+                        <Button fx:id="HistorCompte" mnemonicParsing="false" onMouseClicked="#OpenHistoriqueCompte" prefHeight="37.0" prefWidth="426.0" styleClass="compte__add__btn" stylesheets="@../css/SideNavBar.css" text="Historique des Demandes de Compte">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="HistorCheque" mnemonicParsing="false" onMouseClicked="#OpenHistoriqueCheque" prefHeight="37.0" prefWidth="443.0" styleClass="compte__add__btn" text="Historique des Demandes des Chéque">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="HistorVir" mnemonicParsing="false" onMouseClicked="#OpenHistoriqueVirement" prefHeight="37.0" prefWidth="430.0" styleClass="compte__add__btn" text="Historiqur des Demandes de Virement">
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </Button>
+                            </children>
+                        </VBox>
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+    </children>
+</Pane>

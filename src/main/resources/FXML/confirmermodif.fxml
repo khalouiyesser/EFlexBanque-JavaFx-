@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1236.0" styleClass="userProductsContainer" stylesheets="@../css/SideNavBar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.commentaireArticle.ConfirmermodifController">
+<children>
+    <ScrollPane layoutX="13.0" layoutY="12.0" prefHeight="599.0" prefWidth="1213.0" styleClass="product-card-scrollPane" stylesheets="@../css/SideNavBar.css">
+        <content>
+            <GridPane fx:id="productDetailsContainer">
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+            </GridPane>
+        </content>
+    </ScrollPane>
+    <HBox fx:id="addReviewsModel" alignment="CENTER" layoutX="-256.0" layoutY="-81.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="713.0" prefWidth="1374.0" styleClass="categoriesModel" stylesheets="@../css/SideNavBar.css" translateX="140.0" translateY="-5.0">
+        <children>
+            <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="235.0" prefWidth="345.0" styleClass="productAddedToCart__card" stylesheets="@../css/SideNavBar.css">
+                <children>
+                    <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="75.0" prefWidth="600.0">
+                        <children>
+                            <HBox alignment="CENTER_LEFT" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="12.0" prefWidth="63.0">
+                                <children>
+                                    <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="categoriesModel-card-title" text="Modifier" />
+                                </children>
+                            </HBox>
+                            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close_addReviewsModel" prefHeight="30.0" prefWidth="30.0" styleClass="categoriesModel-card-exitBtn" translateX="200.0">
+                                <children>
+                                    <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                                        <image>
+                                            <Image url="@../imagesAct/cross.png" />
+                                        </image>
+                                    </ImageView>
+                                </children>
+                            </HBox>
+                        </children>
+                        <opaqueInsets>
+                            <Insets />
+                        </opaqueInsets>
+                        <padding>
+                            <Insets left="30.0" right="30.0" />
+                        </padding>
+                    </HBox>
+                    <Line endX="340.0" stroke="#defee6" strokeWidth="2.0" />
+                    <VBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="82.0" prefWidth="346.0">
+                        <padding>
+                            <Insets left="30.0" right="30.0" />
+                        </padding>
+                        <children>
+                            <HBox prefHeight="6.0" prefWidth="538.0">
+                                <children>
+                                    <Text fill="#0d0d0d" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="etoile" text="Voulez-vous vraiment modifier cet élément ?" translateX="-10.0">
+                                        <font>
+                                            <Font name="Montserrat Regular" size="16.0" />
+                                        </font>
+                                    </Text>
+                                </children>
+                                <padding>
+                                    <Insets bottom="10.0" />
+                                </padding>
+                            </HBox>
+                        </children>
+                        <VBox.margin>
+                            <Insets top="20.0" />
+                        </VBox.margin>
+                    </VBox>
+                    <HBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="32.0" prefWidth="90.0">
+                           <children>
+                              <HBox alignment="CENTER" prefHeight="32.0" prefWidth="54.0">
+                                 <children>
+                                    <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../imagesAct/cancel.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <ImageView fitHeight="48.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../imagesAct/tick-mark.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                    </HBox>
+                </children>
+            </VBox>
+        </children>
+    </HBox>
+</children>
+</Pane>

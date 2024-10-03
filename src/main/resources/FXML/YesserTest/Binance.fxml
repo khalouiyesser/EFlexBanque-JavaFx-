@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="yesserTest.TestTextToSpeech.BinanceController"
+            prefHeight="400.0" prefWidth="600.0">
+    <TableView fx:id="leaderboardTable">
+        <columns>
+            <TableColumn text="Position" fx:id="positionColumn"/>
+            <TableColumn text="Nom d'utilisateur" fx:id="usernameColumn"/>
+            <TableColumn text="Profit" fx:id="profitColumn"/>
+            <!-- Ajoutez d'autres colonnes pour les données supplémentaires -->
+        </columns>
+    </TableView>
+
+</VBox>

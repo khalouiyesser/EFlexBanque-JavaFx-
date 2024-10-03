@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox fx:id="rdvrow" alignment="CENTER_LEFT" onMouseClicked="#getdata" prefHeight="81.0" prefWidth="864.0" styleClass="userItem" stylesheets="@../css/Compte.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Credit.Rdvitems">
+    <children>
+        <Text fx:id="credit_id" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field-active" text="1234222231" wrappingWidth="43.84807586669922">
+            <HBox.margin>
+                <Insets left="8.0" right="4.0" />
+            </HBox.margin>
+        </Text>
+        <Text fx:id="idclient" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field" text="12345678" translateX="-10.0" wrappingWidth="52.447983264923096">
+            <HBox.margin>
+                <Insets right="4.0" />
+            </HBox.margin>
+        </Text>
+        <Text fx:id="heure" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field" text="12:12" wrappingWidth="129.2481689453125">
+            <HBox.margin>
+                <Insets right="4.0" />
+            </HBox.margin>
+        </Text>
+        <Text fx:id="daterdv" strokeType="OUTSIDE" strokeWidth="0.0" text="18/04/2024" translateX="-40.0" wrappingWidth="156.10161972045898" />
+        <Text fx:id="methode" strokeType="OUTSIDE" strokeWidth="0.0" text="en ligne" translateX="-20.0" wrappingWidth="87.54998779296875" />
+      <Text fx:id="fraisretard" layoutX="687.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="employename" wrappingWidth="102.54998779296875" />
+        <Label fx:id="userItemStateBtn" onMouseClicked="#DeleteCheque" styleClass="userItem__btn" translateX="80.0">
+            <HBox.margin>
+                <Insets left="14.0" />
+            </HBox.margin>
+        </Label>
+        <Label fx:id="userItemUpdateBtn" onMouseClicked="#UpdateCheque" styleClass="userItem__btn">
+            <graphic>
+                <ImageView fx:id="userItemUpdateBtnImg" fitHeight="22.0" fitWidth="26.0" onMouseClicked="#getdata" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/rename.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+            <HBox.margin>
+                <Insets />
+            </HBox.margin>
+        </Label>
+    </children>
+</HBox>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="profilePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="1086.0" styleClass="userProductsContainer" stylesheets="@../css/SideNavBar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.user.ProfileUserController">
+    <children>
+        <HBox alignment="CENTER_LEFT" layoutX="32.0" layoutY="38.0" stylesheets="@../css/SideNavBar.css" />
+        <AnchorPane layoutX="234.0" layoutY="76.0" prefHeight="453.0" prefWidth="641.0" styleClass="profileContainer" stylesheets="@../css/SideNavBar.css">
+            <children>
+                <Label fx:id="userItemUpdateBtn" layoutX="583.0" layoutY="14.0" styleClass="userItem__btn" />
+                <Label layoutX="266.0" layoutY="-55.0" prefHeight="110.0" prefWidth="110.0" styleClass="profileImgBorder" />
+                <ImageView fx:id="userItemImg" fitHeight="100.0" fitWidth="100.0" layoutX="271.0" layoutY="-50.0" pickOnBounds="true" preserveRatio="true" styleClass="userItem__img">
+                    <image>
+                        <Image url="@../img/admin.png" />
+                    </image></ImageView>
+                <Text fx:id="role" layoutX="253.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="profileTitle" text="Role" textAlignment="CENTER" wrappingWidth="162.9366455078125" />
+                <Text fx:id="descriptionText" layoutX="50.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="profileData" text="association for helping children without family support." textAlignment="CENTER" wrappingWidth="541.3367919921875" />
+                <Text fx:id="fullnameLab" layoutX="82.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="profileTitle" text="Fullname" wrappingWidth="282.93670654296875" />
+                <Text fx:id="fullnameText" layoutX="83.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="profileData" text="Nabil Mersni" wrappingWidth="270.13671875" />
+                <Text fx:id="EmailLab" layoutX="83.0" layoutY="272.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="profileTitle" text="Email" wrappingWidth="282.93670654296864" />
+                <Text fx:id="emailText" layoutX="83.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="profileData" text="nabil@gmail.com" wrappingWidth="270.13671875" />
+                <Text fx:id="PhoneNumberLabel" layoutX="388.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="profileTitle" text="Phone number" wrappingWidth="256.53662109375" />
+                <Text fx:id="AdresseLabel" layoutX="82.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="profileTitle" text="Adresse" />
+                <Text fx:id="adressetext" layoutX="87.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="profileData" text="Tunis" />
+                <Text fx:id="telText" layoutX="388.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="profileData" text="41156289" wrappingWidth="162.9366455078125" />
+                <Button fx:id="changePassBTN" layoutX="59.0" layoutY="391.0" mnemonicParsing="false" onAction="#changePass" onMouseClicked="#change" prefHeight="46.0" prefWidth="297.0" styleClass="changePass__btn" stylesheets="@../../resources/css/SideNavBar.css" text="Edit Profil " />
+                <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="253.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </ImageView>
+                <Text fx:id="profile" layoutX="14.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="home__msg" text="Profile |" />
+                <ImageView fx:id="downloadPdfButton" fitHeight="46.0" fitWidth="54.0" layoutX="555.0" layoutY="26.0" onMouseClicked="#generatePdf" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/format-de-fichier-pdf.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="85.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/update-icon.png" />
+                    </image>
+                </ImageView>
+
+            </children>
+        </AnchorPane>
+        <HBox layoutX="807.0" layoutY="8.0" prefHeight="58.0" prefWidth="163.0">
+            <children>
+                <ImageView fx:id="fr" fitHeight="59.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/france.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="en" fitHeight="59.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/royaume-uni.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </ImageView>
+                <ImageView fx:id="tn" fitHeight="59.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/tunisie.png" />
+                    </image>
+                    <HBox.margin>
+                        <Insets left="10.0" />
+                    </HBox.margin>
+                </ImageView>
+            </children>
+        </HBox>
+    </children>
+</Pane>

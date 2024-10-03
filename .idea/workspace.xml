@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fd1133a1-66a2-40ca-9734-900da38f4a84" name="Changes" comment="lekhra ..">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_10_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_base_23_ea_3_linux.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_media.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_media1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javafx_media_23_ea_3_linux.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/3395dd4f-8b1e-46b8-bb5a-5b7e8159eaae.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/80ae64b6-197f-4dc8-9727-cebbe513169f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/8f3c0eba-1d67-46a1-8827-14730cf21f35.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Images/902dca5e-df69-4398-99d9-7faf3329084d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pdf/cheque_628f511d-928b-452e-8ece-4736e87b9988.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pdf/cheque_6ba83d2d-0dbe-4b3a-8844-9dd787d1b681.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pdf/cheque_6d68a252-6de3-4b9c-86b5-40cb25612e1f.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/pdf/cheque_fb78b594-5bad-447b-b9c4-bcfb264af890.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Entities/OffreDeStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Entities/OffreDeStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Cheque/AjouterChequeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Cheque/AjouterChequeCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Cheque/ChequeItemsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Cheque/ChequeItemsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Cheque/DemandeChequeListClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Cheque/DemandeChequeListClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Cheque/ModifierCheque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Cheque/ModifierCheque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Cheque/updateChequeCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Cheque/updateChequeCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Compte/AjouterCompte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Compte/AjouterCompte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Compte/CompteItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Compte/CompteItems.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Compte/HistoriqueComptAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Compte/HistoriqueComptAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Credit/AjouterCreditCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Credit/AjouterCreditCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Credit/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Credit/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Credit/DemandeCreditListClientUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Credit/DemandeCreditListClientUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/DashboardClientOff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/DashboardClientOff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/FrontControlleur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/FrontControlleur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/OneEvenementListCardControllerfront.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/OneEvenementListCardControllerfront.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Virement/AjouterVirementCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Virement/AjouterVirementCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Virement/VirementCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Virement/VirementCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Virement/VirementItemsAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Virement/VirementItemsAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/Virement/updateVirementCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/Virement/updateVirementCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/article/AjouterArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/article/AjouterArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/article/articleCardAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/article/articleCardAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/article/articleCardClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/article/articleCardClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/article/articleCardRssController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/article/articleCardRssController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/article/listRssBal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/article/listRssBal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/commentaireArticle/CommentArticleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/commentaireArticle/CommentArticleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/commentaireArticle/CommentaireItemAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/commentaireArticle/CommentaireItemAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/demandeStage/DemandeStageItemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/demandeStage/DemandeStageItemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/offreDeStage/DetailsBackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/offreDeStage/DetailsBackController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/offreDeStage/DetailsOffreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/offreDeStage/DetailsOffreController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/reclamation/AjouterReclamationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/reclamation/AjouterReclamationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/reponse/AjouterReponseAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/reponse/AjouterReponseAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/reponse/ReponseItemAdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/reponse/ReponseItemAdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/reponse/UpdateReponseCardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/reponse/UpdateReponseCardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/rss/RSSReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/rss/RSSReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/user/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/user/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/user/SignUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/user/SignUpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/user/UpdateUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/user/UpdateUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/ServiceCredit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/ServiceCredit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/ServiceVirement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/ServiceVirement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/Symfony.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/Symfony.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tests/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tests/TranslatorText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/TranslatorText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tests/Yesser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/Yesser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/DashboardClientOff.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/DashboardClientOff.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/article/articleCardAdmin.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/article/articleCardAdmin.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/article/articleCardClient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/article/articleCardClient.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/commentaire/commentArticle.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/commentaire/commentArticle.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/dashboardClient.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/dashboardClient.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/offreDeStage/DetailBack.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/offreDeStage/DetailBack.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FXML/offreDeStage/DetailsOffre.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/FXML/offreDeStage/DetailsOffre.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/pdf/cheque.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/pdf/cheque.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/token/StoredCredential" beforeDir="false" afterPath="$PROJECT_DIR$/token/StoredCredential" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Interface" />
+        <option value="module-info" />
+        <option value="package-info" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;MarzouguiAhmed9&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="3abce63d-f4a5-4203-ad6c-b941bc3a3c5c" />
+        <option name="url" value="https://github.com/hadhemi13/InnovatixPiDevJava.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/controllers/CardNavBar.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2f9HmSusldwBEMLKY0e6RIt5Xkj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "DevF",
+    "last_opened_file_path": "C:/Users/Yesser/EFlexBanqueJAva",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3908046",
+    "settings.editor.selected.configurable": "copyright",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Yesser\IdeaProjects\InnovatixPiDevJava\src\libraries" />
+      <recent name="C:\Users\Yesser\IdeaProjects\InnovatixPiDevJava\src\main\resources\imagesAct" />
+      <recent name="C:\Users\Yesser\IdeaProjects\InnovatixPiDevJava\src\main\java\controllers" />
+      <recent name="C:\Users\Yesser\IdeaProjects\InnovatixPiDevJava\src\main\resources\FXML\project" />
+      <recent name="C:\Users\Yesser\IdeaProjects\InnovatixPiDevJava\src\main\resources\FXML\article" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Yesser\IdeaProjects\InnovatixPiDevJava\src\main\resources\img" />
+      <recent name="C:\Users\Yesser\IdeaProjects\InnovatixPiDevJava\src\main\resources\FXML\article" />
+      <recent name="C:\Users\Yesser\IdeaProjects\InnovatixPiDevJava\src\main\resources\FXML\reponse" />
+      <recent name="C:\Users\Yesser\IdeaProjects\InnovatixPiDevJava\src\main\resources\css" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="controllers.Credit" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="controllers.Credit" />
+      <recent name="services" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MainFX">
+    <configuration name="AudioPlayerApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="yesserTest.AudioPlayerApp" />
+      <module name="workshoppidev" />
+      <option name="PROGRAM_PARAMETERS" value="--module-path &quot;C:\Users\Yesser\Downloads\openjfx-21.0.2_windows-x64_bin-sdk\javafx-sdk-21.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="yesserTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CurrencyConverterApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="yesserTest.CurrencyConverterApp" />
+      <module name="workshoppidev" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Yesser\Downloads\openjfx-21.0.2_windows-x64_bin-sdk\javafx-sdk-21.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="yesserTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tests.Main" />
+      <module name="workshoppidev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainFX" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="tests.MainFX" />
+      <module name="workshoppidev" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Users\Yesser\Downloads\openjfx-21.0.2_windows-x64_bin-sdk\javafx-sdk-21.0.2\lib&quot; --add-modules javafx.controls,javafx.fxml" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="tests.Yesser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tests.Yesser" />
+      <module name="workshoppidev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="yesserTest.TestTextToSpeech.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="yesserTest.TestTextToSpeech.Main" />
+      <module name="workshoppidev" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="yesserTest.TestTextToSpeech.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.MainFX" />
+      <item itemvalue="Application.AudioPlayerApp" />
+      <item itemvalue="Application.CurrencyConverterApp" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.tests.Yesser" />
+      <item itemvalue="Application.yesserTest.TestTextToSpeech.Main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.CurrencyConverterApp" />
+        <item itemvalue="Application.AudioPlayerApp" />
+        <item itemvalue="Application.yesserTest.TestTextToSpeech.Main" />
+        <item itemvalue="Application.tests.Yesser" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd1133a1-66a2-40ca-9734-900da38f4a84" name="Changes" comment="" />
+      <created>1713206532778</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713206532778</updated>
+      <workItem from="1713206533826" duration="1021000" />
+      <workItem from="1713216510518" duration="1702000" />
+      <workItem from="1713255516271" duration="156000" />
+      <workItem from="1713257759040" duration="8961000" />
+      <workItem from="1713289376972" duration="174000" />
+      <workItem from="1713293096372" duration="40513000" />
+      <workItem from="1713472307925" duration="36725000" />
+      <workItem from="1713557871721" duration="57000" />
+      <workItem from="1713558051156" duration="11426000" />
+      <workItem from="1713607917891" duration="27408000" />
+      <workItem from="1713740118848" duration="7509000" />
+      <workItem from="1713813979715" duration="14907000" />
+      <workItem from="1713908662463" duration="17220000" />
+      <workItem from="1713965669910" duration="18913000" />
+      <workItem from="1714027158345" duration="24842000" />
+      <workItem from="1714109594815" duration="12807000" />
+      <workItem from="1714262683551" duration="14961000" />
+      <workItem from="1714682536891" duration="10677000" />
+      <workItem from="1714718037403" duration="7337000" />
+      <workItem from="1714727471738" duration="51000" />
+      <workItem from="1714727537032" duration="1870000" />
+      <workItem from="1715086143549" duration="93000" />
+      <workItem from="1715086581151" duration="6908000" />
+      <workItem from="1715113900799" duration="4343000" />
+      <workItem from="1715173004583" duration="6878000" />
+      <workItem from="1715181241504" duration="27559000" />
+    </task>
+    <task id="LOCAL-00001" summary="correction sdk">
+      <option name="closed" value="true" />
+      <created>1713253532640</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713253532640</updated>
+    </task>
+    <task id="LOCAL-00002" summary="correction sdk">
+      <option name="closed" value="true" />
+      <created>1713254020025</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713254020025</updated>
+    </task>
+    <task id="LOCAL-00003" summary="kk">
+      <option name="closed" value="true" />
+      <created>1713254204622</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713254204622</updated>
+    </task>
+    <task id="LOCAL-00004" summary="corriger rdv">
+      <option name="closed" value="true" />
+      <created>1713255619470</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713255619470</updated>
+    </task>
+    <task id="LOCAL-00005" summary="ajouter credit v2">
+      <option name="closed" value="true" />
+      <created>1713258079871</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713258079871</updated>
+    </task>
+    <task id="LOCAL-00006" summary="card ajout credit">
+      <option name="closed" value="true" />
+      <created>1713259701976</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713259701976</updated>
+    </task>
+    <task id="LOCAL-00007" summary="card rdv">
+      <option name="closed" value="true" />
+      <created>1713288843936</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713288843936</updated>
+    </task>
+    <task id="LOCAL-00008" summary="19/4">
+      <option name="closed" value="true" />
+      <created>1713514864819</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713514864819</updated>
+    </task>
+    <task id="LOCAL-00009" summary="correction gestion credit">
+      <option name="closed" value="true" />
+      <created>1713710278186</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713710278186</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update">
+      <option name="closed" value="true" />
+      <created>1713874437617</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713874437617</updated>
+    </task>
+    <task id="LOCAL-00011" summary="calendrier rdv + correction affichage credit">
+      <option name="closed" value="true" />
+      <created>1713992867167</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713992867167</updated>
+    </task>
+    <task id="LOCAL-00012" summary="api">
+      <option name="closed" value="true" />
+      <created>1714033425501</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1714033425501</updated>
+    </task>
+    <task id="LOCAL-00013" summary="api">
+      <option name="closed" value="true" />
+      <created>1714033649123</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1714033649123</updated>
+    </task>
+    <task id="LOCAL-00014" summary="api">
+      <option name="closed" value="true" />
+      <created>1714035403434</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1714035403434</updated>
+    </task>
+    <task id="LOCAL-00015" summary="calander+sms">
+      <option name="closed" value="true" />
+      <created>1714035936646</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1714035936646</updated>
+    </task>
+    <task id="LOCAL-00016" summary="26/4 premier validation">
+      <option name="closed" value="true" />
+      <created>1714154245178</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1714154245178</updated>
+    </task>
+    <task id="LOCAL-00017" summary="3/5 suivie api">
+      <option name="closed" value="true" />
+      <created>1714739358143</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1714739358143</updated>
+    </task>
+    <task id="LOCAL-00018" summary="07/05 tri+stats">
+      <option name="closed" value="true" />
+      <created>1715092567037</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1715092567037</updated>
+    </task>
+    <task id="LOCAL-00019" summary="trier par date">
+      <option name="closed" value="true" />
+      <created>1715094001902</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1715094001902</updated>
+    </task>
+    <task id="LOCAL-00020" summary="correction jointure">
+      <option name="closed" value="true" />
+      <created>1715212235394</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1715212235395</updated>
+    </task>
+    <task id="LOCAL-00021" summary="last commit">
+      <option name="closed" value="true" />
+      <created>1715263482841</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1715263482841</updated>
+    </task>
+    <task id="LOCAL-00022" summary="last commit">
+      <option name="closed" value="true" />
+      <created>1715264401190</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1715264401190</updated>
+    </task>
+    <task id="LOCAL-00023" summary="merge ahmed.">
+      <option name="closed" value="true" />
+      <created>1715280470167</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1715280470167</updated>
+    </task>
+    <task id="LOCAL-00024" summary="merge ahmed.">
+      <option name="closed" value="true" />
+      <created>1715280649185</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1715280649185</updated>
+    </task>
+    <task id="LOCAL-00025" summary="merge ahmed.">
+      <option name="closed" value="true" />
+      <created>1715281394829</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1715281394829</updated>
+    </task>
+    <task id="LOCAL-00026" summary="merge ahmed.">
+      <option name="closed" value="true" />
+      <created>1715284152529</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1715284152529</updated>
+    </task>
+    <task id="LOCAL-00027" summary="merge yesser">
+      <option name="closed" value="true" />
+      <created>1715284482571</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1715284482571</updated>
+    </task>
+    <task id="LOCAL-00028" summary="merge yesser terminé">
+      <option name="closed" value="true" />
+      <created>1715290014460</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1715290014461</updated>
+    </task>
+    <task id="LOCAL-00029" summary="last">
+      <option name="closed" value="true" />
+      <created>1715330229621</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1715330229621</updated>
+    </task>
+    <task id="LOCAL-00030" summary="validation java terminé.">
+      <option name="closed" value="true" />
+      <created>1715369602357</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1715369602357</updated>
+    </task>
+    <task id="LOCAL-00031" summary="validation java terminé.">
+      <option name="closed" value="true" />
+      <created>1715373375465</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1715373375465</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fix ahmed's errors and add libraries.">
+      <option name="closed" value="true" />
+      <created>1715465673463</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1715465673463</updated>
+    </task>
+    <task id="LOCAL-00033" summary="fix work.">
+      <option name="closed" value="true" />
+      <created>1715592036845</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1715592036845</updated>
+    </task>
+    <task id="LOCAL-00034" summary="9bal l kertha.">
+      <option name="closed" value="true" />
+      <created>1715731619706</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1715731619706</updated>
+    </task>
+    <task id="LOCAL-00035" summary="lekhra ..">
+      <option name="closed" value="true" />
+      <created>1715792738272</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1715792738272</updated>
+    </task>
+    <task id="LOCAL-00036" summary="lekhra ..">
+      <option name="closed" value="true" />
+      <created>1715795918476</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1715795918476</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="ajouter credit v2" />
+    <MESSAGE value="card ajout credit" />
+    <MESSAGE value="card rdv" />
+    <MESSAGE value="19/4" />
+    <MESSAGE value="correction gestion credit" />
+    <MESSAGE value="update" />
+    <MESSAGE value="calendrier rdv + correction affichage credit" />
+    <MESSAGE value="api" />
+    <MESSAGE value="calander+sms" />
+    <MESSAGE value="26/4 premier validation" />
+    <MESSAGE value="3/5 suivie api" />
+    <MESSAGE value="07/05 tri+stats" />
+    <MESSAGE value="trier par date" />
+    <MESSAGE value="correction jointure" />
+    <MESSAGE value="last commit" />
+    <MESSAGE value="some changes." />
+    <MESSAGE value="merge ahmed." />
+    <MESSAGE value="merge yesser" />
+    <MESSAGE value="merge yesser terminé" />
+    <MESSAGE value="last" />
+    <MESSAGE value="validation java terminé." />
+    <MESSAGE value="fix ahmed's errors and add libraries." />
+    <MESSAGE value="fix work." />
+    <MESSAGE value="9bal l kertha." />
+    <MESSAGE value="lekhra .." />
+    <option name="LAST_COMMIT_MESSAGE" value="lekhra .." />
+  </component>
+</project>

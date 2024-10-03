@@ -1,0 +1,230 @@
+/*
+* Empty Stylesheet file.
+*/
+
+.MenuButton{
+    -fx-background-color: #43882b;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+}
+.MenuButton:hover{
+    -fx-background-color:  linear-gradient(#43882b, white);
+    -fx-background-radius: 20;
+}
+.MenuButton:pressed{
+    -fx-background-color:  linear-gradient(white,#43882b );
+    -fx-background-radius: 20;
+}
+.buttoButtonMenu{
+    -fx-background-color: transparent;
+}
+.buttoButtonMenu:hover{
+    -fx-background-color:  linear-gradient(transparent, grey);
+    -fx-background-radius: 20;
+}
+.buttoButtonMenu:pressed{
+    -fx-background-color:  linear-gradient(grey,transparent );
+    -fx-background-radius: 20;
+}
+.buttonFront{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.buttonFront:hover{
+
+    -fx-background-color: transparent;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+}
+.buttonFront:pressed{
+
+    -fx-background-color: transparent;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+}
+.buttonNext{
+    -fx-background-color: transparent;
+
+}
+/*.buttonNext:hover{
+     -fx-effect: innershadow(gaussian, #000000, 10, 0.2, 0, 0);
+      -fx-effect: dropshadow(gaussian, #000000, 10, 0.2, 0, 0);
+        -fx-background-color: transparent;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+}*/
+.buttonNext:pressed{
+
+    -fx-background-color: transparent;
+    -fx-background-radius: 20;
+
+}
+.star{
+    -fx-background-color: transparent;
+
+}
+.star:hover{
+
+    -fx-background-color: transparent;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+}
+.star:pressed{
+
+    -fx-background-color: transparent;
+    -fx-background-radius: 20;
+
+}
+
+.tabmenu{
+    -fx-padding: 5 180 0 10;
+    -fx-background-color:#DCDCDC;
+    -fx-font-family:"Calibri";
+    -fx-font-style:italic;
+    -fx-font-size:17px;
+}
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator{
+    -fx-text-fill:black;
+    -fx-border-color:transparent;
+}
+
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .tab-label{
+    -fx-text-fill:black;
+    -fx-font-family:"Calibri";
+    -fx-font-style:italic;
+    -fx-font-size:17px;
+}
+.tabmenu:hover{
+    -fx-background-color:linear-gradient(#43882b, transparent);
+    -fx-font-family:"Calibri";
+    -fx-font-style: italic;
+    -fx-font-size:17px;
+}
+.tabmenu:pressed{
+    -fx-text-fill:black;
+    -fx-background-color:linear-gradient(#43882b, transparent);
+    -fx-border-color:transparent;
+    -fx-font-family:"Calibri";
+    -fx-font-style: italic;
+    -fx-font-size:17px;
+}
+.tabmenu:selected{
+    -fx-background-color:linear-gradient(#43882b, transparent);
+    -fx-border-color:transparent;
+}
+/* TableView and Columns */
+.table-view .column-header {
+    -fx-border-color: transparent;
+    -fx-background-color: transparent; /* sets the background color of the header */
+}
+.table-view .column-header-background .filler {
+    -fx-opacity: 0;
+    -fx-pref-width: 0;
+}
+.table-view .column-header .label {
+    /*-fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 0.8), 5, 0.1, 0, 0);*/
+    -fx-font-size: 16px; /* sets the font size of the header labels */
+    -fx-font-family:"Calibri";
+
+}
+.table-view .scroll-bar:vertical {
+    -fx-opacity: 0;
+    -fx-pref-width: 0;
+}
+.table-view:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient( #43882b, transparent);
+    -fx-border-radius: 10px;
+    -fx-background-insets:  0px ;
+    -fx-padding: 5px;
+    -fx-background-radius:10px;
+}
+.table-row-cell:filled {
+    -fx-font-size: 16px; /* sets the font size of the header labels */
+    -fx-font-family:"Calibri";
+    -fx-font-style: italic;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.table-row-cell:filled:hover {
+    -fx-font-size: 16px; /* sets the font size of the header labels */
+    -fx-font-family:"Calibri";
+    -fx-font-style: italic;
+    -fx-background-color: linear-gradient(transparent,#43882b); /* set your desired selected row background color */
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.table-view .focus-indicator {
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.table-view .table-cell{
+    -fx-border-color: transparent;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.table-row-cell:filled:selected {
+    -fx-font-size: 18px; /* sets the font size of the header labels */
+    -fx-font-family:"Calibri";
+    -fx-font-style: italic;
+    -fx-background-color: linear-gradient(#43882b, transparent); /* set your desired selected row background color */
+    -fx-text-fill: whitesmoke; /* sets the text color of the header labels */
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+/* Removes the horizontal scrollbar */
+.table-view .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-pref-height: 0;
+}
+/*Textfields*/
+.text-field {
+    -fx-background-color: transparent; /* remove the background color */
+    -fx-text-fill: black; /* set the text color */
+    -fx-font-family:"Calibri";
+    -fx-font-style: italic;
+    -fx-border-color: transparent transparent #43882b transparent; /* set the border color, only the bottom border is visible */
+    -fx-border-width: 0 0 2 0; /* set the border width, only the bottom border is visible */
+}
+.text-field:focused {
+    -fx-border-color: transparent transparent #43882b transparent; /* set the border color when the text field is focused */
+    -fx-border-width: 0 0 2 0; /* set the border width when the text field is focused */
+}
+/* Style for all ComboBox sub-classes */
+.combo-box > .list-cell:filled:selected {
+    -fx-background-color:linear-gradient(#43882b, transparent);
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 19px; /* sets the font size of the header labels */
+    -fx-font-family:"Calibri";
+    -fx-font-style: italic ;
+}
+/* Style for all ComboBox arrow buttons */
+.combo-box > .arrow-button {
+    -fx-background-color: white;
+    -fx-border-color: #43882b;
+    -fx-focus-color: transparent; /* Remove focus border */
+}
+.combo-box > .arrow-button:hover {
+    -fx-background-color: linear-gradient(#43882b, transparent);
+    -fx-focus-color: transparent; /* Remove focus border */
+}
+.combo-box > .arrow-button:pressed {
+    -fx-background-color: linear-gradient(transparent ,#43882b);
+    -fx-focus-color: transparent; /* Remove focus border */
+}
+.combo-box .list-cell:pressed {
+    -fx-background-color: linear-gradient(transparent ,#43882b);
+    -fx-text-fill: white;
+}
+.combo-box .list-cell:selected {
+    -fx-background-color: linear-gradient(#43882b, transparent);
+    -fx-text-fill: white;
+}
+.combo-box .list-cell:hover {
+    -fx-background-color: linear-gradient(#43882b, transparent);
+    -fx-text-fill: white;
+}

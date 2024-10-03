@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1366.0" styleClass="bg" stylesheets="@../../css/SideNavBar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.SideNavBarUserController">
+    <children>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="100.0" styleClass="dash__side-bar">
+            <opaqueInsets>
+                <Insets />
+            </opaqueInsets>
+            <children>
+                <ImageView fitHeight="71.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true" translateX="-14.0" translateY="-17.0">
+                    <image>
+                        <Image url="@../../img/logo.png" />
+                    </image>
+                    <VBox.margin>
+                        <Insets left="10.0" top="30.0" />
+                    </VBox.margin>
+                </ImageView>
+                <VBox maxWidth="-Infinity" minHeight="-Infinity" prefHeight="552.0" prefWidth="89.0" translateY="20.0">
+                    <children>
+                        <HBox fx:id="dashboardBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#open_dashboard" prefHeight="50.0" prefWidth="60.0" styleClass="nav-links">
+                            <children>
+                                <ImageView fx:id="dashboardIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../img/menu.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="25.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                            <padding>
+                                <Insets left="20.0" right="20.0" />
+                            </padding>
+                        </HBox>
+                        <HBox fx:id="profileBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" onMouseClicked="#open_profile" prefHeight="50.0" prefWidth="200.0" styleClass="nav-links">
+                            <children>
+                                <ImageView fx:id="profileIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../img/user.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="25.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="fundrisingBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" onMouseClicked="#open_fundrisingList" prefHeight="50.0" prefWidth="200.0" styleClass="nav-links">
+                            <children>
+                                <ImageView fx:id="fundrisingIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../img/compte.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="25.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="productsBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" onMouseClicked="#open_productsList" prefHeight="50.0" prefWidth="200.0" styleClass="nav-links">
+                            <children>
+                                <ImageView fx:id="productsIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../img/credit.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="25.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="favBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" onMouseClicked="#open_favList" prefHeight="50.0" prefWidth="200.0" styleClass="nav-links">
+                            <children>
+                                <ImageView fx:id="favIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../img/stage.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="25.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="projetsBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity"  onMouseClicked="#open_ProjectList"  prefHeight="50.0" prefWidth="200.0" styleClass="nav-links">
+                            <children>
+                                <ImageView fx:id="collectIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../img/project.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="25.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="evenementsBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity"  onMouseClicked="#open_evenementsList" prefHeight="50.0" prefWidth="200.0" styleClass="nav-links">
+                            <children>
+                                <ImageView fx:id="commandsIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../img/event.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="25.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="achatBtn" alignment="CENTER_LEFT" maxHeight="-Infinity" minHeight="-Infinity" onMouseClicked="#open_achatList" prefHeight="50.0" prefWidth="54.0" styleClass="nav-links">
+                            <children>
+                                <ImageView fx:id="achatIcon" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateX="5.0">
+                                    <image>
+                                        <Image url="@../../img/help.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="25.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="achatBtn1" alignment="CENTER_LEFT" layoutX="10.0" layoutY="436.0" maxHeight="-Infinity" minHeight="-Infinity" onMouseClicked="#open_actualite" prefHeight="50.0" prefWidth="200.0" styleClass="nav-links">
+                            <padding>
+                                <Insets left="20.0" />
+                            </padding>
+                            <children>
+                                <ImageView fx:id="achatIcon1" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateX="5.0">
+                                    <image>
+                                        <Image url="@../../img/news.png" />
+                                    </image>
+                                    <HBox.margin>
+                                        <Insets right="25.0" />
+                                    </HBox.margin>
+                                </ImageView>
+                            </children>
+                            <VBox.margin>
+                                <Insets top="10.0" />
+                            </VBox.margin>
+                        </HBox>
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </VBox>
+            </children>
+        </VBox>
+        <HBox alignment="CENTER_RIGHT" layoutX="112.0" prefHeight="78.0" prefWidth="1253.0">
+            <children>
+                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="nav-user-fullname" text="E_Flex Bank " translateX="-765.0">
+                    <font>
+                        <Font name="Montserrat ExtraBold" size="18.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets right="70.0" />
+                    </HBox.margin>
+                </Text>
+                <HBox fx:id="navBarLogout" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#logout" prefHeight="50.0" prefWidth="50.0" styleClass="nav-icon">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../img/logout.png" />
+                            </image>
+                            <HBox.margin>
+                                <Insets />
+                            </HBox.margin>
+                        </ImageView>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="16.0" />
+                    </HBox.margin>
+                </HBox>
+                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#open_notifModel" prefHeight="50.0" prefWidth="50.0" styleClass="nav-icon">
+                    <children>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" translateX="10.0">
+                            <image>
+                                <Image url="@../../img/bell.png" />
+                            </image>
+                        </ImageView>
+                        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="20.0" styleClass="nav-notif-bg" translateX="-8.0" translateY="-14.0">
+                            <children>
+                                <Text fx:id="totalNotif" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="3" translateY="-1.0">
+                                    <font>
+                                        <Font name="Montserrat ExtraBold" size="15.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </HBox>
+                    </children>
+                    <HBox.margin>
+                        <Insets right="16.0" />
+                    </HBox.margin>
+                </HBox>
+                <Text fx:id="navFullname" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="nav-user-fullname" text="Client ">
+                    <font>
+                        <Font name="Montserrat Bold" size="18.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets right="16.0" />
+                    </HBox.margin>
+                </Text>
+                <HBox prefHeight="78.0" prefWidth="67.0">
+                    <children>
+                        <ImageView fitHeight="60.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                            <HBox.margin>
+                                <Insets bottom="7.0" right="9.0" top="8.0" />
+                            </HBox.margin>
+                            <image>
+                                <Image url="@../../img/admin.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <HBox.margin>
+                        <Insets />
+                    </HBox.margin>
+                </HBox>
+            </children>
+        </HBox>
+        <Pane fx:id="content_area" layoutX="115.0" layoutY="78.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1236.0" styleClass="dash__container-card" />
+    </children>
+</AnchorPane>

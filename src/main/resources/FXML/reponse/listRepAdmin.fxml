@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="content_area" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="622.0" prefWidth="1084.0" styleClass="dash__container-card" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.reponse.ListRepAdminController">
+    <children>
+        <HBox alignment="CENTER" layoutX="51.0" prefHeight="74.0" prefWidth="1033.0">
+            <children>
+                <ImageView fx:id="backBtn" fitHeight="34.0" fitWidth="41.0" onMouseClicked="#returnBack" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../imagesAct/back.png" />
+                    </image>
+                </ImageView>
+                <Text fx:id="repListTitle" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="user_list--title" text="Liste des réponses" translateX="150.0">
+                    <HBox.margin>
+                        <Insets right="550.0" />
+                    </HBox.margin></Text>
+                <Text fill="#97d158" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="sort-text" text="Triée par :" translateX="-40.0">
+                    <HBox.margin>
+                        <Insets right="25.0" />
+                    </HBox.margin>
+                </Text>
+                <ComboBox fx:id="trierepInput" maxHeight="-Infinity" minHeight="-Infinity" minWidth="150.0" prefHeight="40.0" promptText="Tous" styleClass="product__add-comboBox" stylesheets="@../../css/SideNavBar.css" translateX="-40.0" />
+            </children>
+        </HBox>
+        <HBox fx:id="repTableHead" alignment="CENTER_LEFT" layoutX="33.0" layoutY="92.0" prefHeight="74.0" prefWidth="1023.0" styleClass="userTableHead" stylesheets="@../../css/SideNavBar.css">
+            <children>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Adresse client" textAlignment="CENTER" translateX="-8.0" wrappingWidth="246.9547004699707" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Réponse" textAlignment="CENTER" translateX="-20.0" wrappingWidth="230.15475845336914" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Pièce jointe" textAlignment="CENTER" translateX="-25.0" wrappingWidth="166.95473861694336" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Date réponse" textAlignment="CENTER" translateX="-25.0" wrappingWidth="146.95456314086914" />
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userTableHeadTitle" text="Date réclamation" textAlignment="CENTER" translateX="-25.0" wrappingWidth="134.1545753479004" />
+            </children>
+        </HBox>
+        <ScrollPane hbarPolicy="NEVER" layoutX="33.0" layoutY="167.0" prefHeight="449.0" prefWidth="1023.0" styleClass="user_listScrollPane" stylesheets="@../../css/SideNavBar.css">
+            <content>
+                <VBox fx:id="repListContainer" prefHeight="446.0" prefWidth="1005.0" spacing="13.0" styleClass="userTableBody" />
+            </content>
+        </ScrollPane>
+        <HBox fx:id="updateArticleModel" alignment="CENTER" layoutX="-274.0" layoutY="-85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1478.0" styleClass="updateUserModel" stylesheets="@../../assets/style/nabilStyle.css">
+            <children>
+                <Pane fx:id="hadhemiOsket" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="534.0" prefWidth="630.0" style="-fx-background-color: #fff;" styleClass="updateUserModel-card" translateX="120.0" translateY="30.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="84.0" prefWidth="600.0">
+                            <children>
+                                <Text fill="#32594a" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="updateUserModel-card-title" text="Modifier la réponse" />
+                                <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#close_updateProjectModel" prefHeight="30.0" prefWidth="30.0" styleClass="updateUserModel-card-exitBtn" translateX="355.0" translateY="-13.0">
+                                    <children>
+                                        <ImageView fitHeight="12.0" fitWidth="12.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../../assets/img/cross.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                </HBox>
+                            </children>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <padding>
+                                <Insets left="30.0" right="30.0" />
+                            </padding>
+                        </HBox>
+                        <Line endX="540.0" layoutX="30.0" layoutY="84.0" stroke="#defee6" strokeWidth="2.0" />
+                        <ScrollPane hbarPolicy="NEVER" layoutX="30.0" layoutY="111.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="407.0" prefWidth="571.0" styleClass="updateProjectModel-scrollPane" stylesheets="@../../assets/yesser/style/nabilStyle.css">
+                            <content>
+                                <VBox fx:id="updateArticleModelContent" prefHeight="402.0" prefWidth="551.0" />
+                            </content>
+                        </ScrollPane>
+                    </children>
+                </Pane>
+            </children>
+        </HBox>
+
+    </children>
+   <stylesheets>
+      <URL value="@../../assets/style/nabilStyle.css" />
+      <URL value="@../../assets/yesser/style/nabilStyle.css" />
+   </stylesheets>
+</Pane>

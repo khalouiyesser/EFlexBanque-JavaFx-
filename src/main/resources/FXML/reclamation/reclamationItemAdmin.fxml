@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Text?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="1003.0" styleClass="userItem" stylesheets="@../../css/SideNavBar.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.reclamation.ReclamationItemAdminController">
+    <children>
+        <ImageView fx:id="RecItemImg" fitHeight="50.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true" styleClass="userItem__img">
+            <image>
+                <Image url="@../../imagesAct/admin.png" />
+            </image>
+            <HBox.margin>
+                <Insets right="10.0" />
+            </HBox.margin>
+        </ImageView>
+        <Text fx:id="RecItemMail" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__name" text="hadhemi.mahmoud@esprit.tn" wrappingWidth="143.248046875">
+            <HBox.margin>
+                <Insets right="4.0" />
+            </HBox.margin>
+        </Text>
+        <Text fx:id="RecItemObjet" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field" text="Objet" wrappingWidth="95.24795532226562">
+            <HBox.margin>
+                <Insets right="4.0" />
+            </HBox.margin>
+        </Text>
+        <Text fx:id="RecItemcontenu" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field" text="Contenu" wrappingWidth="119.24810791015625">
+            <HBox.margin>
+                <Insets right="4.0" />
+            </HBox.margin>
+        </Text>
+        <Text fx:id="RecItemDepText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field" text="Département" translateX="-15.0" wrappingWidth="75.248046875">
+            <HBox.margin>
+                <Insets right="4.0" />
+            </HBox.margin>
+        </Text>
+        <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="109.66741943359375">
+            <children>
+                <ImageView fx:id="RecItemState" fitHeight="40.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true" />
+            </children>
+        </HBox>
+        <Text fx:id="RecItemDateText" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="userItem__field" text="Date" textAlignment="CENTER" translateX="20.0" wrappingWidth="117.66735458374023" />
+        <ImageView fx:id="RecItemPieceJ" fitHeight="26.0" fitWidth="32.0" onMouseClicked="#RecItemPieceJ" pickOnBounds="true" preserveRatio="true" translateX="80.0">
+            <image>
+                <Image url="@../../imagesAct/attach.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="RecReplyBtnImg" fitHeight="22.0" fitWidth="26.0" onMouseClicked="#RecReplyBtn" pickOnBounds="true" preserveRatio="true" translateX="160.0">
+            <image>
+                <Image url="@../../imagesAct/reply.png" />
+            </image>
+        </ImageView>
+
+
+    </children>
+</HBox>
